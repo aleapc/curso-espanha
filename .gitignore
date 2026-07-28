@@ -1,0 +1,19 @@
+node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+dev-debug.log
+
+# ── ÁUDIO: fora do repositório de FONTE, e de propósito ──────────────────────
+# São 258 MB em ~2.500 mp3, e eles são REPRODUTÍVEIS: o static/audio/manifest.json
+# guarda chave→texto de cada clipe e está versionado, então # regrava exatamente o mesmo corpus. Versionar os binários faria o histórico
+# crescer 258 MB a cada regravação — foram cinco só no dia 28/07.
+# O áudio publicado vive no branch gh-pages, que o deploy.sh mantém.
+static/audio/*.mp3
+static/audio/index.json
+!static/audio/manifest.json

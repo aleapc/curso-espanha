@@ -1,0 +1,723 @@
+{
+  "id": "i06",
+  "slot": "I06",
+  "nivel": "intermediario",
+  "numero": 24,
+  "parte": "I06",
+  "titulo": "Where you went yesterday, and where he sends you tomorrow",
+  "subtitulo": "Three short sentences you learn whole and never take apart — the place, the plate and the one thing you loved — and the recommendation that comes back across the counter",
+  "moldura": "ganha",
+
+  "cena": "Nine at night, your third evening in the same bar, and the man who served you on Tuesday puts the glass down, leans on his elbows and asks what you did today.",
+
+  "decisao": "where tomorrow comes from — the table that can give an account of yesterday, in three sentences, gets sent somewhere off the square and told what to eat when it gets there; the table that answers 'lovely, thanks' spends the rest of the fortnight on the itinerary it arrived with, paying square prices at the restaurant every visitor is already in",
+  "emJogo": "ambos",
+
+  "clique": {
+    "contagem": ["the counter", "the taxi", "the market stall", "the hotel desk"],
+    "desconto": "Nobody gave you those sentences. There are three fronts, you have been changing what hangs off the end all evening, and not one of the fronts moved.",
+    "piso": "You will say where you went, what you ate and what you loved, and be understood. Most visitors spend a fortnight being asked that and answering it in English."
+  },
+  "cliqueAudioKey": "i06-n26",
+
+  "frasePiso": "You will say where you went, what you ate and what you loved, and be understood. Most visitors spend a fortnight being asked that and answering it in English.",
+
+  "permissao": "You are allowed to tell the whole of yesterday in three short sentences and stop. Nobody is waiting for a story and nobody is counting your words. You are allowed to use the same three sentences every night for a fortnight, because the place, the plate and the thing on the end are the only parts anybody is listening to. And when the name of what you ate has gone, point at the next table's plate and say you ate that — pointing is a legitimate half of this.",
+  "permissaoAudioKey": "i06-n24",
+
+  "espelho": "Answering 'it's all been lovely, thanks' is the bit that reads as odd there. At home it is modest and it closes the exchange politely; here it hands back nothing, and the door you had just been handed shuts on its own.",
+
+  "fichasCulturais": [
+    {
+      "sinal": "He asks what you did today, and then stays where he is — elbows on the counter, not wiping anything, waiting through the pause while you get the words out.",
+      "suaLeitura": "He is being polite and I am holding him up. I should wave it off, say it was lovely, and let him get back to work.",
+      "oQueEAli": "At a counter that has already served you twice, that question is the opening of an account rather than filler. What you answer is what he repeats when the next person asks him where to send somebody.",
+      "oQueVoceFaz": "Say the three short sentences, slowly, and then stop. Do not wave it off and do not switch to English to get it over with faster.",
+      "oQueMelhora": "You stop being a room number and become the table that went to Toledo, and that table is the one that gets told where to eat on Thursday.",
+      "ondeNaoVale": "Not at a till in a chain shop, or at a hotel breakfast counter with a queue behind you — there the same question is a greeting, and two words back is the correct answer.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["i06-n18", "i06-n19", "i06-n20"]
+    },
+    {
+      "sinal": "You say the whole city has been wonderful and the person nods once and looks away; you name one square, and they lean in and start telling you about it.",
+      "suaLeitura": "The bigger the compliment, the better it lands, so I should say the whole trip has been marvellous.",
+      "oQueEAli": "A compliment about all of it gives the other person nothing to hold. One named thing hands them something they know by heart, and knowing it by heart is the part they enjoy.",
+      "oQueVoceFaz": "Name one place, one plate and one thing. Then stop talking and let them run with it.",
+      "oQueMelhora": "The conversation carries on without you needing another word of Spanish, which is the whole trick of this part.",
+      "ondeNaoVale": "Not in a place that lives off visitors, where the same three names cross the counter forty times a day — there naming the cathedral gets you a nod and nothing else, and nothing has gone wrong.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["i06-n21", "i06-n22"]
+    }
+  ],
+
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n01",
+      "bloco": "aquecimento",
+      "gesto": 4,
+      "tom": "ganha",
+      "pt": "Part twenty-four. Warm-up, ten seconds, and tonight it is the flick: one quick tap of the tongue. A-YER."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n02",
+      "pt": "No English R in any of tonight's words. Mer-CA-do. Pre-FIE-ro. Pri-ME-ra. Flick a finger for each."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "bloco": "callback",
+      "molde": "SOY-ESTOY",
+      "encaixe": "de Londres",
+      "encaixeGloss": "from London",
+      "promptAudioKey": "i06-p01",
+      "promptPt": "The man on the next stool has opened with the same one they all open with — the one about where you started out — and last night you learned to hand it straight back. Speak now.",
+      "audioKey": "i05-londres-e",
+      "es": "Soy de Londres, ¿y tú?",
+      "pinyin": "soy deh LOHN-drehs, ee too",
+      "pt": "where you started out, and back to him"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n03",
+      "bloco": "cena",
+      "pt": "Nine at night, your third evening, and the same man behind the counter who served you on Tuesday."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n04",
+      "pt": "He puts the glass down, leans on his elbows, and does not walk away."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i06-quetal-e",
+      "es": "¿Qué tal el día?",
+      "pinyin": "keh tahl el DEE-ah",
+      "pt": "👂 'How has your day been?' — elbows on the counter means he is not going anywhere.",
+      "tts": "¿Qué tal el día?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n05",
+      "pt": "That is a door being held open, and most visitors close it with a smile and a nod."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n06",
+      "pt": "Three sentences fit through it. Three, not four. Whatever will not go into one of them, you point at."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i06-ayertoledo-e",
+      "es": "Ayer fui a Toledo.",
+      "pinyin": "ah-YEHR fwee ah toh-LEH-dhoh",
+      "pt": "Yesterday I went to Toledo.",
+      "tts": "Ayer fui a Toledo."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n07",
+      "bloco": "molde",
+      "pt": "That is the frame, and it is the first of three. Ayer fui a — and then the place. The front never moves."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i06-ayerplaya-c",
+      "es": "Ayer fui a la playa.",
+      "pinyin": "ah-YEHR fwee ah lah PLAH-yah",
+      "pt": "The same front, somewhere else — and this one arrived with a little word stuck to it.",
+      "tts": "Ayer fui a la playa."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i06-ayermercado-e",
+      "es": "Ayer fui al mercado.",
+      "pinyin": "ah-YEHR fwee al mehr-KAH-dhoh",
+      "pt": "And here the little word has fused onto the front. You take that pair whole, by ear.",
+      "tts": "Ayer fui al mercado."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n08",
+      "pt": "Learn each place with its little word already attached, the way you learned la cuenta. Then stop looking at it."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "encaixe": "Sevilla",
+      "encaixeGloss": "Seville",
+      "promptAudioKey": "i06-p02",
+      "promptPt": "He wants to know where you got to yesterday. You were on a train south at seven and back at midnight, in the city with orange trees down every street. Speak now.",
+      "audioKey": "i06-sevilla-e",
+      "es": "Ayer fui a Sevilla.",
+      "pinyin": "ah-YEHR fwee ah seh-BEE-yah",
+      "pt": "the place, on the end",
+      "tts": "Ayer fui a Sevilla."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "encaixe": "la catedral",
+      "encaixeGloss": "the cathedral",
+      "promptAudioKey": "i06-p03",
+      "promptPt": "Morning after, in a taxi, and the driver has asked what you saw yesterday. It was the enormous one in the middle of the old town, and you climbed the tower of it. Speak now.",
+      "audioKey": "i06-catedral-c",
+      "es": "Ayer fui a la catedral.",
+      "pinyin": "ah-YEHR fwee ah lah kah-teh-DRAHL",
+      "pt": "with its little word attached",
+      "tts": "Ayer fui a la catedral."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "encaixe": "al museo",
+      "encaixeGloss": "the museum",
+      "promptAudioKey": "i06-p04",
+      "promptPt": "The hotel desk, key in your hand, and she asks how the day went. Three hours of it went on a stone floor in a building full of paintings. Speak now.",
+      "audioKey": "i06-museo-e",
+      "es": "Ayer fui al museo.",
+      "pinyin": "ah-YEHR fwee al moo-SEH-oh",
+      "pt": "the one that fused",
+      "tts": "Ayer fui al museo."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n09",
+      "pt": "Second one, and it is the thing he will get to before anything else. One word, then the plate."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i06-comipaella-c",
+      "es": "Comí paella.",
+      "pinyin": "koh-MEE pah-EH-yah",
+      "pt": "I had paella. — one word, then the plate, and nothing in between the two.",
+      "tts": "Comí paella."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i06-comipulpo-e",
+      "es": "Comí pulpo.",
+      "pinyin": "koh-MEE POOL-poh",
+      "pt": "The same word, a different plate. The plate goes on bare this time.",
+      "tts": "Comí pulpo."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n10",
+      "pt": "No little word here at all. Comí, and then the thing you ate. That is the whole of it."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "encaixe": "cocido",
+      "encaixeGloss": "the stew",
+      "promptAudioKey": "i06-p05",
+      "promptPt": "A different table, a different night, and the man pouring the wine wants to know what you had yesterday. It came out in three goes — the broth first, then the chickpeas, then a plate of meat. Speak now.",
+      "audioKey": "i06-cocido-c",
+      "es": "Comí cocido.",
+      "pinyin": "koh-MEE koh-THEE-dhoh",
+      "pt": "the plate, bare",
+      "tts": "Comí cocido."
+    },
+    {
+      "consulta": ["simpatia/puxar-conversa","simpatia/elogiar-comida"],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "encaixe": "tortilla",
+      "encaixeGloss": "the omelette",
+      "promptAudioKey": "i06-p06",
+      "promptPt": "Eleven in the morning, a market stall, a thick yellow wedge with potato in it eaten standing up off a paper napkin. He asks what you had. Speak now.",
+      "audioKey": "i06-tortilla-e",
+      "es": "Comí tortilla.",
+      "pinyin": "koh-MEE tor-TEE-yah",
+      "pt": "standing up, off a napkin",
+      "tts": "Comí tortilla."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n11",
+      "pt": "Third one, and this is the one that keeps the conversation going after you have stopped talking."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i06-encantotoledo-e",
+      "es": "Me encantó Toledo.",
+      "pinyin": "meh en-kan-TOH toh-LEH-dhoh",
+      "pt": "I loved Toledo. — one named thing, never the whole country.",
+      "tts": "Me encantó Toledo."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i06-encantoplaza-c",
+      "es": "Me encantó la plaza.",
+      "pinyin": "meh en-kan-TOH lah PLAH-thah",
+      "pt": "The same front with something else after it. Nothing at the front shifts.",
+      "tts": "Me encantó la plaza."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n12",
+      "pt": "Whatever you hang on the end, the front stays exactly as it is. That is a gift, and it is free."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i06-osgustado-e",
+      "es": "¿Y os ha gustado?",
+      "pinyin": "ee ohs ah goos-TAH-dhoh",
+      "pt": "👂 'And did you two like it?' — aimed at both of you, answered by one of you.",
+      "tts": "¿Y os ha gustado?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "encaixe": "el mercado",
+      "encaixeGloss": "the market",
+      "promptAudioKey": "i06-p07",
+      "promptPt": "The woman in the corner shop, wrapping your bread, has asked what the two of you have liked best so far. It was the hall with the fish laid out on ice and a man shouting prices over your head. Speak now.",
+      "audioKey": "i06-encantomercado-c",
+      "es": "Me encantó el mercado.",
+      "pinyin": "meh en-kan-TOH el mehr-KAH-dhoh",
+      "pt": "one named thing",
+      "tts": "Me encantó el mercado."
+    },
+    {
+      "consulta": ["simpatia/elogiar-comida"],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "encaixe": "el pulpo",
+      "encaixeGloss": "the octopus",
+      "promptAudioKey": "i06-p08",
+      "promptPt": "Back at the counter, and he wants to know which of last night's plates you would order again tonight. It was the one with paprika on top. Speak now.",
+      "audioKey": "i06-encantopulpo-e",
+      "es": "Me encantó el pulpo.",
+      "pinyin": "meh en-kan-TOH el POOL-poh",
+      "pt": "the one you would have again",
+      "tts": "Me encantó el pulpo."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "i06-g01",
+      "tom": "protege",
+      "pt": "GUIRI ALERT. George here. Asked how my day had been, I said: 'Oh, lovely, thanks. Really nice.'"
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "i06-g02",
+      "pt": "True, polite, and it handed him nothing to hold. He said 'muy bien', wiped the counter, and went."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "i06-g03",
+      "pt": "Name the place. Name the plate. Name one thing you liked. Three sentences, and he stayed put."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n13",
+      "tom": "ganha",
+      "pt": "Two more now, whole, with nothing in them to change. The first is for when the day was a good one."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i06-genial-c",
+      "es": "Estuvo genial.",
+      "pinyin": "ehs-TOO-boh kheh-NYAL",
+      "pt": "It was great. — two words, and they cover an afternoon, an evening or the whole week.",
+      "tts": "Estuvo genial."
+    },
+    {
+      "consulta": ["simpatia/agradecer","simpatia/puxar-conversa"],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "i06-p09",
+      "promptPt": "He has asked how last night went, and it went a good deal better than anything you had booked. Two words. Speak now.",
+      "audioKey": "i06-genial-c",
+      "es": "Estuvo genial.",
+      "pinyin": "ehs-TOO-boh kheh-NYAL",
+      "pt": "two words, and stop"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i06-habeisestado-e",
+      "es": "¿Habéis estado en Granada?",
+      "pinyin": "ah-BEHS ehs-TAH-dhoh en grah-NAH-dhah",
+      "pt": "👂 'Have you two been to Granada?' — he is not making conversation, he is lining something up.",
+      "tts": "¿Habéis estado en Granada?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n14",
+      "pt": "The second whole one is the answer to that, and it is what makes him tell you the rest."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i06-todavia-c",
+      "es": "Todavía no.",
+      "pinyin": "toh-dhah-BEE-ah noh",
+      "pt": "Not yet. — two words, and 'not yet' is an invitation where 'no' is a full stop.",
+      "tts": "Todavía no."
+    },
+    {
+      "consulta": ["simpatia/puxar-conversa","simpatia/convite"],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "i06-p10",
+      "promptPt": "He has just named a town two hours west and raised his eyebrows at you, and you have four days left and no plan for them. Two words, and leave the door open. Speak now.",
+      "audioKey": "i06-todavia-c",
+      "es": "Todavía no.",
+      "pinyin": "toh-dhah-BEE-ah noh",
+      "pt": "two words, door open"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n15",
+      "pt": "And they will not let you sit on the fence for long. One of the two, and the frame for it is yours already."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i06-prefieronorte-c",
+      "es": "Prefiero el norte.",
+      "pinyin": "preh-FYEH-roh el NOR-teh",
+      "pt": "I prefer the north. — three words, and it settles the question for the table.",
+      "tts": "Prefiero el norte."
+    },
+    {
+      "consulta": ["simpatia/puxar-conversa"],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "molde": "PREFERENCIA",
+      "encaixe": "el norte",
+      "encaixeGloss": "the north",
+      "promptAudioKey": "i06-p11",
+      "promptPt": "Two of them at the counter are arguing about which half of the country you should have started in, and both have turned round to you. You came in through Bilbao and you would do it again. Speak now.",
+      "audioKey": "i06-prefieronorte-c",
+      "es": "Prefiero el norte.",
+      "pinyin": "preh-FYEH-roh el NOR-teh",
+      "pt": "your half of it"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i06-pueblos-e",
+      "es": "Prefiero los pueblos.",
+      "pinyin": "preh-FYEH-roh lohs PWEH-blohs",
+      "pt": "The same three words with something else after them. Nothing at the front shifts for the plural.",
+      "tts": "Prefiero los pueblos."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "PREFERENCIA",
+      "encaixe": "los pueblos",
+      "encaixeGloss": "the villages",
+      "promptAudioKey": "i06-p12",
+      "promptPt": "In the taxi again, and the driver has asked what you want out of your last three days. You have had quite enough of queues and cathedrals — the small places, up in the hills. Speak now.",
+      "audioKey": "i06-pueblos-e",
+      "es": "Prefiero los pueblos.",
+      "pinyin": "preh-FYEH-roh lohs PWEH-blohs",
+      "pt": "the small ones, in the hills"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n16",
+      "pt": "Now the part all of that was for. He has heard where you went, and he has a view about tomorrow."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "i06-recomendar-e",
+      "es": "¿Me puede recomendar otro sitio?",
+      "pinyin": "meh PWEH-dheh rreh-koh-men-DAR OH-troh SEE-tyoh",
+      "pt": "Could you recommend somewhere else? — the opener from part three, with tomorrow on the end of it.",
+      "tts": "¿Me puede recomendar otro sitio?"
+    },
+    {
+      "consulta": ["simpatia/puxar-conversa","mesa/comida"],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "ME-PUEDE",
+      "encaixe": "recomendar otro sitio",
+      "encaixeGloss": "somewhere else",
+      "promptAudioKey": "i06-p13",
+      "promptPt": "He has just told you that the place you went to yesterday is the one every visitor goes to, and he is enjoying saying it. Ask him. Speak now.",
+      "audioKey": "i06-recomendar-e",
+      "es": "¿Me puede recomendar otro sitio?",
+      "pinyin": "meh PWEH-dheh rreh-koh-men-DAR OH-troh SEE-tyoh",
+      "pt": "for tomorrow"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i06-tienesqueir-c",
+      "es": "Pues entonces tienes que ir a…",
+      "pinyin": "pwehs en-TON-thehs TYEH-nehs keh eer ah",
+      "pt": "👂 'Well then you have to go to…' — that is the tip arriving, and the name comes at speed.",
+      "tts": "Pues entonces tienes que ir a…"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n17",
+      "pt": "The name goes past in one lump and it is gone. You already own the words that stop it."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "molde": "ME-PUEDE",
+      "encaixe": "escribir",
+      "encaixeGloss": "write it down",
+      "promptAudioKey": "i06-p14",
+      "promptPt": "He has said the name of the place twice now and it is still not sticking. His pen is on the till and both your hands are full. Speak now.",
+      "audioKey": "e01c-escribir-c",
+      "es": "¿Me lo puede escribir, por favor?",
+      "pinyin": "meh loh PWEH-dheh ehs-kree-BEER, por fah-BOR",
+      "pt": "onto paper, before it goes"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n18",
+      "bloco": "capsula",
+      "pt": "Back to the question he asked. At a counter that has served you twice, it is not small talk."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n19",
+      "pt": "Your answer is what he repeats when the next person asks him where to send somebody."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n20",
+      "pt": "Not at a till with a queue behind you, mind. There it is a greeting, and two words back is right."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n21",
+      "pt": "And name one thing, not the country. A compliment about all of it hands the other person nothing."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n22",
+      "pt": "One square, one plate, one street, and they are off — and your Spanish has run out, and it holds."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n23",
+      "bloco": "espelho",
+      "pt": "At home, 'it's all been lovely, thanks' is modest. Here it shuts the door you were just handed."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n24",
+      "bloco": "permissao",
+      "pt": "You can tell the whole of yesterday in three short sentences and stop. Nobody wants the long version."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n25",
+      "pt": "And when the name of what you ate has gone, point at the next table's plate and say you ate that."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n26",
+      "bloco": "clique",
+      "tom": "ganha",
+      "pt": "Count the places. The counter. The taxi. The market stall. The hotel desk. Three fronts covered them."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n27",
+      "pt": "Nobody gave you those sentences. You changed what hung off the end, and no front ever moved."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n28",
+      "bloco": "piso",
+      "pt": "You will say where you went, what you ate and what you loved. Most visitors answer that in English."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-s00",
+      "pt": "Shadowing. Out loud, underneath them, one tap for every R and no English R anywhere in it."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "i06-ayertoledo-e",
+      "es": "Ayer fui a Toledo.",
+      "pinyin": "ah-YEHR fwee ah toh-LEH-dhoh",
+      "pt": "Yesterday I went to Toledo."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "i06-comipaella-c",
+      "es": "Comí paella.",
+      "pinyin": "koh-MEE pah-EH-yah",
+      "pt": "I had paella."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "i06-rend",
+      "bloco": "recap",
+      "pt": "One more out loud, somewhere we have not stood tonight, and nobody has asked you anything at all."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "encaixe": "la playa",
+      "encaixeGloss": "the beach",
+      "promptAudioKey": "i06-p15",
+      "promptPt": "Breakfast, second morning, and the woman with the coffee pot has stopped at your table with nothing to do. You spent all of yesterday on the sand and your shoulders are still telling you about it. Start it yourself. Speak now.",
+      "audioKey": "i06-ayerplaya-c",
+      "es": "Ayer fui a la playa.",
+      "pinyin": "ah-YEHR fwee ah lah PLAH-yah",
+      "pt": "you go first this time"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "i06-n29",
+      "pt": "That is it. You went, you ate, you loved it, and he told you where to go next. Hasta luego."
+    }
+  ],
+
+  "aprofundar": {
+    "titulo": "Three sentences, and why there is no fourth (optional reading)",
+    "secoes": [
+      {
+        "titulo": "Why you are given three finished sentences instead of a machine",
+        "corpo": "Spanish has a full apparatus for talking about what happened yesterday, and learning it properly takes months that you do not have before this flight. What a fortnight in Spain actually asks of you is much smaller: somebody wants to know where you went, what you ate and whether you liked it. So we have handed you the three finished sentences that answer exactly that, learnt whole, with one slot each — the place, the plate, the thing. 'Fui', 'comí' and 'encantó' are not being taught to you as forms with rules attached; they are being handed over as the front halves of three sentences, the way 'la cuenta' was handed over as one word. There is deliberately no fourth. Everything else that happened to you yesterday either fits into one of these three or gets pointed at, and pointing is a legitimate half of this part rather than a failure of it. If you find yourself wanting to say 'we were going to go but then it rained', the honest answer is that the sentence is not worth the fortnight it would cost you — say 'ayer fui a' somewhere else instead, and the evening carries on.",
+        "exemplos": [
+          {
+            "es": "Ayer fui a Toledo. Comí cocido. Me encantó.",
+            "pt": "ah-YEHR fwee ah toh-LEH-dhoh — the three run together as one answer in about four seconds, and the third one can drop its ending when you have only just named the thing"
+          },
+          {
+            "es": "Hoy no he hecho nada.",
+            "pt": "oy noh eh EH-choh NAH-dhah — 👂 'I've done nothing today' — you will hear this back from them constantly, and it is a complete and respectable answer"
+          }
+        ]
+      },
+      {
+        "titulo": "The little word that comes with the place",
+        "corpo": "'Ayer fui a' takes a place name straight — a Toledo, a Sevilla, a Bilbao — and that is the easy half. When the place has a 'the' in front of it in English, Spanish keeps its own version of that 'the' and glues it on: a la playa, a la catedral, a la plaza. And when the word is a masculine one, the two little words collapse into one syllable: a + el becomes al. Al mercado. Al museo. Al parque. This is not something to work out at the counter. Learn the place with its little word already stuck on, exactly as you learned 'la cuenta' and 'el baño' rather than 'cuenta' and 'baño', and it will never come up again. Get it the wrong way round and nothing whatsoever happens: 'ayer fui a el museo' is understood instantly and read as an accent, not an error. The only reason we recorded all three shapes is so that your ear has heard each of them before your mouth needs one.",
+        "exemplos": [
+          {
+            "es": "Ayer fui al pueblo de al lado.",
+            "pt": "ah-YEHR fwee al PWEH-bloh deh al LAH-dhoh — yesterday I went to the next village along"
+          },
+          {
+            "es": "Ayer fui a la sierra.",
+            "pt": "ah-YEHR fwee ah lah SYEH-rrah — yesterday I went up into the hills"
+          }
+        ]
+      },
+      {
+        "titulo": "'Me encantó' — and why the end of it never moves",
+        "corpo": "'Me encantó' is the one that surprises people, because the thing you loved sits after it and yet the front does not change to match: me encantó el mercado, me encantó la plaza, me encantó Toledo. Strictly speaking the sentence is built the other way round from the English — the market is doing the delighting and you are the one it happens to — which is the same shape as 'me gusta' from the last part. That is genuinely all there is to know, and knowing it buys you nothing at a bar table, so treat it as a gift: one front, anything you like on the end, no agreement to think about. The one place it does move is when you loved several things — 'me encantaron las plazas' — and we have deliberately not taught you that, because naming one thing is the whole point of the sentence and naming three is what makes the other person stop listening. If you want more force, 'me encantó, de verdad' does it with two extra words, and those two turn up properly in the next part.",
+        "exemplos": [
+          {
+            "es": "Me encantó el barrio.",
+            "pt": "meh en-kan-TOH el BAH-rryoh — I loved the neighbourhood"
+          },
+          {
+            "es": "Me encantó, de verdad.",
+            "pt": "meh en-kan-TOH, deh behr-DAHDH — I really did love it (the 'de verdad' is the same one from the thank-you)"
+          }
+        ]
+      },
+      {
+        "titulo": "'Estuvo genial', 'todavía no', and being asked as a pair",
+        "corpo": "'Estuvo genial' is two words about how a thing went — an evening, a concert, a day out — and it needs nothing after it. Its neighbours are 'estuvo muy bien' (it was very good) and 'estuvo bien' (it was fine, and it is genuinely fine). You will also hear 'ha estado genial' from people talking about something that has only just finished; both are correct, nobody is counting, and one of them is enough. 'Todavía no' is the other two-word whole, and it is doing more work than it looks: asked whether you have been to somewhere, 'no' closes the subject and 'not yet' asks to be told about it, which is exactly the reply that gets you the directions. Its partner is 'ya' — already, been, done — and between them they answer almost every 'have you…?' you will be asked in a fortnight. The other thing worth knowing before you get asked: when you are travelling as a pair, the question will very often arrive in the plural — '¿y qué habéis hecho?', '¿os ha gustado?' — because they are addressing both of you at once. You answer in the singular and nothing at all goes wrong: 'ayer fui a la playa' is a perfectly ordinary reply to a question aimed at two people, because you are answering for yourself. If you would like the pair version, it is one word learnt whole — 'fuimos' instead of 'fui' — and it is entirely optional. Recognising 'habéis' and 'os' as 'you two' is the part that actually matters, and that lives in your ear rather than your mouth.",
+        "exemplos": [
+          {
+            "es": "Estuvo muy bien.",
+            "pt": "ehs-TOO-boh mwee byen — it was very good"
+          },
+          {
+            "es": "Todavía no. ¿Merece la pena?",
+            "pt": "toh-dhah-BEE-ah noh. meh-REH-theh lah PEH-nah — not yet. Is it worth it? (the second half is optional, and it hands the turn straight back)"
+          },
+          {
+            "es": "¿Y qué habéis hecho hoy?",
+            "pt": "ee keh ah-BEHS EH-choh oy — 👂 'and what have you two done today?' — answer it in the singular"
+          }
+        ]
+      },
+      {
+        "titulo": "What the three sentences are actually buying you",
+        "corpo": "The reason this part exists is not conversation practice. Up to now everything the course has given you is something you use to ask for things — a drink, a table, a platform, a chemist. These three are the first ones that hand something back, and that changes what the other person does next. A bar that has served you twice and knows you went to Toledo yesterday will tell you where to go tomorrow; a bar that has served you twice and got a smile and a nod will keep serving you and tell you nothing, which is exactly what happens to almost everybody. It is worth being blunt about the size of the difference, because it is the whole reason to bother: the recommendation you get across a counter is the one that is not in the guidebook, is not on the square, and is not full. And the mechanics of collecting it are already in your hands — you say the three sentences, they tell you where to go, and when the name goes past too fast you ask them to write it down, which is the oldest sentence in this course.",
+        "exemplos": [
+          {
+            "es": "¿Y usted dónde va a comer?",
+            "pt": "ee oos-TEHDH DOHN-deh bah ah koh-MEHR — 👂 'and where do you eat?' — the question you will hear a local ask another local; you do not need to produce it, but recognising it tells you what a real recommendation sounds like"
+          },
+          {
+            "es": "¿Me lo puede escribir, por favor?",
+            "pt": "meh loh PWEH-dheh ehs-kree-BEER — could you write it down for me, please? (part three, doing the most valuable work it will ever do)"
+          }
+        ]
+      }
+    ]
+  }
+}

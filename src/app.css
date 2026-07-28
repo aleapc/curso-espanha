@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Dois toques rápidos em "⏭" davam double-tap zoom no iOS; isto elimina o
+   zoom acidental sem desligar o pinch-zoom (a11y preservada). */
+button,
+a,
+label {
+  touch-action: manipulation;
+}
+
+/* Respeita "Reduzir Movimento" do iOS. Exceção: .barra é a contagem regressiva
+   do "Fale agora!" — carrega informação (tempo restante), então fica. */
+@media (prefers-reduced-motion: reduce) {
+  *:not(.barra),
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-creme text-carvao font-sans;
+}
+
+/* Botões e cartões compartilhados */
+@layer components {
+  .card {
+    @apply rounded-2xl bg-white/80 shadow-sm ring-1 ring-black/5;
+  }
+  .pill {
+    @apply inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm font-medium;
+  }
+  .btn {
+    @apply rounded-xl px-4 py-2 font-semibold transition active:scale-95;
+  }
+  .btn-primary {
+    @apply rounded-xl bg-terracota px-4 py-2 font-semibold text-white transition hover:brightness-110 active:scale-95;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "text": "你好！欢迎来到中国。请问，你想喝点什么？茶还是咖啡？",
+  "vozes": [
+    { "key": "fem-amy",    "name": "Amy",       "voiceId": "bhJUNIXWQQ94l8eI2VUf" },
+    { "key": "fem-coco",   "name": "Coco Li",   "voiceId": "Ca5bKgudqKJzq8YRFoAz" },
+    { "key": "fem-julia",  "name": "Julia",     "voiceId": "tOuLUAIdXShmWH7PEUrU" },
+    { "key": "fem-stacy",  "name": "Stacy",     "voiceId": "hkfHEbBvdQFNX4uWHqRF" },
+    { "key": "masc-jason", "name": "Jason Chen","voiceId": "DowyQ68vDpgFYdWVGjc3" },
+    { "key": "masc-james", "name": "James Gao", "voiceId": "4VZIsMPtgggwNg7OXbPY" },
+    { "key": "masc-evan",  "name": "Evan Zhao", "voiceId": "MI36FIkp9wRP7cpWKPTl" },
+    { "key": "masc-haoran","name": "Haoran",    "voiceId": "pU9NaAwkoR3v0Mrg3uKz" }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "curso-espanha",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev --host",
+    "prebuild": "npm run outline:conferir && npm run estrutura:estrito && npm run audio:check && npm run tom",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "audio": "node scripts/generate-audio.mjs",
+    "audio:list": "node scripts/generate-audio.mjs --list",
+    "estrutura": "node scripts/valida-estrutura.mjs",
+    "estrutura:estrito": "node scripts/valida-estrutura.mjs --estrito",
+    "audio:check": "node scripts/valida-audio.mjs",
+    "tom": "node scripts/valida-tom.mjs",
+    "tom:relatorio": "node scripts/valida-tom.mjs --relatorio",
+    "reuso": "node scripts/mede-reuso.mjs",
+    "outline": "node scripts/gera-outline.mjs",
+    "outline:conferir": "node scripts/gera-outline.mjs --conferir",
+    "briefing": "node scripts/briefing-slot.mjs",
+    "briefing:todos": "node scripts/briefing-slot.mjs --todos",
+    "consulta": "node scripts/build-consulta.mjs",
+    "consulta:cobertura": "node scripts/build-consulta.mjs --cobertura",
+    "transito": "node scripts/confere-transito.mjs"
+  },
+  "_prebuild": {
+    "_": "OS PORTÕES, E EM QUE MODO CADA UM RODA. npm executa `prebuild` antes de `build`; qualquer um dos três saindo != 0 impede a build. Até 27/07/2026 não havia prebuild nenhum: os dois validadores existiam e ninguém os executava (achado 3 da auditoria adversarial — 'portão descrito e não escrito é pior que portão nenhum, porque desliga a conferência humana sem ligar a automática').",
+    "estrutura": "MODO AVISO. Slot de módulo travado ainda vazio é aviso, não erro — PRODUTO.md §3.2, regra 10. Divergência de contrato (slot inexistente, slot preenchido duas vezes, nivel divergente, dissolveEm para slot inventado, B13 ausente) continua sendo erro duro nos dois modos. Medido em 27/07: 0 erros, 5 avisos.",
+    "audio:check": "MODO ESTRITO, e sempre foi. Manifesto × mp3 em disco × texto atual do curso. Medido em 27/07: passa, 938 clipes.",
+    "tom": "MODO ESTRITO, e é O QUE ESTÁ VERMELHO HOJE: 282 erros de G1/G3/G4 sobre os 24 episódios legados — moldura defensiva acima do teto, média de `responde` abaixo do piso e, sobretudo, narração a 578 chars/clipe contra o teto de 120. Nenhum é regressão: é a dívida que as Ondas 1 a 5 existem para pagar, e ela cai parte por parte conforme cada slot é reescrito. Quem precisar de build verde antes disso NÃO afrouxa o portão — reescreve a parte, ou roda `npm run build --ignore-scripts` uma vez, deliberadamente e com o número na mão.",
+    "quando_o_estrito_liga": "AO FIM DA ONDA 3 (GRADE-36-ESPANHA §7), quando B14, B10 e B18 fecharem os 18 slots de ME VIRO. Nesse dia o prebuild vira `npm run estrutura:estrito && npm run audio:check && npm run tom` e este bloco é atualizado. Ligar antes deixa o build vermelho durante a obra inteira, e equipe que convive com vermelho aprende a ignorar vermelho — que é como se perde um portão para sempre.",
+    "outros_4_cursos": "curso-espanha-de, curso-espanol, curso-mandarim e curso-tailandes receberam a MESMA flag --estrito no validador de estrutura, mas continuam SEM prebuild: estão no ar e não conformam. Ligar lá é decisão separada, curso a curso, depois de medir."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.6",
+    "@sveltejs/kit": "^2.8.0",
+    "@sveltejs/vite-plugin-svelte": "^7.2.0",
+    "@types/node": "^22.9.0",
+    "@vite-pwa/sveltekit": "^1.1.0",
+    "autoprefixer": "^10.4.20",
+    "pinyin-pro": "^3.28.1",
+    "svelte": "^5.1.16",
+    "svelte-check": "^4.0.5",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3",
+    "vite": "^8.1.4",
+    "vite-plugin-pwa": "^1.3.0"
+  }
+}

@@ -1,0 +1,13 @@
+[
+  { "key": "b01-d1", "voice": "Ana", "text": "¡Hola! Buenos días." },
+  { "key": "b01-d2", "voice": "Diego", "text": "¡Buenos días! ¿Cómo estás?" },
+  { "key": "b01-d3", "voice": "Ana", "text": "Muy bien, gracias. ¿Y vos?" },
+  { "key": "b01-d4", "voice": "Diego", "text": "Bien también. ¿Cómo te llamás?" },
+  { "key": "b01-d5", "voice": "Ana", "text": "Me llamo Ana. ¿Y vos?" },
+  { "key": "b01-d6", "voice": "Diego", "text": "Me llamo Diego. ¡Mucho gusto!" },
+  { "key": "b01-d7", "voice": "Ana", "text": "¡Mucho gusto! Hasta luego." },
+  { "key": "b01-d8", "voice": "Diego", "text": "¡Adiós!" },
+  { "key": "b01-f1", "voice": "narrador", "text": "Mucho gusto." },
+  { "key": "b01-f2", "voice": "narrador", "text": "¿Cómo te llamás?" },
+  { "key": "b01-f3", "voice": "narrador", "text": "Me llamo Alexandre." }
+]

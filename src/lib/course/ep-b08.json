@@ -1,0 +1,597 @@
+{
+  "id": "b08",
+  "slot": "B08",
+  "nivel": "basico",
+  "numero": 8,
+  "parte": "B08",
+  "titulo": "Stopping a stranger, and understanding the answer",
+  "subtitulo": "Four in the afternoon, a street that is not where the map put it, and forty people walking past who could all fix it in ten seconds",
+  "moldura": "ganha",
+  "cena": "Four in the afternoon, your phone is on four per cent, the street you want is not where the map said it was, and forty people a minute are walking past you.",
+  "moldes": [
+    "HAY",
+    "DONDE"
+  ],
+  "clique": {
+    "contagem": [
+      "a kiosk",
+      "a beach bar",
+      "a station",
+      "a doorway"
+    ],
+    "desconto": "Nobody gave you those four sentences. You built them out of two words: hay, and dónde.",
+    "piso": "You will stop a stranger in the street tomorrow and get where you are going. Most people who spend a fortnight here never once try."
+  },
+  "cliqueAudioKey": "b08-n23",
+  "permissao": "You are not going to understand the answer, and you are not meant to. One word in five plus an arm pointing is a successful conversation here. Ask, catch what you catch, and start walking.",
+  "permissaoAudioKey": "b08-n22",
+  "frasePiso": "You will stop a stranger in the street and get where you are going. Most people who spend a fortnight in Spain do the whole trip without opening their mouth outdoors once.",
+  "espelho": "Saying sorry, no idea and carrying on is a normal answer at home. If someone stops you in the street there, they expect you to have a go, badly, for as long as it takes.",
+  "fichasCulturais": [
+    {
+      "sinal": "You ask one short question and the answer comes back as three streets, two roundabouts and a long arm pointing over your shoulder.",
+      "suaLeitura": "He has not realised that I did not understand. If I ask again we will both be embarrassed, so I will nod and walk off.",
+      "oQueEAli": "Directions are given generously and at full speed, and the arm is doing as much of the work as the words. Stopping halfway to check whether you followed is not part of how it is done.",
+      "oQueVoceFaz": "Do not ask for a repeat. Ask ¿está lejos? and walk the first turn his arm gave you.",
+      "oQueMelhora": "You get there having understood one word in five, which is what getting there looks like for everybody who does not live on that street.",
+      "ondeNaoVale": "Not at a hotel desk or a tourist office. There the person is paid to slow down, and will draw it on a paper map if you ask for it.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "b08-n20",
+        "b08-n21"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n01",
+      "bloco": "aquecimento",
+      "gesto": 1,
+      "pt": "Part eight. Warm-up: metronome hand. One tap per syllable, all the same size. Ca-je-ro. Three taps, three equal ones."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "bloco": "callback",
+      "promptAudioKey": "b08-p01",
+      "promptPt": "Yesterday's taxi. Back seat, and the hotel is a name you cannot pronounce, glowing on your phone. Hold up the screen and ask him. Speak now.",
+      "audioKey": "e06a-d2",
+      "es": "¿Me lleva a esta dirección, por favor?",
+      "pinyin": "meh YEH-bah ah EHS-tah dee-rek-THYON, por fah-BOR",
+      "pt": "Can you take me to this address, please?",
+      "tts": "¿Me lleva a esta dirección, por favor?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n02",
+      "bloco": "cena",
+      "pt": "Right. Today you are on foot. Four in the afternoon, phone on four per cent, and the street you want is not where the map put it."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n03",
+      "pt": "Forty people a minute walk past you. Any one of them can fix this in ten seconds."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n04",
+      "pt": "And here is what goes wrong, and it is not your Spanish. You ask a perfect question and get a paragraph back."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n05",
+      "bloco": "molde",
+      "pt": "So we start with the question that comes back as a yes or a no. The frame is hay — is there."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-cajero-c",
+      "es": "¿Hay un cajero por aquí?",
+      "pinyin": "ai oon kah-KHEH-roh por ah-KEE",
+      "pt": "Is there a cash machine round here?",
+      "tts": "¿Hay un cajero por aquí?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n06",
+      "pt": "The piece that moves is the middle. The two ends of that frame never change at all."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b08-farmacia-e",
+      "es": "¿Hay una farmacia por aquí?",
+      "pinyin": "ai OO-nah far-MAH-thyah por ah-KEE",
+      "pt": "Is there a chemist round here?",
+      "tts": "¿Hay una farmacia por aquí?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n07",
+      "pt": "Por aquí is the bit doing the work. It shrinks the whole thing down to a yes or a no."
+    },
+    {
+      "consulta": ["pagar/dinheiro"],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "molde": "HAY",
+      "encaixe": "un cajero",
+      "encaixeGloss": "cash machine",
+      "promptAudioKey": "b08-p02",
+      "promptPt": "A bar the size of a lift, SOLO EFECTIVO hand-written on the door, and nothing in your pockets but cards. The man at the kiosk is free. Speak now.",
+      "audioKey": "b08-cajero-c",
+      "es": "¿Hay un cajero por aquí?",
+      "pinyin": "ai oon kah-KHEH-roh por ah-KEE",
+      "pt": "Is there a cash machine round here?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b08-comision-e",
+      "es": "Ahí en la esquina hay uno, pero cobra comisión. El del banco está a dos calles.",
+      "pinyin": "ah-EE en lah ehs-KEE-nah ai OO-noh, PEH-roh KOH-brah koh-mee-SYON. el del BAN-koh ehs-TAH ah dohs KAH-yehs",
+      "pt": "👂 'There's one on the corner, but it charges. The bank's own is two streets away.' — walk the two streets.",
+      "tts": "Ahí en la esquina hay uno, pero cobra comisión. El del banco está a dos calles."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "HAY",
+      "encaixe": "aseos",
+      "encaixeGloss": "toilets",
+      "promptAudioKey": "b08-p03",
+      "promptPt": "A beach bar, plastic chairs, and three cold beers behind you. Not one door in the place is marked with anything. The girl clearing tables walks past you. Speak now.",
+      "audioKey": "b08-aseos-e",
+      "es": "¿Hay aseos por aquí?",
+      "pinyin": "ai ah-SEH-ohs por ah-KEE",
+      "pt": "Are there toilets round here?",
+      "tts": "¿Hay aseos por aquí?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "molde": "HAY",
+      "encaixe": "una parada de taxis",
+      "encaixeGloss": "taxi rank",
+      "promptAudioKey": "b08-p04",
+      "promptPt": "Half eleven at night on a station forecourt, the last bus long gone, and your feet have had enough. Two men smoking by the door. Speak now.",
+      "audioKey": "b08-taxis-c",
+      "es": "¿Hay una parada de taxis por aquí?",
+      "pinyin": "ai OO-nah pah-RAH-dhah deh TAK-sees por ah-KEE",
+      "pt": "Is there a taxi rank round here?",
+      "tts": "¿Hay una parada de taxis por aquí?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b08-adonde-e",
+      "es": "¿Adónde va?",
+      "pinyin": "ah-DOHN-deh bah",
+      "pt": "👂 Where are you going? — the question that comes straight back at you",
+      "tts": "¿Adónde va?"
+    },
+    {
+      "consulta": ["taxi/destino"],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "b08-p05",
+      "promptPt": "He does not answer. He asks you a question of his own, and the name of the big square is on your phone. Say it, with nothing round it. Speak now.",
+      "audioKey": "b08-plaza-c",
+      "es": "A la Plaza Mayor.",
+      "pinyin": "ah lah PLAH-thah mah-YOR",
+      "pt": "To the Plaza Mayor.",
+      "tts": "A la Plaza Mayor."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n08",
+      "tom": "protege",
+      "pt": "One thing here costs you money and daylight: nodding politely at an answer you did not get. That is twenty minutes and the wrong bridge."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n09",
+      "tom": "ganha",
+      "pt": "Which is exactly why a yes-or-no question is worth more to you than a better accent."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n10",
+      "pt": "One more, and it is the one nobody drills: the thing you cannot name in any language at all."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "HAY",
+      "encaixe": "una tienda",
+      "encaixeGloss": "a shop",
+      "promptAudioKey": "b08-p06",
+      "promptPt": "You are holding the plastic clip that snapped off your suitcase. You have no word for it in English either. Hold it up to the woman in the doorway. Speak now.",
+      "audioKey": "b08-tienda-e",
+      "es": "¿Hay una tienda por aquí?",
+      "pinyin": "ai OO-nah TYEN-dah por ah-KEE",
+      "pt": "Is there a shop round here?",
+      "tts": "¿Hay una tienda por aquí?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n11",
+      "pt": "You had no word for the object. You did not need one. The frame, plus a finger, plus a yes."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n12",
+      "bloco": "molde",
+      "pt": "Now the open one, for when a yes is not enough. Dónde está — where is. It comes in two versions."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-donde-aseos-c",
+      "es": "¿Dónde están los aseos?",
+      "pinyin": "DOHN-deh ehs-TAN lohs ah-SEH-ohs",
+      "pt": "Where are the toilets? — the ones this place has got",
+      "tts": "¿Dónde están los aseos?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e05a-cajero-c",
+      "es": "¿Dónde hay un cajero?",
+      "pinyin": "DOHN-deh ai oon kah-KHEH-roh",
+      "pt": "Where is there a cash machine? — any one, anywhere",
+      "tts": "¿Dónde hay un cajero?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n13",
+      "pt": "Dónde está el is the one this building has. Dónde hay un is any one, anywhere. Same frame, one word apart."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n14",
+      "pt": "The little word gives it away. El and la mean the one we both know about. Un and una mean give me any."
+    },
+    {
+      "consulta": ["transporte/placas"],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "DONDE",
+      "encaixe": "la salida",
+      "encaixeGloss": "the way out",
+      "promptAudioKey": "b08-p07",
+      "promptPt": "Underground, three identical corridors, and the woman in the ticket booth has watched you turn round twice. Ask her how to get back up to the street. Speak now.",
+      "audioKey": "b08-salida-e",
+      "es": "¿Dónde está la salida?",
+      "pinyin": "DOHN-deh ehs-TAH lah sah-LEE-dhah",
+      "pt": "Where's the way out?",
+      "tts": "¿Dónde está la salida?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-correspondencia-c",
+      "es": "¿La salida a la calle o la correspondencia?",
+      "pinyin": "lah sah-LEE-dhah ah lah KAH-yeh oh lah koh-rrehs-pon-DEN-thyah",
+      "pt": "👂 'Out to the street, or the change of line?' — SALIDA is the street. CORRESPONDENCIA is the other platform.",
+      "tts": "¿La salida a la calle o la correspondencia?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "molde": "DONDE",
+      "encaixe": "los aseos",
+      "encaixeGloss": "the toilets",
+      "promptAudioKey": "b08-p08",
+      "promptPt": "Two hours into lunch. You stand up, and the door you need is not marked and not in sight. The waiter is two tables away. Speak now.",
+      "audioKey": "b08-donde-aseos-c",
+      "es": "¿Dónde están los aseos?",
+      "pinyin": "DOHN-deh ehs-TAN lohs ah-SEH-ohs",
+      "pt": "Where are the toilets?"
+    },
+    {
+      "consulta": ["saude/guardia"],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "DONDE",
+      "encaixe": "una farmacia",
+      "encaixeGloss": "a chemist",
+      "promptAudioKey": "b08-p09",
+      "promptPt": "Sunday morning, a neighbourhood you do not know, and your partner's ankle has come up like a bread roll. Any one that is open will do. Ask the man sweeping up. Speak now.",
+      "audioKey": "b08-donde-farmacia-e",
+      "es": "¿Dónde hay una farmacia?",
+      "pinyin": "DOHN-deh ai OO-nah far-MAH-thyah",
+      "pt": "Where's there a chemist? (any one)",
+      "tts": "¿Dónde hay una farmacia?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n15",
+      "bloco": "corpo",
+      "pt": "And now the half of this that nobody teaches. You asked it perfectly. Here comes the answer."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b08-respuesta-e",
+      "es": "Sí, mira, todo recto, en el segundo semáforo a la izquierda, y luego la segunda a la derecha, al lado del banco.",
+      "pinyin": "see, MEE-rah, TOH-dhoh RREK-toh, en el seh-GOON-doh seh-MAH-foh-roh ah lah eeth-KYEHR-dhah, ee LWEH-goh lah seh-GOON-dah ah lah deh-REH-chah, al LAH-dhoh del BAN-koh",
+      "pt": "👂 Straight on, second lights, left, then second right, next to the bank. — don't decode it. Catch one word.",
+      "tts": "Sí, mira, todo recto, en el segundo semáforo a la izquierda, y luego la segunda a la derecha, al lado del banco."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n16",
+      "pt": "You caught izquierda. Left. That is normal, and for the next thirty seconds it is plenty."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n17",
+      "pt": "So you do not ask him to say it again. You ask the one thing whose answer is a number or a nod."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-lejos-c",
+      "es": "¿Está lejos?",
+      "pinyin": "ehs-TAH LEH-khohs",
+      "pt": "Is it far? — the hatch out of any answer you did not follow",
+      "tts": "¿Está lejos?"
+    },
+    {
+      "consulta": ["reparo/apontar","reparo/devagar"],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "b08-p10",
+      "promptPt": "Four turns and a set of traffic lights, and you got the first one. Do not make him repeat it. Ask the thing that tells you whether to walk or sit down. Speak now.",
+      "audioKey": "b08-lejos-c",
+      "es": "¿Está lejos?",
+      "pinyin": "ehs-TAH LEH-khohs",
+      "pt": "Is it far?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n18",
+      "pt": "Two rungs left, and you already own both of them from part three. Get it out of the air."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "ME-PUEDE",
+      "encaixe": "enseñar",
+      "encaixeGloss": "show",
+      "promptAudioKey": "b08-p11",
+      "promptPt": "He is pointing at a corner you cannot see, and the bus stop two steps away has the whole neighbourhood printed on the side of it. Move his arm onto that. Speak now.",
+      "audioKey": "b08-mapa-e",
+      "es": "¿Me lo puede enseñar en el mapa?",
+      "pinyin": "meh loh PWEH-dheh en-seh-NYAR en el MAH-pah",
+      "pt": "Can you show me on the map?",
+      "tts": "¿Me lo puede enseñar en el mapa?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "b08-p12",
+      "promptPt": "The street name has four syllables and two of them you have never heard. He is happy to say it again. That is not what you need. Speak now.",
+      "audioKey": "e01c-08",
+      "es": "¿Me lo escribe, por favor?",
+      "pinyin": "meh loh ehs-KREE-beh, por fah-BOR",
+      "pt": "Could you write it down for me, please?",
+      "tts": "¿Me lo escribe, por favor?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n19",
+      "pt": "And when the whole thing has gone, two words make a stranger stop and take charge of you."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-perdida-c",
+      "es": "Estoy perdida.",
+      "pinyin": "ehs-TOY pehr-DEE-dhah",
+      "pt": "I'm lost. (a woman speaking — note the -a)",
+      "tts": "Estoy perdida."
+    },
+    {
+      "consulta": ["reparo/apontar"],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "SOY-ESTOY",
+      "encaixe": "perdido",
+      "encaixeGloss": "lost",
+      "promptAudioKey": "b08-p13",
+      "promptPt": "Twenty minutes of walking and the square is not where a square should be. A woman with a dog is coming towards you. Two words, with the ending that belongs to you. Speak now.",
+      "audioKey": "b08-perdido-e",
+      "es": "Estoy perdido.",
+      "pinyin": "ehs-TOY pehr-DEE-dhoh",
+      "pt": "I'm lost. (a man speaking — note the -o)",
+      "tts": "Estoy perdido."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-s00",
+      "pt": "Shadowing. Straight over the top of them, do not wait for a gap. Two sentences."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "b08-cajero-c",
+      "molde": "HAY",
+      "es": "¿Hay un cajero por aquí?",
+      "pinyin": "ai oon kah-KHEH-roh por ah-KEE",
+      "pt": "Say it with her."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "b08-lejos-c",
+      "es": "¿Está lejos?",
+      "pinyin": "ehs-TAH LEH-khohs",
+      "pt": "And the one that rescues the answer."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n20",
+      "bloco": "capsula",
+      "pt": "Watch what happens when you ask. Three streets, two roundabouts, and a long arm pointing over your shoulder."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n21",
+      "pt": "That arm is half the answer. Do not ask for a repeat: ask ¿está lejos? and walk the first turn it gave you."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n22",
+      "bloco": "permissao",
+      "pt": "You are not going to understand the answer, and you are not meant to. One word in five plus an arm is a successful conversation here."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n23",
+      "bloco": "clique",
+      "pt": "Count where you have just been. A kiosk with your pockets empty. A beach bar. A station at half eleven at night. A doorway, with a broken clip in your hand."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n24",
+      "pt": "Nobody gave you those four sentences. You built them out of two words: hay, and dónde."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b08-n25",
+      "pt": "Tomorrow you will stop a stranger and get where you are going. Most people who spend a fortnight here never once try."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "b08-r01",
+      "bloco": "recap",
+      "pt": "Part eight done. Let's recall it, out loud, one last one."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "molde": "HAY",
+      "encaixe": "un supermercado",
+      "encaixeGloss": "supermarket",
+      "promptAudioKey": "b08-p14",
+      "promptPt": "Nine at night in a village. Everything on the square shut at eight, and you need water, bread and coffee for the morning. A man on a bench. Speak now.",
+      "audioKey": "b08-super-c",
+      "es": "¿Hay un supermercado por aquí?",
+      "pinyin": "ai oon soo-pehr-mehr-KAH-dhoh por ah-KEE",
+      "pt": "Is there a supermarket round here?",
+      "tts": "¿Hay un supermercado por aquí?"
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "b08-r02",
+      "pt": "Hay plus por aquí comes back as a yes. Dónde está comes back as a paragraph, and ¿está lejos? rescues it. Next: tickets, gates, and the beep that lets you through."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Asking the street, and reading what comes back (optional)",
+    "secoes": [
+      {
+        "titulo": "Why the yes-or-no question is worth more than the good one",
+        "corpo": "A question is only as useful as the answer you can hold in your head. ¿Dónde está…? is a better sentence and a worse tool: it invites a route, and a route said at speed by someone who lives there is four instructions long. ¿Hay… por aquí? invites a yes, a no, or a pointed arm — all three of which you can act on immediately. Ask the closed question first, get the direction of travel, and start walking; ask the open one only when you already know the thing exists. This is the same trick the course uses everywhere: shrink the answer space before you ask.",
+        "exemplos": [
+          {
+            "es": "¿Hay un cajero por aquí?",
+            "pt": "Is there a cash machine round here?"
+          },
+          {
+            "es": "¿Dónde está la salida?",
+            "pt": "Where's the way out?"
+          }
+        ]
+      },
+      {
+        "titulo": "el / la or un / una — the one word that changes the question",
+        "corpo": "¿Dónde está el baño? asks for the one this building has. ¿Dónde hay un baño? asks for any one at all, anywhere near here. Get it the wrong way round and nothing terrible happens — you will be pointed at something — but the second version is the one that works in the street, and the first is the one that works indoors. Learn each place name with its little word already glued to the front (el baño, la salida, los aseos, una farmacia, un cajero) and never think about it again.",
+        "exemplos": [
+          {
+            "es": "¿Dónde están los aseos?",
+            "pt": "Where are the toilets? (in this restaurant)"
+          },
+          {
+            "es": "¿Dónde hay una farmacia?",
+            "pt": "Where's there a chemist? (anywhere near)"
+          }
+        ]
+      },
+      {
+        "titulo": "The hatch: far, map, paper, finger",
+        "corpo": "The repair kit from part three does its heaviest work in the street, and the order matters. ¿Está lejos? converts a paragraph into a number or a shrug. ¿Me lo puede enseñar en el mapa? moves the answer out of the air and onto something you can look at twice — a paper map on a bus shelter, a street plan on a wall, or your own screen. ¿Me lo escribe, por favor? gets the street name written down by someone who can spell it. And the finger is not a failure: pointing at the thing, the screen or the map is a legitimate, adult, universally understood move, and it is faster than the word you are hunting for.",
+        "exemplos": [
+          {
+            "es": "¿Está lejos?",
+            "pt": "Is it far?"
+          },
+          {
+            "es": "¿Me lo puede enseñar en el mapa?",
+            "pt": "Can you show me on the map?"
+          }
+        ]
+      },
+      {
+        "titulo": "Estoy perdido — and why it works",
+        "corpo": "Estoy perdido, or perdida, is not a confession, it is a request that people respond to. It moves you from a person asking a question to a person who needs a hand, and it usually produces a slower, shorter, better answer than the question you were about to ask. It is also one of the handful of words in this course where the ending matters, because the word is describing you: -o if you are a man, -a if you are a woman. Everywhere else in Spanish you can get the ending wrong all day and still be understood.",
+        "exemplos": [
+          {
+            "es": "Estoy perdido. / Estoy perdida.",
+            "pt": "I'm lost. (man / woman speaking)"
+          },
+          {
+            "es": "Perdone, ¿está lejos la Plaza Mayor?",
+            "pt": "Excuse me, is the Plaza Mayor far?"
+          }
+        ]
+      }
+    ]
+  }
+}

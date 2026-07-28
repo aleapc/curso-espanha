@@ -1,0 +1,564 @@
+{
+  "id": "b06",
+  "slot": "B06",
+  "nivel": "basico",
+  "numero": 6,
+  "parte": "6",
+  "titulo": "Bag, phone, cash, loo — the first hour",
+  "subtitulo": "Sixty minutes between the belt and the taxi rank, and one question opens every counter in them",
+  "moldura": "ganha",
+  "cena": "Ten past seven at belt four, your case is in your hand, and the only person not in a hurry is the woman with a lanyard twenty metres away — who will not come to you.",
+  "moldes": [
+    "PUEDO"
+  ],
+  "clique": {
+    "contagem": [
+      "the airport bar",
+      "the left-luggage desk",
+      "the empty café",
+      "the food hall"
+    ],
+    "desconto": "Nobody taught you those four sentences. You built all four out of one, by changing the tail yourself.",
+    "piso": "Next time a sign or a guard stops you, you won't stand there working out whether it is allowed. You'll ask."
+  },
+  "permissao": "You don't need the sentence to be right. Puedo, a finger and a smile is a complete sentence at any counter in that building, and nobody there is marking you.",
+  "permissaoAudioKey": "b06-n20",
+  "frasePiso": "You will spend your first hour in Spain asking for things instead of waiting to be offered them. Most people who fly in spend that hour queueing behind their own good manners.",
+  "fichasCulturais": [
+    {
+      "sinal": "You stand at a counter, politely, in what you believe is a queue, and three people who arrived after you are served first.",
+      "suaLeitura": "They have seen me and decided to deal with me last. Either they don't like tourists or my Spanish is so bad they're avoiding me.",
+      "oQueEAli": "Waiting to be noticed is not a bid for service here — speaking is. The padding a British ear hears as politeness ('I was wondering if I could possibly…') lands as distance, and it slows the counter down for everybody behind you.",
+      "oQueVoceFaz": "Catch the eye of whoever is behind the counter, say perdone, and put your question in six words.",
+      "oQueMelhora": "You get sorted in seconds instead of minutes, and the person serving you warms up, because you have just made their job quick.",
+      "ondeNaoVale": "Not at a police or Guardia Civil desk, and not with an official at a government window: there the formal register and waiting your turn are exactly right, and being brisk is the thing that costs you.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "b06-n18",
+        "b06-n19"
+      ]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "atm-tarifa-saque",
+      "afirmacao": "A cash withdrawal in Spain costs roughly three to five euros, per withdrawal — and the free-standing Euronet machines in tourist streets charge a fee of their own on top of that.",
+      "valor": "€3–5 por saque; Euronet €1,95–4,99 adicionais",
+      "fonte": "Monito — 'ATMs in Spain' e 'Euronet ATM charges and fees'; síntese em docs/pesquisa-espanha.md §8.2",
+      "ano": 2026,
+      "revisarAte": "2027-04-01",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "b06-n13"
+      ]
+    },
+    {
+      "id": "cartao-nao-obrigatorio",
+      "afirmacao": "No law obliges a Spanish business to take a card. A bar can legally run on cash alone, and the sign that tells you so is SOLO EFECTIVO.",
+      "fonte": "Euro Weekly News, 'Cash or card in Spain: when shops can refuse your payment and when they can't' (abr/2026); síntese em docs/pesquisa-espanha.md §8.2",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "b06-n10"
+      ]
+    },
+    {
+      "id": "nota-de-cincuenta",
+      "afirmacao": "Fifty-euro notes are routinely refused in small shops, and a bar selling a three-euro coffee cannot break one early in the day.",
+      "fonte": "docs/pesquisa-espanha.md §8.2 — regra prática derivada de guias de campo convergentes de 2026, marcada ali como INFERÊNCIA",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "INFERENCIA",
+      "risco": "baixo",
+      "audioKeys": [
+        "b06-n11"
+      ]
+    },
+    {
+      "id": "sim-prepago-passaporte",
+      "afirmacao": "A Spanish prepaid SIM is registered against an identity document at the point of sale, and a photo of your passport on a screen is routinely refused.",
+      "fonte": "docs/pesquisa-espanha.md §8.3 — relatos convergentes sobre Vodafone e Movistar; sem fonte primária regulatória citada",
+      "ano": 2026,
+      "revisarAte": "2027-01-31",
+      "evidencia": "CONSENSO",
+      "risco": "medio",
+      "audioKeys": [
+        "b06-n16"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n01",
+      "bloco": "aquecimento",
+      "gesto": 1,
+      "tom": "ganha",
+      "pt": "Part six. Passport done, case in your hand, and the next hour belongs entirely to you."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n02",
+      "pt": "Warm-up. Hand flat on your thigh, one tap a syllable, every tap the same size: a-se-os."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n03",
+      "pt": "Ca-je-ro. Pue-do. English swallows the small syllables. The hand won't let you."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "bloco": "callback",
+      "promptAudioKey": "b06-p01",
+      "promptPt": "Two minutes ago at the desk, she asked her third question — where you are sleeping tonight. Give her the answer again, out loud. Speak now.",
+      "audioKey": "e02b-alojo-e",
+      "es": "Me alojo en el hotel Rialto, en Madrid.",
+      "pinyin": "meh ah-LOH-khoh en el oh-TEL ree-AHL-toh, en mah-DREEDH",
+      "pt": "I'm staying at the Hotel Rialto, in Madrid."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n04",
+      "bloco": "cena",
+      "pt": "Belt four, ten past seven. Your case comes round, and nobody walks over to help you."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n05",
+      "pt": "Nobody is ignoring you either. In that building, whoever speaks first gets sorted first."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n06",
+      "pt": "So the whole hour runs on one question — and it's the frame you'll lean on more than any other."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n07",
+      "pt": "Puedo. Can I. It's about you, so you never have to decide how to address the person opposite."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b06-tarjeta-c",
+      "bloco": "molde",
+      "es": "¿Puedo pagar con tarjeta?",
+      "pinyin": "PWEH-dhoh pah-GAR kon tar-KHEH-tah",
+      "pt": "Can I pay by card?",
+      "tts": "¿Puedo pagar con tarjeta?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n08",
+      "pt": "The front of it never moves. Only the tail changes, and the tail is whatever you want to do."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b06-maleta-e",
+      "es": "¿Puedo dejar la maleta aquí?",
+      "pinyin": "PWEH-dhoh deh-KHAR lah mah-LEH-tah ah-KEE",
+      "pt": "Can I leave the case here?",
+      "tts": "¿Puedo dejar la maleta aquí?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b06-banyo-c",
+      "es": "¿Puedo usar el baño?",
+      "pinyin": "PWEH-dhoh oo-SAR el BAH-nyoh",
+      "pt": "Can I use the toilet?",
+      "tts": "¿Puedo usar el baño?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n09",
+      "pt": "Three counters, one question, four syllables at the front that never move. Your go."
+    },
+    {
+      "consulta": ["pagar/cartao"],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "molde": "PUEDO",
+      "encaixe": "pagar con tarjeta",
+      "encaixeGloss": "card",
+      "promptAudioKey": "b06-p02",
+      "promptPt": "The airport bar, one coffee, and you have no coins on you at all. Ask him before he starts pouring. Speak now.",
+      "audioKey": "b06-tarjeta-c",
+      "es": "¿Puedo pagar con tarjeta?",
+      "pinyin": "PWEH-dhoh pah-GAR kon tar-KHEH-tah",
+      "pt": "Can I pay by card?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b06-soloefectivo-e",
+      "es": "Solo efectivo, lo siento.",
+      "pinyin": "SOH-loh eh-fek-TEE-boh, loh SYEN-toh",
+      "pt": "👂 'Cash only, sorry.' — no bar here is obliged to take a card. Ask before you drink, not after.",
+      "tts": "Solo efectivo, lo siento."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n10",
+      "tom": "protege",
+      "pt": "Worth knowing before you order: no law here makes a bar take your card. Cash only is legal."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b06-placas-c",
+      "es": "ASEOS · SERVICIOS · LAVABOS · SOLO EFECTIVO",
+      "pinyin": "ah-SEH-ohs · sehr-BEE-thyohs · lah-BAH-bohs · SOH-loh eh-fek-TEE-boh",
+      "pt": "👂 signs: toilets, written three ways · cash only. Four words, and the last one decides whether you can eat here.",
+      "tts": "Aseos. Servicios. Lavabos. Solo efectivo."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n11",
+      "pt": "And a fifty, in a bar selling a three-euro coffee, cannot be broken at eight in the morning."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n12",
+      "tom": "ganha",
+      "pt": "So take more out, fewer times, from a bank's own machine on the street. Santander, BBVA, CaixaBank."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n13",
+      "pt": "Three to five euros a go, every go. Euronet, the free-standing ones, adds a fee of its own on top."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e05a-cajero-c",
+      "es": "¿Dónde hay un cajero?",
+      "pinyin": "DOHN-deh ai oon kah-KHEH-roh",
+      "pt": "Where is there a cash machine? — any one will do",
+      "tts": "¿Dónde hay un cajero?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n14",
+      "pt": "Never the one in the arrivals hall. That machine is there because you are tired."
+    },
+    {
+      "consulta": ["pagar/dinheiro"],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "DONDE",
+      "encaixe": "un cajero",
+      "encaixeGloss": "cash machine",
+      "promptAudioKey": "b06-p03",
+      "promptPt": "The bus into town takes coins and notes and nothing else, and you have four euros on you. Ask the woman with the lanyard. Speak now.",
+      "audioKey": "e05b-cajero-e",
+      "es": "¿Dónde hay un cajero?",
+      "pinyin": "DOHN-deh ai oon kah-KHEH-roh",
+      "pt": "Where's a cash machine?"
+    },
+    {
+      "consulta": ["quarto/mala","transporte/bagagem"],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "PUEDO",
+      "encaixe": "dejar la maleta",
+      "encaixeGloss": "the case",
+      "promptAudioKey": "b06-p04",
+      "promptPt": "Ten in the morning, the room isn't ready until two, and both bags are still on your shoulder. There's a counter downstairs for exactly this. Ask the man behind it. Speak now.",
+      "audioKey": "b06-maleta-e",
+      "es": "¿Puedo dejar la maleta aquí?",
+      "pinyin": "PWEH-dhoh deh-KHAR lah mah-LEH-tah ah-KEE",
+      "pt": "Can I leave the case here?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b06-hasta-e",
+      "es": "¿Hasta qué hora?",
+      "pinyin": "AHS-tah keh OH-rah",
+      "pt": "👂 Until what time? — the answer that comes back at you, and it wants a number.",
+      "tts": "¿Hasta qué hora?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "b06-p05",
+      "promptPt": "He looks up and asks how long for. Your train goes at six. Two words and the hour. Speak now.",
+      "consulta": ["quarto/mala"],
+      "audioKey": "b06-seis-c",
+      "es": "Hasta las seis.",
+      "pinyin": "AHS-tah lahs sayss",
+      "pt": "Until six.",
+      "tts": "Hasta las seis."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "b06-g01",
+      "pt": "GUIRI ALERT. You are about to spend twenty minutes hunting for a door marked BAÑO. There isn't one."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "b06-g02",
+      "pt": "It says ASEOS. Or SERVICIOS. Or LAVABOS. Out of your mouth, baño is fine. On a door, it doesn't exist."
+    },
+    {
+      "consulta": ["chegar/entrar"],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "molde": "PUEDO",
+      "encaixe": "usar el baño",
+      "encaixeGloss": "the toilet",
+      "promptAudioKey": "b06-p06",
+      "promptPt": "You bought nothing, the empty café is all yours, and there's a door at the back marked ASEOS. Ask her first. Speak now.",
+      "audioKey": "b06-banyo-c",
+      "es": "¿Puedo usar el baño?",
+      "pinyin": "PWEH-dhoh oo-SAR el BAH-nyoh",
+      "pt": "Can I use the toilet?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n15",
+      "pt": "Your phone. An eSIM needs a connection before it can hand you one — which is why it goes on at home."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b06-wifi-c",
+      "es": "¿Hay wifi?",
+      "pinyin": "ai WEE-fee",
+      "pt": "Is there wifi? — three syllables, and it unlocks the phone you arrived with.",
+      "tts": "¿Hay wifi?"
+    },
+    {
+      "consulta": ["quarto/pedir","chegar/entrar"],
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "molde": "HAY",
+      "encaixe": "wifi",
+      "promptAudioKey": "b06-p07",
+      "promptPt": "The eSIM you bought at home needs a connection before it will give you one, and you're standing in a bar. Shortest question in the course. Speak now.",
+      "audioKey": "b06-wifi-c",
+      "es": "¿Hay wifi?",
+      "pinyin": "ai WEE-fee",
+      "pt": "Is there wifi?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b06-contrasenatique-e",
+      "es": "Sí. La contraseña está en el tique.",
+      "pinyin": "see. lah kon-trah-SEH-nyah ehs-TAH en el TEE-keh",
+      "pt": "👂 'Yes. The password's on the receipt.' — look at the slip in your hand before you ask twice.",
+      "tts": "Sí. La contraseña está en el tique."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n16",
+      "pt": "Landed with nothing? The shop wants the passport itself, in its hand. A photo of it gets refused."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n17",
+      "pt": "Last tail, and it's the one that saves you. No word for the thing? Point at it and call it esto."
+    },
+    {
+      "consulta": ["transporte/bagagem","reparo/apontar"],
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "PUEDO",
+      "encaixe": "entrar con esto",
+      "promptAudioKey": "b06-p08",
+      "promptPt": "A guard is standing between you and the door of the food hall, and you're towing a bag you have no word for. Point at it and ask him. Speak now.",
+      "audioKey": "b06-esto-e",
+      "es": "¿Puedo entrar con esto?",
+      "pinyin": "PWEH-dhoh en-TRAR kon EHS-toh",
+      "pt": "Can I come in with this?",
+      "tts": "¿Puedo entrar con esto?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n18",
+      "bloco": "capsula",
+      "pt": "Look around the concourse a second. Nobody is offering anybody anything, and nobody looks stranded."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n19",
+      "pt": "Pick the person with a lanyard, say perdone, ask in six words. That's the deal in that building."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n20",
+      "bloco": "permissao",
+      "pt": "You don't need the sentence to be right. Puedo, a finger and a smile is a complete sentence there."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-s00",
+      "pt": "Shadowing. Say them over the top of her, same speed, no gaps. These two open the whole hour."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "molde": "PUEDO",
+      "audioKey": "b06-tarjeta-c",
+      "es": "¿Puedo pagar con tarjeta?",
+      "pinyin": "PWEH-dhoh pah-GAR kon tar-KHEH-tah",
+      "pt": "Can I pay by card?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "molde": "PUEDO",
+      "audioKey": "b06-maleta-e",
+      "es": "¿Puedo dejar la maleta aquí?",
+      "pinyin": "PWEH-dhoh deh-KHAR lah mah-LEH-tah ah-KEE",
+      "pt": "Can I leave the case here?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n21",
+      "bloco": "clique",
+      "pt": "Count the places, not the phrases: the airport bar, the left-luggage desk, the empty café, the food hall."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n22",
+      "pt": "Nobody taught you those four sentences. You built all four out of one, by changing the tail yourself."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "b06-n23",
+      "bloco": "piso",
+      "tom": "ganha",
+      "pt": "Next time a sign stops you, you won't work out whether it's allowed. You'll ask. Most people who fly in won't."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "b06-r01",
+      "bloco": "recap",
+      "pt": "Once more, out loud, somewhere you haven't been yet today."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "molde": "PUEDO",
+      "encaixe": "dejar la maleta",
+      "encaixeGloss": "the case",
+      "promptAudioKey": "b06-p09",
+      "promptPt": "Eleven at night, a bar by the station, and your bus isn't for two hours. Ask the barman for the same favour. Speak now.",
+      "audioKey": "b06-maleta-e",
+      "es": "¿Puedo dejar la maleta aquí?",
+      "pinyin": "PWEH-dhoh deh-KHAR lah mah-LEH-tah ah-KEE",
+      "pt": "Can I leave the case here?"
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "b06-rend",
+      "pt": "Part six done: bag down, phone alive, notes in your pocket, toilets found. Next, the taxi rank."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "The first hour, in detail (optional)",
+    "secoes": [
+      {
+        "titulo": "Cash machines: why the fee decides how often, not how much",
+        "corpo": "A withdrawal in Spain typically costs €3–5, with the reported spread running from about €0.50 at Bankinter to €6 at BBVA, and the free-standing Euronet machines add €1.95–4.99 of their own on top of anything your bank charges. Because the fee is per withdrawal and not per euro, three small withdrawals cost you roughly €6–10 more than one larger one. The practical rule: use a street machine belonging to an actual bank, take out more and less often, and skip the machine in the arrivals hall — it is the most expensive one you will meet all trip. Separately, if the screen ever offers to charge you in pounds or dollars, that is the dynamic currency conversion markup, and it is dealt with in the part on the bill.",
+        "exemplos": [
+          {
+            "es": "¿Dónde hay un cajero?",
+            "pt": "DOHN-deh ai oon kah-KHEH-roh — where's a cash machine?"
+          },
+          {
+            "es": "¿Hay un cajero por aquí?",
+            "pt": "the yes/no version, when you only need to know whether to keep walking"
+          }
+        ]
+      },
+      {
+        "titulo": "Card, cash, and the fifty-euro note",
+        "corpo": "Contactless is the default in Madrid, Barcelona and Valencia, and most urban businesses have dropped the old €5 minimum. But there is no legal obligation in Spain to accept cards: a bar can lawfully run on cash alone, and the sign that says so is SOLO EFECTIVO. Cash still dominates in traditional bakeries, small pharmacies, family guesthouses, small family tapas bars in Andalusia, fruit and craft stalls and street markets. Carry €40–60 per person in small notes. The problem is never the total, it is the shape of it: fifty-euro notes are routinely refused in small shops, and a bar selling a €3.20 coffee genuinely cannot break one at nine in the morning.",
+        "exemplos": [
+          {
+            "es": "¿Puedo pagar con tarjeta?",
+            "pt": "PWEH-dhoh pah-GAR kon tar-KHEH-tah — can I pay by card?"
+          },
+          {
+            "es": "¿Aceptan tarjeta o solo efectivo?",
+            "pt": "ah-THEP-tan tar-KHEH-tah oh SOH-loh eh-fek-TEE-boh — card, or cash only?"
+          }
+        ]
+      },
+      {
+        "titulo": "The phone: what to do at home and what to do on the ground",
+        "corpo": "A travel eSIM needs an internet connection to activate, the QR code arrives by email, and you will land without either — so it is installed and tested at home, on your own wifi, which is why it lives on the pre-flight list rather than in this hour. On the ground, two sentences cover most of it: '¿Hay wifi?' and '¿Cuál es la contraseña?'. On a receipt the password is often printed as 'clave' or 'contraseña'. If you land with nothing at all, a Spanish prepaid SIM has to be registered against an identity document at the point of sale and the physical passport is what they want in their hand — a photo of it on your screen is routinely refused, with Vodafone and Movistar counters reported as the strictest.",
+        "exemplos": [
+          {
+            "es": "¿Hay wifi? ¿Cuál es la contraseña?",
+            "pt": "ai WEE-fee · lah kon-trah-SEH-nyah — is there wifi? what's the password?"
+          },
+          {
+            "es": "Quiero una tarjeta SIM de prepago, solo datos.",
+            "pt": "prepaid SIM, data only — and have the passport out before you ask"
+          }
+        ]
+      },
+      {
+        "titulo": "Why 'puedo' and not something more polite",
+        "corpo": "'¿Puedo…?' is first person. It asks about you, which means it commits you to nothing about the person opposite — no choice between 'tú' and 'usted' to make under pressure at a counter, which is the decision English speakers reliably get backwards. The English instinct is that formal equals polite and polite equals safe; in most tourist scenes in Spain the formal register simply reads as distance, and the padding ('I was wondering if I could possibly…') is what slows you down. The politeness lives in your tone and in a 'por favor' at the end, not in five layers of hedging. The one place to keep the formal register and the queue discipline is an official window: police, Guardia Civil, government counters.",
+        "exemplos": [
+          {
+            "es": "Perdone, ¿puedo dejar la maleta aquí?",
+            "pt": "the full move: get their attention, then ask in six words"
+          },
+          {
+            "es": "¿Puedo entrar con esto?",
+            "pt": "PWEH-dhoh en-TRAR kon EHS-toh — the version for anything you have no word for"
+          }
+        ]
+      }
+    ]
+  }
+}

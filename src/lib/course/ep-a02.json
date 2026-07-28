@@ -1,0 +1,608 @@
+{
+  "id": "a02",
+  "slot": "A02",
+  "nivel": "avancado",
+  "numero": 30,
+  "parte": "A02",
+  "titulo": "What they laugh at — and the one joke you can make",
+  "subtitulo": "The insult across the table is affection, the sudden courtesy is a fence, and the safest joke you will ever make in Spain is about yourself",
+  "moldura": "ganha",
+
+  "cena": "Ten at night, six round a table, the man opposite has just called his oldest friend a donkey to his face, everybody is laughing — and the one person they are watching is you.",
+
+  "decisao": "whether the next two seconds are a laugh or an apology — the table reads that one reaction and treats the rest of the evening accordingly, and a fortnight of tables comes off it",
+  "emJogo": "tempo",
+
+  "frasePiso": "You will hear an insult land at a Spanish table and know it was affection. Most visitors read it as a row and go quiet for the rest of the night.",
+
+  "permissao": "You are allowed to laugh at something you did not understand — the laugh is the answer, and nobody is checking whether you got the joke. You are allowed to make the joke about yourself out loud, on day one, in any bar, and it never lands badly. And nobody is waiting for you to insult anybody back: not taking that turn costs you nothing at all.",
+  "permissaoAudioKey": "a02-n27",
+
+  "espelho": "Saying the opposite of what you mean with a flat face is the bit that reads as odd there. Deadpan arrives as a complaint rather than as a joke, and the funniest thing you said all evening comes back as an apology from the kitchen.",
+
+  "fichasCulturais": [
+    {
+      "sinal": "Two friends at the next table call each other names across the plates, loudly, and four minutes later they split the bill and leave with an arm round each other.",
+      "suaLeitura": "That escalated. Somebody is about to storm off, and I am sitting a metre away from it.",
+      "oQueEAli": "Between people who already know each other, the insult is the proof of the closeness: it gets spent on the person you are surest of, and it is answered in kind rather than resented. What carries it is visible — the volume goes up, the eyes stay soft, and somebody else joins in within a second.",
+      "oQueVoceFaz": "Laugh, keep eating, and do not repeat the word back at anybody.",
+      "oQueMelhora": "You stop reading warmth as a row, and you stop going quiet at the exact moment the table has decided you are one of them.",
+      "ondeNaoVale": "Not out of your mouth, and not in your first week: the same word from a visitor has no history behind it and arrives as what it says. And not at a counter, a desk or a pharmacy, where the person in front of you is doing a job, not being a friend.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a02-n24", "a02-n25", "a02-n26"]
+    },
+    {
+      "sinal": "The voice goes flat, the sentences get short, and somebody who was calling you tú four minutes ago is suddenly calling you usted.",
+      "suaLeitura": "They have gone formal, so they must be being respectful, and I should carry on with what I was saying.",
+      "oQueEAli": "Courtesy that arrives suddenly, in the middle of an easy conversation, is a door being closed politely. The formality is the message; the words sitting on top of it are not.",
+      "oQueVoceFaz": "Change the subject in your very next sentence, keep your voice exactly where it was, and do not apologise for the last one.",
+      "oQueMelhora": "The temperature comes back inside a minute and the evening carries on, because you read it the first time instead of the third.",
+      "ondeNaoVale": "Not with somebody who has used usted with you since hello — a pharmacist, an older waiter, a hotel desk. There it is the register they started in and it means nothing at all.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a02-n11", "a02-n12", "a02-n13"]
+    },
+    {
+      "sinal": "Somebody at the table says the word guiri about you, and there is a pause about a second long while everybody looks to see how you take it.",
+      "suaLeitura": "I have just been called something and I have no idea how bad it was.",
+      "oQueEAli": "It is the everyday word for a visitor from northern Europe, spent on the sandals and the sunburn rather than on the person, and the pause is the table finding out whether you are going to be fun about it.",
+      "oQueVoceFaz": "Say it about yourself first, with a shrug, and carry straight on with what you were saying.",
+      "oQueMelhora": "One sentence and the table stops handling you carefully — and it is the only joke available to you on day one that has no history you could get wrong.",
+      "ondeNaoVale": "Not from a stranger shouting it down the street at you: same word, no table, no pause, nothing to answer. There you keep walking.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a02-guiri-e", "a02-n21"]
+    }
+  ],
+
+  "fatosDatados": [
+    {
+      "id": "guiri-registro",
+      "afirmacao": "Guiri is the everyday word for a visitor from northern Europe. It is normally spent without hostility and often affectionately, and it is not a slur.",
+      "fonte": "docs/pesquisa-espanha.md §7.8 — «Guiri: gíria para turista do norte europeu, normalmente sem hostilidade, às vezes afetuosa»; e §3, que registra o mesmo termo como teasing, não insulto",
+      "ano": 2026,
+      "revisarAte": "2029-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["a02-n21"]
+    },
+    {
+      "id": "insulto-jocoso-peninsular",
+      "afirmacao": "Insulting a friend to their face, in front of other people, is described for peninsular Spanish as a way of showing closeness rather than of giving offence — and the same words from someone outside the group do not carry that reading.",
+      "fonte": "Linha de pesquisa de pragmática sobre corpora de conversa coloquial espanhola conhecida como mock impoliteness; síntese secundária, sem fonte primária conferida. A pesquisa do SKU NÃO cobre este item: o «teasing» que ela registra em §3 é sobre a palavra guiri, não sobre o insulto entre amigos. NUNCA citada no áudio, só no aprofundar",
+      "ano": 2026,
+      "revisarAte": "2029-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["a02-n05", "a02-n06", "a02-n25"]
+    },
+    {
+      "id": "usted-como-distancia",
+      "afirmacao": "In Spain tú is the default in tourist scenes, and usted is what marks distance — so a switch to usted in the middle of an easy conversation reads as distance being put back in, not as respect arriving.",
+      "fonte": "docs/pesquisa-espanha.md §4.1 — «`tú` é o default na Espanha» e o `usted` de phrasebook «não ofende, mas cria distância». A leitura da MUDANÇA de registro no meio da conversa é extensão desse registro documentado, por síntese secundária de pragmática, sem fonte primária conferida — nunca dita no áudio como estudo, e nenhum nome de acadêmico vai ao ar",
+      "ano": 2026,
+      "revisarAte": "2029-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["a02-n11", "a02-n12", "a02-n13"]
+    }
+  ],
+
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n01",
+      "bloco": "aquecimento",
+      "gesto": 3,
+      "tom": "ganha",
+      "pt": "Part thirty. Warm-up: the punch. One syllable takes it, and only one. BU-rro. TÍ-o. Ca-chon-DE-o."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n02",
+      "pt": "Three beats, then four, and the punch never wanders. Hand flat on your leg, twice more, out loud."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "bloco": "callback",
+      "promptAudioKey": "a02-p01",
+      "promptPt": "You have just spent a whole part listening to a bar in the south swallow half its consonants. Same bar, same man behind it, and he is looking at you. Ask him for what every hand along that counter is already holding. Speak now.",
+      "audioKey": "e03a-cana-e",
+      "es": "¿Me pones una caña, por favor?",
+      "pinyin": "meh POH-nehs OO-nah KAH-nyah, por fah-BOR",
+      "pt": "the small one, the way you always ask",
+      "tts": "¿Me pones una caña, por favor?",
+      "consulta": ["mesa/bebida", "chegar/balcao"]
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-marchando-e",
+      "es": "Marchando. ¿Algo de picar?",
+      "pinyin": "mar-CHAN-doh. AL-goh deh pee-KAR",
+      "pt": "👂 'Coming right up. Anything to eat?' — the second question, before you have got your wallet out",
+      "tts": "Marchando. ¿Algo de picar?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n03",
+      "bloco": "cena",
+      "pt": "Ten at night. Six of you round a table, and it has been loud for the best part of an hour."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n04",
+      "pt": "The man opposite turns to his oldest friend and says this. Listen to the room, not to the words."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-burro-e",
+      "es": "¡Pero qué burro eres, tío!",
+      "pinyin": "PEH-roh keh BOO-rroh EH-rehs, TEE-oh",
+      "pt": "👂 no translation — listen to the volume, and to the faces",
+      "tts": "¡Pero qué burro eres, tío!"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-llaves-c",
+      "es": "Anda, calla, que tú te dejaste las llaves dentro del coche.",
+      "pinyin": "AN-dah, KAH-yah, keh too teh deh-HAHS-teh lahs YAH-behs DEN-troh del KOH-cheh",
+      "pt": "👂 still no translation — watch what happens in the next four minutes",
+      "tts": "Anda, calla, que tú te dejaste las llaves dentro del coche."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n05",
+      "pt": "Nobody is fighting. In four minutes they split the bill and walk out with an arm round each other."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n06",
+      "pt": "That word went to the person he is surest of. It is the proof of the thing, not a wound."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n07",
+      "pt": "So your first job here is not a sentence. It is telling affection from a fence — and they look nothing alike."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-cachondeo-c",
+      "es": "Que está de cachondeo, hombre.",
+      "pinyin": "keh ehs-TAH deh kah-chon-DEH-oh, OM-breh",
+      "pt": "👂 'He's winding you up' — somebody at the table saying it out loud, for your benefit",
+      "tts": "Que está de cachondeo, hombre."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n08",
+      "pt": "Three things travel with the teasing, and all three are visible from where you are sitting."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n09",
+      "pt": "The volume goes up. The eyes stay soft. And somebody else joins in within a second or two."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n10",
+      "pt": "When you hear that, the move is small. Laugh, keep eating, and do not repeat the word back."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n11",
+      "tom": "protege",
+      "pt": "Now the other one, and it arrives quietly. The voice goes flat and the sentences get short."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-usted-c",
+      "es": "Como usted quiera.",
+      "pinyin": "KOH-moh oos-TEHDH KYEH-rah",
+      "pt": "👂 'As you like' — from somebody who was calling you tú four minutes ago",
+      "tts": "Como usted quiera."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n12",
+      "pt": "Courtesy that turns up in the middle of an easy conversation is a door being closed politely."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n13",
+      "pt": "The move is smaller still. Change the subject in your next sentence, and do not apologise for the last one."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n14",
+      "tom": "ganha",
+      "pt": "It comes back inside a minute and the evening carries on, because you read it the first time."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n15",
+      "pt": "Right. Here is what you say when somebody has a go at you across the table. Two words long."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-andaya-e",
+      "es": "Anda ya.",
+      "pinyin": "AN-dah yah",
+      "pt": "'Get away with you.' — flat, half a smile, and you go on eating",
+      "tts": "Anda ya."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n15b",
+      "pt": "Flat. Not cross and not loud — the voice of somebody who is enjoying the evening."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "promptAudioKey": "a02-p02",
+      "promptPt": "The table has decided you are the one who cannot take the heat, and the man opposite is grinning at you over his glass. Two words, flat, then go on eating. Speak now.",
+      "audioKey": "a02-andaya-e",
+      "es": "Anda ya.",
+      "pinyin": "AN-dah yah",
+      "pt": "two words, and you keep eating",
+      "consulta": ["simpatia/puxar-conversa"]
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-defiende-c",
+      "es": "¡Ah, que este se defiende!",
+      "pinyin": "ah, keh EHS-teh seh deh-FYEN-deh",
+      "pt": "👂 'Oh, this one can hold his own!' — somebody else at the table, one second later",
+      "tts": "¡Ah, que este se defiende!"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n16",
+      "pt": "The bigger one, for when the story has grown a third leg and everybody at the table knows it."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-contando-c",
+      "es": "¡Qué me estás contando!",
+      "pinyin": "keh meh ehs-TAHS kon-TAN-doh",
+      "pt": "'What are you telling me!' — aimed at the story, never at the person",
+      "tts": "¡Qué me estás contando!"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n16b",
+      "pt": "Four words, and they land on the story. Everybody says it, and nobody means a word of it."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "a02-p03",
+      "promptPt": "A different night, a courtyard, and the woman beside you swears her uncle once served a plate of rice to a king. Four words, and enjoy it. Speak now.",
+      "audioKey": "a02-contando-c",
+      "es": "¡Qué me estás contando!",
+      "pinyin": "keh meh ehs-TAHS kon-TAN-doh",
+      "pt": "at the story, not at her",
+      "consulta": ["simpatia/puxar-conversa"]
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-juro-e",
+      "es": "Te lo juro por mi madre.",
+      "pinyin": "teh loh HOO-roh por mee MAH-dreh",
+      "pt": "👂 'I swear on my mother.' — the story does not get smaller, it gets bigger",
+      "tts": "Te lo juro por mi madre."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "a02-g01",
+      "pt": "GUIRI ALERT. George here. British irony: you say the opposite of what you mean, with a face like a shut door."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "a02-g02",
+      "pt": "I told a waiter the paella was absolutely dreadful. Flat. No smile. He took the plate away and fetched the owner."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "a02-g03",
+      "pt": "Two of them stood over me apologising. My joke had gone in as a review. Mean what you say, and laugh out loud."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n17",
+      "bloco": "espelho",
+      "pt": "Saying the opposite of what you mean with a flat face is the bit that reads as odd there."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n18",
+      "pt": "It arrives as a complaint, and the funniest thing you said all evening comes back as an apology."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n19",
+      "tom": "ganha",
+      "pt": "So here is the joke that is yours for the whole fortnight, and it costs nothing to get right."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n20",
+      "pt": "It is about you. Not about them, not about the food, and not about anybody's government."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-guiri-e",
+      "es": "Soy el guiri, ya lo sé.",
+      "pinyin": "soy el GEE-ree, yah loh SEH",
+      "pt": "'I'm the tourist, I know.' — said about yourself, with a shrug",
+      "tts": "Soy el guiri, ya lo sé."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n21",
+      "pt": "That middle word is the everyday one for a visitor from the north. Sandals, sunburn, factor fifty."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "promptAudioKey": "a02-p04",
+      "promptPt": "You have walked into the bar in shorts and factor fifty, in October, and the whole counter has clocked you. Get there before anybody else does. Speak now.",
+      "audioKey": "a02-guiri-e",
+      "es": "Soy el guiri, ya lo sé.",
+      "pinyin": "soy el GEE-ree, yah loh SEH",
+      "pt": "about yourself, with a shrug",
+      "consulta": ["simpatia/puxar-conversa", "chegar/entrar"]
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-sientate-c",
+      "es": "Anda, ven, siéntate aquí.",
+      "pinyin": "AN-dah, ben, SYEN-tah-teh ah-KEE",
+      "pt": "👂 'Go on, come and sit here.' — one sentence, and nobody is handling you carefully any more",
+      "tts": "Anda, ven, siéntate aquí."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n22",
+      "pt": "There is a second one, and you have owned most of it since part three. Two words on the end."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a02-muypoco-c",
+      "es": "Hablo un poco de español. Muy poco.",
+      "pinyin": "AH-bloh oon POH-koh deh ehs-pah-NYOL. mwee POH-koh",
+      "pt": "'I speak a bit of Spanish. Very little.' — the sentence you already have, undercut",
+      "tts": "Hablo un poco de español. Muy poco."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n23",
+      "pt": "Same opener you have carried since the third part. The two on the end do all the work."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "a02-p05",
+      "promptPt": "Somebody has just told the whole table that your accent is marvellous, which it is not, and six faces are pointed at you. Take yourself down a peg before they have to. Speak now.",
+      "audioKey": "a02-muypoco-c",
+      "es": "Hablo un poco de español. Muy poco.",
+      "pinyin": "AH-bloh oon POH-koh deh ehs-pah-NYOL. mwee POH-koh",
+      "pt": "the old sentence, undercut",
+      "consulta": ["simpatia/puxar-conversa", "reparo/ingles"]
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a02-queva-e",
+      "es": "Qué va, hombre, si te entiendo perfectamente.",
+      "pinyin": "keh bah, OM-breh, see teh en-TYEN-doh per-fek-tah-MEN-teh",
+      "pt": "👂 'Nonsense, I understand you perfectly.' — which is what the joke buys, every single time",
+      "tts": "Qué va, hombre, si te entiendo perfectamente."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n24",
+      "bloco": "capsula",
+      "pt": "Back to the two at the next table. Neither was insulted, and neither is keeping any score."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n25",
+      "pt": "Spend that word yourself in week one and it has no history behind it. It arrives as what it says."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n26",
+      "pt": "And never at a counter or a desk. The person serving you is doing a job, not being an old friend."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n27",
+      "bloco": "permissao",
+      "pt": "You can laugh at something you did not understand. The laugh is the answer, and nobody is marking it."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n28",
+      "pt": "And nobody is waiting for you to hand one back. Skipping that turn costs you exactly nothing."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n29",
+      "bloco": "piso",
+      "tom": "ganha",
+      "pt": "You will hear an insult land at a table and know it was affection. Most visitors read it as a row."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-s00",
+      "pt": "Shadowing. Out loud, underneath them, flat vowels and one punch a word. The two you will use:"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "a02-andaya-e",
+      "es": "Anda ya.",
+      "pinyin": "AN-dah yah",
+      "pt": "Get away with you."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "a02-guiri-e",
+      "es": "Soy el guiri, ya lo sé.",
+      "pinyin": "soy el GEE-ree, yah loh SEH",
+      "pt": "I'm the tourist, I know."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a02-r01",
+      "bloco": "recap",
+      "pt": "One more out loud, somewhere we have not stood yet, and this time nobody has said a word to you."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "promptAudioKey": "a02-p06",
+      "promptPt": "Day nine. The woman on the market stall has watched you weigh two tomatoes for a full minute, and she is smiling at you with her arms folded. Say the thing about yourself. Speak now.",
+      "audioKey": "a02-guiri-e",
+      "es": "Soy el guiri, ya lo sé.",
+      "pinyin": "soy el GEE-ree, yah loh SEH",
+      "pt": "you first, before anybody else"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a02-n30",
+      "pt": "That is it. You heard it, you did not repeat it, and the joke you made was about you. Hasta luego."
+    }
+  ],
+
+  "aprofundar": {
+    "titulo": "Teasing, fences and the joke that is yours (optional reading)",
+    "secoes": [
+      {
+        "titulo": "Why the insult is the compliment",
+        "corpo": "Linguists who work on recordings of everyday Spanish conversation have a name for what happens at that table: mock impoliteness. The form of the utterance is an attack — you are a donkey, you are useless, shut up — and the function is the opposite of an attack. It says: our relationship is strong enough that I can say this to your face in front of five people, and you and everybody else know it will hold. That is why it gets spent on the person the speaker is surest of, and why answering in kind is the polite move rather than the rude one. Two consequences follow, and only the second one matters at your table. First: the words are not a vocabulary list to learn, because the meaning is not in them. Second, and this is the whole reason the part exists: the reading depends entirely on the history between the two people, and a visitor in week one has none. Identical words, identical tone, and a completely different landing. This is not a rule about being careful — it is a rule about what you are holding. You are holding no history yet, so you hold the laugh instead, which is free and which works from the first evening. If you want the reading, look for the pragmatics literature on Spanish conversation corpora under 'mock impoliteness' and 'descortesía de fustigación'; the audio deliberately never mentions any of it, because the behaviour is the useful part and the label is not.",
+        "exemplos": [
+          {
+            "es": "¡Pero qué burro eres, tío!",
+            "pt": "PEH-roh keh BOO-rroh EH-rehs TEE-oh — 👂 literally 'what a donkey you are', and between old friends it is closer to 'you idiot, I love you'"
+          },
+          {
+            "es": "Anda, calla.",
+            "pt": "AN-dah KAH-yah — 👂 'oh, be quiet' — the standard answer in kind, and the sound of nobody being offended"
+          }
+        ]
+      },
+      {
+        "titulo": "Anda ya, venga ya, and the two-word family",
+        "corpo": "'Anda ya' is the one to own. It is disbelief with a smile on it, and it covers everything from a tall story to a wind-up aimed at you: get away with you, do me a favour, pull the other one. Its neighbours are 'venga ya' (same job, slightly more forceful), 'no me digas' (you don't say — genuine surprise rather than disbelief) and 'qué va' (nothing of the sort, used to knock down a suggestion rather than a person). '¡Qué me estás contando!' is the big one and it is aimed at the story, never at the teller, which is exactly why it is safe: you are marvelling, not accusing. You will also hear '¡no me lo puedo creer!' and, in younger company, 'ni de coña' — worth recognising, not worth producing, because the second one is mildly rude in the way that is charming from a local and odd from a visitor. Notice what all of these have in common: they are short, they are said fast, and none of them requires you to have understood the whole story. That is the point. They are the sound of somebody who is in the conversation, which is a different thing from somebody who has followed it.",
+        "exemplos": [
+          {
+            "es": "Venga ya, hombre.",
+            "pt": "BEN-gah yah OM-breh — 👂 come off it — the same move with a bit more push behind it"
+          },
+          {
+            "es": "¿No me digas?",
+            "pt": "noh meh DEE-gahs — 👂 you don't say? — genuine surprise, and a perfectly good thing to say back to anybody"
+          }
+        ]
+      },
+      {
+        "titulo": "Guiri, and what to do with it",
+        "corpo": "Guiri is the ordinary word for a visitor from northern Europe. It is not a slur, it is not usually said with any hostility, and it is very often said with affection — it lives in the same register as the English 'tourist' when your friend says it about you in a queue. What it points at is a look and a set of habits rather than a nationality: the shorts in October, the shoulders the colour of a postbox, the pint at eleven in the morning, sandals with socks. Which is precisely why the sentence 'soy el guiri, ya lo sé' works so well: you are not claiming an identity, you are agreeing with an observation about your shorts, and you are getting there first. Said once, on the way in, it does more than any amount of careful Spanish, because it tells the room you are not going to need managing. Two things it does not do. It is not an apology, so do not add 'lo siento' to it. And it is not a licence to use the word about anybody else — about another visitor it is odd, and about the person serving you it makes no sense at all. Related things you may be called and can safely enjoy: 'inglés' applied to every English-speaker regardless of passport, and 'rubio' or 'rubia' used as a friendly form of address at a market stall whatever colour your hair actually is.",
+        "exemplos": [
+          {
+            "es": "Soy el guiri, ya lo sé.",
+            "pt": "soy el GEE-ree yah loh SEH — I'm the tourist, I know. Say it once, on the way in, with a shrug"
+          },
+          {
+            "es": "Hablo un poco de español. Muy poco.",
+            "pt": "AH-bloh oon POH-koh deh ehs-pah-NYOL, mwee POH-koh — the sentence from part three with the joke bolted on the end"
+          }
+        ]
+      },
+      {
+        "titulo": "Tío, hombre, and the words that are not really words",
+        "corpo": "Three of the most common noises at a Spanish table are not carrying meaning at all, and mistaking them for meaning is what makes an ordinary conversation sound like an argument. 'Tío' and 'tía' mean uncle and aunt in a family and mean nothing whatsoever between friends — they are the tag on the end of a sentence, roughly the job that 'mate' does in Britain, and they are everywhere. 'Hombre' is not addressing a man: '¡hombre!' on its own is pleased surprise at somebody arriving, 'hombre, no' is a gentle disagreement, and it gets said to women constantly. 'Venga' is the all-purpose closer — right then, come on, off we go, see you — and it ends about a third of the phone calls in the country. None of these are worth producing on purpose in your first fortnight; all of them are worth recognising, because once you stop hearing them as content the sentences underneath get a great deal shorter and a great deal clearer. And one about volume, since it belongs here: a Spanish table at full tilt is louder than a British one, and several people talking at once is not people interrupting each other. Waiting politely for a gap is how a visitor ends up saying nothing for two hours.",
+        "exemplos": [
+          {
+            "es": "Que está de cachondeo, hombre.",
+            "pt": "keh ehs-TAH deh kah-chon-DEH-oh OM-breh — 👂 he's winding you up — the sentence somebody kind says for your benefit"
+          },
+          {
+            "es": "Venga, hasta luego.",
+            "pt": "BEN-gah AHS-tah LWEH-goh — 👂 right then, see you — the standard end of almost anything"
+          }
+        ]
+      },
+      {
+        "titulo": "The fence, and how to walk away from it without limping",
+        "corpo": "The other half of this part is the one nobody warns you about, because it looks like good manners. Somebody who has been on tú with you all evening switches to usted; the sentences get short and correct; the voice flattens out; 'como usted quiera' and 'lo que usted diga' start appearing. That is not respect arriving, it is a door being closed politely, and in a conversation that was easy a minute ago the switch itself is the message. Most often it is not about you personally: you have walked into a subject that the table has decided is not for tonight, which is what the part on the old argument, later in this module, is entirely about. What to do is small and it has to be quick — change the subject in your very next sentence, keep your volume and your face exactly where they were, and do not apologise, because apologising names the thing and makes it bigger. Give it a minute and the temperature comes back on its own. The mirror image is worth holding on to as well: if somebody has used usted with you from the first word — a pharmacist, an older waiter, a hotel desk, anybody in a uniform — then usted is simply the register they work in and it carries no message at all. The signal is the change, never the form.",
+        "exemplos": [
+          {
+            "es": "Como usted quiera.",
+            "pt": "KOH-moh oos-TEHDH KYEH-rah — 👂 as you like — polite, correct, and a closed door if it turns up mid-conversation"
+          },
+          {
+            "es": "Bueno, cambiando de tema…",
+            "pt": "BWEH-noh, kam-BYAN-doh deh TEH-mah — 👂 anyway, changing the subject — you will hear somebody else do this for you, and you can do it too"
+          }
+        ]
+      }
+    ]
+  }
+}

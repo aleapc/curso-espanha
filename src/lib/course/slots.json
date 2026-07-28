@@ -1,0 +1,414 @@
+{
+  "_contrato": "MAPA CANÔNICO DE SLOTS — Kit de Bordo. CRAVADO EM PEDRA. Todo curso, em qualquer destino e para qualquer comprador, tem EXATAMENTE estes 36 slots, nesta ordem, nestes módulos. O que muda entre destinos é o CONTEÚDO do slot, nunca a sua existência, posição ou função. Um slot que 'não se aplica' NÃO é excluído: muda de recheio (ex.: B10 modo placa vira placa de falso amigo onde a escrita é transparente). Este arquivo é lido pelo validador (scripts/valida-estrutura.mjs) e quebra o build se um curso divergir. Alterar exige mudar a versão e re-validar TODOS os cursos.",
+  "versao": "2.1.0",
+  "total": 36,
+  "modulos": [
+    {
+      "id": "basico",
+      "nome_pt": "ME VIRO",
+      "nome_en": "GET BY",
+      "partes": 18,
+      "travado": true,
+      "promessa_pt": "Chego, entendo, peço, pago, durmo e volto — sozinho.",
+      "consumo_rotulo_pt": "Antes de embarcar",
+      "consumo_rotulo_en": "Before you fly",
+      "consumo_definicao": "antes de embarcar"
+    },
+    {
+      "id": "intermediario",
+      "nome_pt": "APROVEITO",
+      "nome_en": "GET THE GOOD STUFF",
+      "partes": 10,
+      "travado": true,
+      "promessa_pt": "Comer onde eles comem, na hora que eles comem, pelo preço que eles pagam.",
+      "consumo_rotulo_pt": "No caminho",
+      "consumo_rotulo_en": "On the way",
+      "consumo_definicao": "o voo e os 2 primeiros dias"
+    },
+    {
+      "id": "avancado",
+      "nome_pt": "LEIO A SALA",
+      "nome_en": "READ THE ROOM",
+      "partes": 8,
+      "travado": false,
+      "min": 8,
+      "max": 10,
+      "promessa_pt": "Entender essa gente: o humor, o orgulho, a briga antiga e o que o silêncio deles quer dizer.",
+      "consumo_rotulo_pt": "Enquanto você está lá",
+      "consumo_rotulo_en": "While you are there",
+      "consumo_definicao": "enquanto você está lá"
+    }
+  ],
+  "dono": {
+    "par": "o conteúdo pertence ao PAR (língua do comprador × destino) — muda a cada SKU novo. Ex.: âncora fonética, falso amigo, inversão de polidez.",
+    "destino": "o conteúdo pertence só ao DESTINO — a pesquisa e o roteiro se reusam em TODOS os compradores daquele destino. É aqui que está a economia do catálogo."
+  },
+  "slots": [
+    {
+      "id": "B01",
+      "modulo": "basico",
+      "ordem": 1,
+      "fase": "antes de embarcar",
+      "funcao": "A melodia — os sons que fazem você ser entendido",
+      "dono": "par",
+      "gesto_obrigatorio": true,
+      "nota": "PROGRAMA MOTOR OBRIGATÓRIO. Toda língua ganha uma mão — ver invariante do gesto. Tonais herdam a mão de maestro do Shuō!/Phûut!; não-tonais recebem a versão que serve ao erro delas (no espanhol para anglófono: metrônomo de 4 programas)."
+    },
+    {
+      "id": "B02",
+      "modulo": "basico",
+      "ordem": 2,
+      "fase": "antes de embarcar",
+      "funcao": "As primeiras dez palavras — cumprimentar, agradecer, pedir licença",
+      "dono": "par",
+      "nota": "inclui a regra de que entrar sem cumprimentar é grosseria"
+    },
+    {
+      "id": "B03",
+      "modulo": "basico",
+      "ordem": 3,
+      "fase": "antes de embarcar",
+      "funcao": "O kit anti-pânico — não entendi, mais devagar, escreve aí",
+      "dono": "par",
+      "nota": "reparo vem CEDO, nunca no fim do módulo"
+    },
+    {
+      "id": "B04",
+      "modulo": "basico",
+      "ordem": 4,
+      "fase": "antes de embarcar",
+      "funcao": "A lista com prazo — documentos, eSIM, app de pagamento, ingresso",
+      "dono": "destino",
+      "nota": "TODO conteúdo com prazo físico vive aqui, nunca na trilha cultural"
+    },
+    {
+      "id": "B05",
+      "modulo": "basico",
+      "ordem": 5,
+      "fase": "chegar",
+      "funcao": "A fronteira e as três perguntas",
+      "dono": "destino",
+      "nota": "motivo, tempo, onde você fica"
+    },
+    {
+      "id": "B06",
+      "modulo": "basico",
+      "ordem": 6,
+      "fase": "chegar",
+      "funcao": "Os primeiros 60 minutos — bagagem, chip, dinheiro, banheiro",
+      "dono": "destino"
+    },
+    {
+      "id": "B07",
+      "modulo": "basico",
+      "ordem": 7,
+      "fase": "chegar",
+      "funcao": "Do aeroporto até a cama — o transporte certo pelo preço certo",
+      "dono": "destino",
+      "nota": "golpe entra como beat, nunca como episódio"
+    },
+    {
+      "id": "B08",
+      "modulo": "basico",
+      "ordem": 8,
+      "fase": "circular",
+      "funcao": "Onde fica? — a pergunta cuja resposta cabe na sua cabeça",
+      "dono": "par",
+      "nota": "ensina a formular pergunta de resposta sim/não ou gesto"
+    },
+    {
+      "id": "B09",
+      "modulo": "basico",
+      "ordem": 9,
+      "fase": "circular",
+      "funcao": "Bilhete, validar, entrar",
+      "dono": "destino",
+      "nota": "os números entram aqui, pelo lado RECEPTIVO"
+    },
+    {
+      "id": "B10",
+      "modulo": "basico",
+      "ordem": 10,
+      "fase": "circular",
+      "funcao": "Ler o lugar — placas, horários e portas",
+      "dono": "par",
+      "condicional": "escrita não-latina → modo placa de decifração; escrita transparente → placa de FALSO AMIGO e convenção. O slot NUNCA some.",
+      "receptivo": true
+    },
+    {
+      "id": "B11",
+      "modulo": "basico",
+      "ordem": 11,
+      "fase": "comer",
+      "funcao": "Sentar e pedir a primeira rodada",
+      "dono": "destino"
+    },
+    {
+      "id": "B12",
+      "modulo": "basico",
+      "ordem": 12,
+      "fase": "comer",
+      "funcao": "Pedir o que você quer mesmo — os moldes (sem, com, mais, sem gelo)",
+      "dono": "par",
+      "nota": "núcleo gerador denso: é o slot com mais moldes do módulo"
+    },
+    {
+      "id": "B13",
+      "modulo": "basico",
+      "ordem": 13,
+      "fase": "comer",
+      "funcao": "Alergia e restrição — a frase-martelo e o cartão escrito",
+      "dono": "destino",
+      "nota": "INTOCÁVEL. Nunca cortar, nunca cobrar à parte."
+    },
+    {
+      "id": "B14",
+      "modulo": "basico",
+      "ordem": 14,
+      "fase": "gastar",
+      "funcao": "A conta — pagar sem pagar a mais",
+      "dono": "destino",
+      "nota": "números em modo receptivo: ouvir o preço e anotar"
+    },
+    {
+      "id": "B15",
+      "modulo": "basico",
+      "ordem": 15,
+      "fase": "gastar",
+      "funcao": "Comprar — preço, tamanho, provar, trocar",
+      "dono": "destino"
+    },
+    {
+      "id": "B16",
+      "modulo": "basico",
+      "ordem": 16,
+      "fase": "dormir",
+      "funcao": "Check-in e o quarto — pedir o que melhora e reclamar do que não funciona",
+      "dono": "destino",
+      "nota": "abre pedindo (andar alto, mais silencioso, late check-out), só depois reclama"
+    },
+    {
+      "id": "B17",
+      "modulo": "basico",
+      "ordem": 17,
+      "fase": "quando dá errado",
+      "funcao": "Farmácia, dor e emergência",
+      "dono": "destino",
+      "nota": "a ÚNICA parte declaradamente defensiva do módulo inteiro"
+    },
+    {
+      "id": "B18",
+      "modulo": "basico",
+      "ordem": 18,
+      "fase": "voltar",
+      "funcao": "O último dia — check-out, guardar a mala e o até a próxima",
+      "dono": "destino",
+      "nota": "a jornada TERMINA em despedida, nunca em roubo"
+    },
+    {
+      "id": "I01",
+      "modulo": "intermediario",
+      "ordem": 19,
+      "funcao": "O relógio deles",
+      "dono": "destino",
+      "decisao": "a que horas eu janto — e por que jantar cedo me joga na casa que vive de turista"
+    },
+    {
+      "id": "I02",
+      "modulo": "intermediario",
+      "ordem": 20,
+      "funcao": "A ordem certa no balcão",
+      "dono": "destino",
+      "decisao": "onde me ponho e como peço; volume, contato visual; a permissão contra a hiper-polidez"
+    },
+    {
+      "id": "I03",
+      "modulo": "intermediario",
+      "ordem": 21,
+      "funcao": "O prato que você não ia pedir",
+      "dono": "destino",
+      "decisao": "qual prato; ler a carta local, o menu do dia, o que você recomenda"
+    },
+    {
+      "id": "I04",
+      "modulo": "intermediario",
+      "ordem": 22,
+      "funcao": "A noite",
+      "dono": "destino",
+      "decisao": "qual bar e quanto fica; a rodada, quem paga, como se despedir da mesa"
+    },
+    {
+      "id": "I05",
+      "modulo": "intermediario",
+      "ordem": 23,
+      "funcao": "As perguntas que eles fazem",
+      "dono": "destino",
+      "decisao": "fico ou saio da conversa; as 3-5 perguntas de sempre e as suas respostas prontas"
+    },
+    {
+      "id": "I06",
+      "modulo": "intermediario",
+      "ordem": 24,
+      "funcao": "Contar a sua viagem",
+      "dono": "par",
+      "decisao": "ontem eu fui, comi, adorei — é aqui que o PASSADO vive, como história"
+    },
+    {
+      "id": "I07",
+      "modulo": "intermediario",
+      "ordem": 25,
+      "funcao": "Elogiar, agradecer e reclamar sem drama",
+      "dono": "par",
+      "decisao": "o elogio que faz o cozinheiro aparecer; a reclamação calma que resolve"
+    },
+    {
+      "id": "I08",
+      "modulo": "intermediario",
+      "ordem": 26,
+      "funcao": "Ser convidado",
+      "dono": "destino",
+      "decisao": "a casa: o que levar, onde sentar, a hora de ir; brinde como fórmula pronta"
+    },
+    {
+      "id": "I09",
+      "modulo": "intermediario",
+      "ordem": 27,
+      "funcao": "Fazer o que eles fazem",
+      "dono": "destino",
+      "decisao": "como gasto a tarde: mercado, jogo, praça, a festa da semana"
+    },
+    {
+      "id": "I10",
+      "modulo": "intermediario",
+      "ordem": 28,
+      "funcao": "O dinheiro sem drama",
+      "dono": "destino",
+      "decisao": "gorjeta, rachar, pechinchar ou não — enquadrado como 'como funciona aqui'"
+    },
+    {
+      "id": "A01",
+      "modulo": "avancado",
+      "ordem": 29,
+      "funcao": "Como eles falam quando não é com você",
+      "dono": "par",
+      "receptivo": true,
+      "nota": "o EAR MODULE: fala rápida, o que some, sotaque regional"
+    },
+    {
+      "id": "A02",
+      "modulo": "avancado",
+      "ordem": 30,
+      "funcao": "Do que eles riem — e a piada que você pode fazer",
+      "dono": "destino",
+      "nota": "humor entra RECEPTIVO; insulto jocoso na boca de estrangeiro tem retorno negativo"
+    },
+    {
+      "id": "A03",
+      "modulo": "avancado",
+      "ordem": 31,
+      "funcao": "Quem eles acham que são",
+      "dono": "destino",
+      "nota": "identidade: o orgulho, o complexo, a piada interna"
+    },
+    {
+      "id": "A04",
+      "modulo": "avancado",
+      "ordem": 32,
+      "funcao": "A briga antiga",
+      "dono": "destino",
+      "nota": "a divisão interna que todo país tem e como não pisar nela"
+    },
+    {
+      "id": "A05",
+      "modulo": "avancado",
+      "ordem": 33,
+      "funcao": "A outra língua",
+      "dono": "destino",
+      "receptivo": true,
+      "nota": "línguas e sotaques regionais + as 6 palavras de cortesia que compram simpatia"
+    },
+    {
+      "id": "A06",
+      "modulo": "avancado",
+      "ordem": 34,
+      "funcao": "O calendário deles",
+      "dono": "destino",
+      "nota": "o feriado, o santo, o mês em que tudo fecha, a festa que toma a rua"
+    },
+    {
+      "id": "A07",
+      "modulo": "avancado",
+      "ordem": 35,
+      "funcao": "Sinais: bem-vindo, incômodo e hora de ir",
+      "dono": "destino",
+      "nota": "o não disfarçado; volume, toque, distância"
+    },
+    {
+      "id": "A08",
+      "modulo": "avancado",
+      "ordem": 36,
+      "funcao": "A despedida",
+      "dono": "destino",
+      "nota": "o que dizer pra ser convidado de novo + a cola de bolso do país; fecho do curso"
+    }
+  ],
+  "invariante_do_gesto": {
+    "_": "O ACHADO MAIS ORIGINAL DO PRODUTO — o dono mandou preservar explicitamente (2026-07-27), citando o 'ma' do Shuō!. NÃO é técnica de tom; é a técnica do MÉTODO: transformar coisa de boca em coisa de corpo. Tom é uma aplicação, não a regra.",
+    "regra": "TODA língua ganha uma mão em B01. Sem exceção. Um curso sem programa motor em B01 falha a validação.",
+    "aplicacoes": {
+      "tonal": "mão de maestro — a mão desenha o contorno de altura da sílaba. Origem: Shuō! (4 tons do mandarim, com o par mínimo mā/má/mǎ/mà), estendida no Phûut! (5 tons do tailandês). É o componente TomGesto.svelte. INTOCÁVEL: é o ativo pedagógico mais original do catálogo.",
+      "nao_tonal": "a mão desenha o que a língua cobra e o comprador erra. No espanhol para anglófono virou METRÔNOMO com 4 programas motores (batida igual = ritmo silábico; palma plana = vogal pura sem ditongar; soco = acento tônico; flick = tap do r). É o componente GestoRitmo.svelte.",
+      "derivacao": "para uma língua nova, a pergunta é sempre a mesma: qual é o erro nº1 do comprador, e que movimento de mão o torna impossível de esconder? O gesto tem que TRAIR o erro, não ilustrar a regra."
+    }
+  },
+  "extensoes": {
+    "_": "EXCEÇÕES ENTRAM COMO CONTEÚDO ADICIONAL, não deformando os 36 slots (decisão do dono, 2026-07-27). A espinha é idêntica em todo destino — é o que faz o comprador do italiano reconhecer o francês. Onde a língua exige mais, entram partes EXTRA, claramente marcadas, por REGRA FECHADA. Nunca por critério do agente que escreve.",
+    "regra_de_ativacao": "decidida por tabela a partir das propriedades da língua-destino, não por bom senso",
+    "catalogo": [
+      {
+        "id": "X-TOM",
+        "ativa_se": "língua tonal",
+        "partes": "1 a 2",
+        "conteudo": "percepção e produção dos tons com a mão de maestro; par mínimo; drill de discriminação",
+        "exemplos": "mandarim (4 tons), tailandês (5), vietnamita (6)"
+      },
+      {
+        "id": "X-ESCRITA",
+        "ativa_se": "escrita não-latina",
+        "partes": "1",
+        "conteudo": "reconhecimento visual de placas — SEMPRE receptivo, nunca produção",
+        "exemplos": "tailandês, mandarim, japonês, grego, árabe"
+      },
+      {
+        "id": "X-POLIDEZ",
+        "ativa_se": "polidez obrigatória que muda a forma da frase",
+        "partes": "1",
+        "conteudo": "os níveis mínimos e quando cada um é obrigatório",
+        "exemplos": "japonês (keigo), coreano, tailandês (partículas khráp/khâ)"
+      },
+      {
+        "id": "X-CLASSIF",
+        "ativa_se": "classificadores obrigatórios ao contar",
+        "partes": "1",
+        "conteudo": "os 5 a 8 classificadores que cobrem a viagem",
+        "exemplos": "mandarim, tailandês, japonês, vietnamita"
+      }
+    ],
+    "limite": "máximo 4 partes de extensão por curso. Acima disso, a língua está sendo ensinada por si mesma e não pela viagem — reprova no filtro 'torna a viagem mais proveitosa?'.",
+    "posicao": "extensões vivem no módulo BÁSICO, logo após B01 (a mão já foi apresentada), e nunca substituem um slot canônico."
+  },
+  "regras": [
+    "Um slot NUNCA é excluído, renomeado nem reordenado por um curso. Se não se aplica, muda o CONTEÚDO.",
+    "Exceção de língua NÃO deforma slot: entra como EXTENSÃO declarada (ver extensoes.catalogo).",
+    "B01 tem programa motor obrigatório em TODO curso — a mão é invariante do método, não do mandarim.",
+    "Todo arquivo ep-*.json declara o campo \"slot\" com o id canônico. Sem isso o build falha.",
+    "Slots com dono=destino têm pesquisa e roteiro REUSADOS entre todos os compradores do mesmo destino.",
+    "Slots com dono=par são refeitos a cada SKU novo (âncora fonética, falso amigo, inversão de polidez).",
+    "B13 (alergia) é intocável: nunca cortado, nunca atrás de paywall, em nenhum destino.",
+    "Conteúdo com prazo físico vive em B04. Nunca na trilha cultural.",
+    "Golpe/multa é beat dentro de B07, B14 e B17 — episódio próprio só em M2/M3, com enquadramento 'como funciona aqui'."
+  ],
+  "_changelog": [
+    "2.1.0 (2026-07-27): separa consumo_rotulo (UI, curto, igual em todo SKU) de consumo_definicao (quando se consome). Havia duas canônicas para a mesma string entre este arquivo e o PRODUTO.md, e nenhum script conferia — achado 20 da auditoria adversarial."
+  ]
+}

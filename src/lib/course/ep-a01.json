@@ -1,0 +1,656 @@
+{
+  "id": "a01",
+  "slot": "A01",
+  "nivel": "avancado",
+  "numero": 29,
+  "parte": "A01",
+  "titulo": "How they talk when it isn't to you",
+  "subtitulo": "Two people at a bar, at the speed they actually use it, and twelve of the sentences in there are ones you built yourself in the first eighteen parts",
+  "moldura": "ganha",
+
+  "cena": "Nine at night, third in at the bar with your elbow on the zinc: the man next to you orders, the woman behind the bar answers, and neither sentence has an S left in it — and none of it is for you.",
+
+  "frasePiso": "If all you take from this part is that the S can vanish, you will still follow more of a Spanish bar than most people who spend a fortnight in one.",
+
+  "permissao": "You are allowed to catch one word in five and keep listening: take that word, use it, and let the rest go past. You never correct anybody — plenty of Spain says 'grasias' rather than 'grathias', and nobody there is wrong. And you will never have to talk like this yourself. Understanding it is the whole job.",
+  "permissaoAudioKey": "a01-n29",
+
+  "espelho": "Leaving a clean gap at the end of your sentence is the bit that reads as odd there. There was no gap at all in what you just heard, and that is not rudeness — a pause that size is read as you having finished with the subject, and somebody else takes it.",
+
+  "fichasCulturais": [
+    {
+      "sinal": "The barman says a sentence to you that you follow, then turns to the man beside you and says the next one at twice the speed.",
+      "suaLeitura": "I understood him a second ago and now I understand nothing — my Spanish only works when somebody is being kind to me.",
+      "oQueEAli": "Speech aimed at a visitor is slowed and fully pronounced; speech aimed at the regular next to him is not. What changed in that second was the audience, not the language.",
+      "oQueVoceFaz": "Stay in it. Count the beats instead of hunting for the letters, and keep the one word you did catch.",
+      "oQueMelhora": "You keep listening through the fast half of the room instead of switching off at the first sentence that is not for you — and the fast half is where the recommendation gets made.",
+      "ondeNaoVale": "Not at a hotel desk or a ticket window, where the whole exchange runs at visitor speed all day and there is no faster version underneath it.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a01-n25", "a01-n26", "a01-n27", "a01-n28"]
+    },
+    {
+      "sinal": "A word you know well arrives with a hole in the middle of it — pescado comes out as pescao — and nobody repeats it.",
+      "suaLeitura": "That was a dish I have never heard of, so I will point at something else on the list.",
+      "oQueEAli": "The D between two vowels drops out in ordinary relaxed speech across Spain, not only in one corner of it. The word was not swapped for another one; it was worn down.",
+      "oQueVoceFaz": "Put the D back in your head and take the order. Say the dish back with the D in if you want to check — you are understood either way.",
+      "oQueMelhora": "You eat the fish the house is proud of instead of the safe thing you could already pronounce.",
+      "ondeNaoVale": "Not on a written menu, where the D is always in place — this one is a hearing problem, and it disappears the moment anything is on paper.",
+      "evidencia": "CONSENSO",
+      "audioKeys": ["a01-n12", "a01-n13"]
+    }
+  ],
+
+  "fatosDatados": [
+    {
+      "id": "distincion-seseo",
+      "afirmacao": "Most of peninsular Spain distinguishes the 'th' of gracias from a plain S; seseo — everything as a plain S — is standard in the Canaries, in parts of Andalusia and across the Americas.",
+      "fonte": "RAE/ASALE, Diccionario panhispánico de dudas, verbetes «seseo» e «ceceo»",
+      "ano": 2026,
+      "revisarAte": "2031-01-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": ["a01-n14", "a01-n15"]
+    },
+    {
+      "id": "erosao-s-e-d",
+      "afirmacao": "At the end of a syllable the S is aspirated or dropped, and the D between two vowels falls out in ordinary relaxed speech — the second one across Spain, not only in the south.",
+      "fonte": "Descrição dialetal de consenso recolhida em docs/pesquisa-espanha.md §2 e §2.10. SEM fonte primária conferida: a única fonte primária deste bloco é a RAE/ASALE, e ela cobre seseo/ceceo, não a erosão de coda nem a queda do -d-. Precisa de revisor nativo antes de virar régua de outro SKU.",
+      "ano": 2026,
+      "revisarAte": "2031-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": ["a01-n08", "a01-n12", "a01-n13"]
+    }
+  ],
+
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n01",
+      "bloco": "aquecimento",
+      "gesto": 1,
+      "tom": "ganha",
+      "pt": "Part twenty-nine. Warm-up, and it is the first hand you ever learned: the metronome. Four even beats, all the same size."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n02",
+      "pt": "Keep it running while you listen today. The hand stays even. It is the words that are going to lose bits."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n03",
+      "bloco": "cena",
+      "pt": "Nine at night. You are third in at the bar, elbow on the zinc, waiting to be seen."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n04",
+      "pt": "The man next to you and the woman serving have been going a minute, and none of it is aimed at you. Listen."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-abre-i",
+      "es": "¿Me poneh doh cañah y algo pa' picá?",
+      "tts": "¿Me poneh doh cañah y algo pa picá?",
+      "pinyin": "meh POH-neh doh KAH-nyah ee AL-goh pah pee-KAH",
+      "pt": "👂 Not for you. Nothing to work out — let it go past."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-abre-m",
+      "es": "Marchando. ¿Loh dejo aquí?",
+      "tts": "Marchando. ¿Loh dejo aquí?",
+      "pinyin": "mar-CHAN-doh. loh DEH-khoh ah-KEE",
+      "pt": "👂 Still not for you. Nothing to do yet."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n05",
+      "pt": "You did not catch that, and your ear is fine. Almost every word in it is one you have said out loud."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n06",
+      "pt": "So today you say nothing at all. For the next twelve minutes the exercise is your ears."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n07",
+      "pt": "Two people are going to hand your own sentences back to you at the speed they actually use them."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n08",
+      "pt": "First, the one that costs you most: the S at the end of a syllable. Here it is with all three in place."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03a-doscanas-c",
+      "es": "¿Me pones dos cañas, por favor?",
+      "tts": "¿Me pones dos cañas, por favor?",
+      "pinyin": "meh POH-nehs dohs KAH-nyahs, por fah-BOR",
+      "pt": "👂 The one you learned in part eleven. Three S's, and you can hear all of them."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-canyas-i",
+      "es": "¿Me poneh doh cañah, por favó?",
+      "tts": "¿Me poneh doh cañah, por favó?",
+      "pinyin": "meh POH-neh doh KAH-nyah, por fah-BOH",
+      "pt": "👂 Same order, same bar, same words. The S went to a puff of air, and then it went."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n09",
+      "pt": "Do not go hunting for the S. Count the beats instead — the hand is still giving you four of them."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n10",
+      "pt": "That is the whole of this part. The syllables survive. The letters are the ones that go."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01c-10",
+      "es": "¿Cuántas cosas más?",
+      "tts": "¿Cuántas cosas más?",
+      "pinyin": "KWAN-tahs KOH-sahs MAHS",
+      "pt": "👂 'Anything else?' — every syllable in place, all three S's audible."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-cosas-m",
+      "es": "¿Cuánta' cosa' má'?",
+      "tts": "¿Cuánta cosa má?",
+      "pinyin": "KWAN-tah KOH-sah MAH",
+      "pt": "👂 The same question at the same counter, and you are still being asked whether you want anything else."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n11",
+      "pt": "Four beats in the careful one, four in the fast one. Nothing was added, and nothing moved."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n12",
+      "bloco": "capsula",
+      "pt": "Second, and it turns up all over Spain, not just in one corner of it: the D between two vowels."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01c-12",
+      "es": "El pescado está muy bueno.",
+      "tts": "El pescado está muy bueno.",
+      "pinyin": "el pehs-KAH-dhoh ehs-TAH mwee BWEH-noh",
+      "pt": "👂 'The fish is very good.' — the careful one, with the D where the menu puts it."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-pescao-i",
+      "es": "El pescao está mu bueno.",
+      "tts": "El pescao está mu bueno.",
+      "pinyin": "el pehs-KAO ehs-TAH moo BWEH-noh",
+      "pt": "👂 Pescado became pescao. The D walked out. Same fish, same price, same recommendation."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n13",
+      "pt": "Cansado, tomado, pagado — the same hole in the middle every time. Expect it and it stops being a new word."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b18-pagado-e",
+      "es": "Ya está pagado.",
+      "tts": "Ya está pagado.",
+      "pinyin": "yah ehs-TAH pah-GAH-dhoh",
+      "pt": "👂 Yours, from the last morning at the desk. The careful one."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-pagao-m",
+      "es": "Ya 'tá pagao.",
+      "tts": "Ya tá pagao.",
+      "pinyin": "yah TAH pah-GAO",
+      "pt": "👂 Two holes in four words, and it still means the bill is settled and nobody owes anything."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n14",
+      "pt": "Third. That free 'th' from part one is not used everywhere, and both versions are ordinary Spanish."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e04b-jamon-c",
+      "es": "¿Lleva jamón o chorizo?",
+      "tts": "¿Lleva jamón o chorizo?",
+      "pinyin": "YEH-bah khah-MOHN oh choh-REE-thoh",
+      "pt": "👂 Chorizo with the 'th' inside it, the way you were taught to say it."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-chorizo-i",
+      "es": "¿Lleva jamón o chorizo?",
+      "tts": "¿Lleva jamón o choriso?",
+      "pinyin": "YEH-bah khah-MOHN oh choh-REE-soh",
+      "pt": "👂 The same question with a plain S in the middle of it. Same words, same answer, same lunch."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n15",
+      "pt": "You will hear both of those in the same week, sometimes at the same table. Neither one is a correction."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n16",
+      "pt": "Fourth and last: the R on the end of a word going soft, and then not being there at all."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-parallevar-e",
+      "es": "Para llevar, por favor.",
+      "tts": "Para llevar, por favor.",
+      "pinyin": "PAH-rah yeh-BAR, por fah-BOR",
+      "pt": "👂 Yours, from part twelve — the one that takes the food out of the door with you."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-llevar-i",
+      "es": "Pa' llevá, por favó.",
+      "tts": "Pa llevá, por favó.",
+      "pinyin": "pah yeh-BAH, por fah-BOH",
+      "pt": "👂 Three shorter words, and it is still the same order going out of the door."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n17",
+      "pt": "Those are the four to know. The S, the D, the th, and the R on the end of a word."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n18",
+      "pt": "Now the bit worth the whole twelve minutes. Everything you own, at the speed of the room."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n19",
+      "pt": "The careful one first, then the same one from somebody with no reason to slow down for you."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b10-picar-c",
+      "es": "¿Hay algo para picar?",
+      "tts": "¿Hay algo para picar?",
+      "pinyin": "ai AL-goh PAH-rah pee-KAR",
+      "pt": "👂 Yours: anything at all, cold, on a plate."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-pica-i",
+      "es": "¿Hay algo pa' picá?",
+      "tts": "¿Hay algo pa picá?",
+      "pinyin": "ai AL-goh pah pee-KAH",
+      "pt": "👂 Two syllables lighter and the same plate arrives."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b08-donde-aseos-c",
+      "es": "¿Dónde están los aseos?",
+      "tts": "¿Dónde están los aseos?",
+      "pinyin": "DOHN-deh ehs-TAN lohs ah-SEH-ohs",
+      "pt": "👂 Yours: where the toilets are, in the version you practised."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-aseos-m",
+      "es": "¿Dónde 'tán loh aseo'?",
+      "tts": "¿Dónde tán loh aseo?",
+      "pinyin": "DOHN-deh TAHN loh ah-SEH-oh",
+      "pt": "👂 The es- fell off the front and the S off the end. Same question, same corridor."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n20",
+      "pt": "Two for two. You have said both of those out loud — one at a bar, one to a stranger on a corner."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e03b-queriuno-e",
+      "es": "Quería uno de esos, por favor.",
+      "tts": "Quería uno de esos, por favor.",
+      "pinyin": "keh-REE-ah OO-noh deh EH-sohs, por fah-BOR",
+      "pt": "👂 Yours: that one there, in the glass case."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-uno-i",
+      "es": "Quería uno de eso', por favó.",
+      "tts": "Quería uno de eso, por favó.",
+      "pinyin": "keh-REE-ah OO-noh deh EH-soh, por fah-BOH",
+      "pt": "👂 Same five words, two ends filed off, and the finger is still pointing at the case."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e01c-despacio-e",
+      "es": "¿Me puede hablar más despacio, por favor?",
+      "tts": "¿Me puede hablar más despacio, por favor?",
+      "pinyin": "meh PWEH-dheh ah-BLAR mahs dehs-PAH-thyoh, por fah-BOR",
+      "pt": "👂 Yours, from part three — the one that sets the pace of the whole exchange."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-despacio-m",
+      "es": "¿Me puede hablá máh dehpacio, por favó?",
+      "tts": "¿Me puede hablá máh dehpacio, por favó?",
+      "pinyin": "meh PWEH-dheh ah-BLAH mah deh-PAH-thyoh, por fah-BOH",
+      "pt": "👂 The request for slower, said fast. You still recognise it, which is the point."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n21",
+      "pt": "Yes. Even the one where you ask for slower comes back fast. That is a joke, and it is a real one."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e04a-marisco-c",
+      "es": "Soy alérgica al marisco.",
+      "tts": "Soy alérgica al marisco.",
+      "pinyin": "soy ah-LEHR-khee-kah al mah-REES-koh",
+      "pt": "👂 Yours, and the most serious sentence in the course."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-marisco-m",
+      "es": "Soy alérgica al marihco.",
+      "tts": "Soy alérgica al marihco.",
+      "pinyin": "soy ah-LEHR-khee-kah al mah-REEH-koh",
+      "pt": "👂 The same sentence coming back off a waitress on her way to the kitchen. That is what agreement sounds like."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n22",
+      "pt": "That one matters more than the rest. When a kitchen repeats it back at you, that is what it sounds like."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b07-dejado-c",
+      "es": "Me he dejado el móvil en el taxi.",
+      "tts": "Me he dejado el móvil en el taxi.",
+      "pinyin": "meh eh deh-KHAH-dhoh el MOH-beel en el TAK-see",
+      "pt": "👂 Yours, from the first night: left behind, never stolen."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-movil-i",
+      "es": "Me he dejao el móvil en el taxi.",
+      "tts": "Me he dejao el móvil en el taxi.",
+      "pinyin": "meh eh deh-KHAO el MOH-beel en el TAK-see",
+      "pt": "👂 Dejado, dejao. Third time you have met that hole tonight, and it is the same D."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b06-tarjeta-c",
+      "es": "¿Puedo pagar con tarjeta?",
+      "tts": "¿Puedo pagar con tarjeta?",
+      "pinyin": "PWEH-dhoh pah-GAR kon tar-KHEH-tah",
+      "pt": "👂 Yours, from the first hour on the ground."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-paga-i",
+      "es": "¿Puedo pagá con tarjeta?",
+      "tts": "¿Puedo pagá con tarjeta?",
+      "pinyin": "PWEH-dhoh pah-GAH kon tar-KHEH-tah",
+      "pt": "👂 The R on the end is gone, and the card still works."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e03a-otra-c",
+      "es": "Otra, por favor.",
+      "tts": "Otra, por favor.",
+      "pinyin": "OH-trah, por fah-BOR",
+      "pt": "👂 Yours, and the shortest thing in the whole course."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-otra-m",
+      "es": "Otra, por favó.",
+      "tts": "Otra, por favó.",
+      "pinyin": "OH-trah, por fah-BOH",
+      "pt": "👂 Even three words lose something. It is still one more of the same."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n23",
+      "pt": "Twelve. That is every frame you built in the first eighteen parts, heard the way it actually arrives."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n24",
+      "pt": "Nothing new went in today. What changed is that you can find them now with the pieces missing."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n25",
+      "bloco": "capsula",
+      "pt": "One more thing to notice, and it is why this part exists at all. Watch the speed change on you."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n26",
+      "pt": "A sentence to you, then the next one to the man beside you at twice the speed. Same person, same bar."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n27",
+      "pt": "Nothing about your Spanish changed in that second. The audience changed, and that is all."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n28",
+      "pt": "So when the fast half of the room goes past, stay in it. That is where the recommendation gets made."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n29",
+      "bloco": "permissao",
+      "pt": "You never correct anybody. Plenty of Spain says 'grasias' rather than 'grathias', and nobody there is wrong."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n30",
+      "pt": "And you are allowed to catch one word in five. Take that word, use it, and let the rest go by."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "a01-g01",
+      "pt": "GUIRI ALERT. George here. I spent a week convinced the bloke at my corner bar was saying a word I had never met."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "a01-g02",
+      "pt": "Doh-euro-cuarenta. I looked it up. Twice. It was dos euros cuarenta, which I can count to in my sleep."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n31",
+      "bloco": "espelho",
+      "pt": "The mirror: leaving a clean gap at the end of your sentence is the bit that reads as odd there."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n32",
+      "pt": "There was no gap in what you heard. A pause that size is read as you being finished, and somebody takes it."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n33",
+      "bloco": "piso",
+      "pt": "If all you take from this is that the S can vanish, you will follow more of a bar than most visitors ever do."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a01-r01",
+      "bloco": "recap",
+      "pt": "Last time, and there is still nothing to say. Same two people, same two sentences. Beats, not letters."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Ivan",
+      "audioKey": "a01-abre-i",
+      "es": "¿Me poneh doh cañah y algo pa' picá?",
+      "tts": "¿Me poneh doh cañah y algo pa picá?",
+      "pinyin": "meh POH-neh doh KAH-nyah ee AL-goh pah pee-KAH",
+      "pt": "👂 Two cañas, and something to pick at."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Matilda",
+      "audioKey": "a01-abre-m",
+      "es": "Marchando. ¿Loh dejo aquí?",
+      "tts": "Marchando. ¿Loh dejo aquí?",
+      "pinyin": "mar-CHAN-doh. loh DEH-khoh ah-KEE",
+      "pt": "👂 Coming right up. Shall I leave them here?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n34",
+      "pt": "You got it. One word in there was new — marchando, coming right up. Everything else was already yours."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a01-n35",
+      "pt": "Say nothing, and keep the hand going. Four even beats, whatever falls off the words. Hasta luego."
+    }
+  ],
+
+  "aprofundar": {
+    "titulo": "What the ear module trains, and why nobody speaks in it (optional reading)",
+    "secoes": [
+      {
+        "titulo": "Why there is no speaking in this one",
+        "corpo": "Your brain recognises far more than it can produce, and the gap between the two is the cheapest thing in the whole course to close. You already own the sentences; what you do not own yet is the ability to spot them when a third of the sounds have gone. So this part spends its twelve minutes entirely on the receiving side, and it is the only part of the course where you are asked to say nothing at all. That is deliberate and it is not a day off: recognising a worn-down sentence is a different skill from producing a careful one, and the only way to build it is exposure to the worn-down version of things you already know. This is also why every single sentence in here came out of an earlier part. A new sentence would have made it a vocabulary lesson with a difficult accent on top, and you would have learned neither. And to be plain about the ambition: you will never need to speak like this. You will absolutely need to understand it, because it starts exactly where the hotel English stops.",
+        "exemplos": [
+          {
+            "es": "¿Me pones dos cañas, por favor? → ¿Me poneh doh cañah, por favó?",
+            "pt": "the same order twice — the second one is the one you will actually be standing next to"
+          },
+          {
+            "es": "El pescado está muy bueno. → El pescao está mu bueno.",
+            "pt": "the fish is very good — same fish, same price, one letter shorter"
+          }
+        ]
+      },
+      {
+        "titulo": "The four things that happen to fast Spanish, in the order you meet them",
+        "corpo": "One: the S at the end of a syllable turns into a soft puff of air and then into nothing, so dos cervezas comes out closer to 'doh thervetha'. Two: the 'th' of gracias and cerveza is a plain S in some places — that is seseo, and the RAE and ASALE describe it as standard in the Canaries, in parts of Andalusia and throughout the Americas, with the 'th' distinction holding across most of the rest of peninsular Spain. Three: the D between two vowels drops out, so pescado becomes pescao, cansado becomes cansao, pagado becomes pagao — and this one is ordinary relaxed speech all over Spain, not a southern thing. Four: the R and the L at the end of a word soften, so pagar becomes pagá and para llevar becomes pa' llevá. Item two has a primary source behind it; items one, three and four are the settled description you will find in any dialectology of Spanish, but we have not put a single primary citation next to them, and this is us saying so rather than dressing it up. Nothing in the audio depends on the difference: what the audio asks of you is to recognise your own sentences with holes in them, and holes are holes whoever put them there.",
+        "exemplos": [
+          {
+            "es": "Ya está pagado. → Ya 'tá pagao.",
+            "pt": "it is already paid — two holes in four words, and it still settles the bill"
+          },
+          {
+            "es": "Para llevar, por favor. → Pa' llevá, por favó.",
+            "pt": "to take away, please — the R on the end going, twice in one breath"
+          }
+        ]
+      },
+      {
+        "titulo": "Two different people, not two accents — and why we are being careful about that",
+        "corpo": "The careful recordings in this part are the same voices you have been learning from since part one. The fast recordings are two other people, and that is the honest description of what changed: another person, another rhythm, another speed, the same Spanish. We are deliberately not telling you that the second voice is from Seville, or from anywhere else, because we have not verified that it is, and a course that tells you what a region sounds like on the strength of a recording it did not check is teaching you an accent that may not exist. The distinction matters for a practical reason too. If you file this away as 'southern Spanish', you will switch the skill off the moment you are in the north — and the fast version is what you get at a busy counter in any city in the country, at nine at night, from somebody who has four orders in his head. The rule that survives all of it is the one the hand has been teaching you since part one: the number of beats does not change. Count those and you will find the sentence even when half the consonants have gone.",
+        "exemplos": [
+          {
+            "es": "¿Cuántas cosas más? → ¿Cuánta' cosa' má'?",
+            "pt": "anything else? — five beats either way, three fewer letters"
+          },
+          {
+            "es": "¿Dónde están los aseos? → ¿Dónde 'tán loh aseo'?",
+            "pt": "where are the toilets? — the front of están goes as well as the ends"
+          }
+        ]
+      },
+      {
+        "titulo": "The one thing you should never do with any of this",
+        "corpo": "Never correct anybody. If somebody says 'grasias' where you were taught 'grathias', they are speaking their own language in their own way and there is nothing to fix. The same goes for the dropped S and the missing D: they are not sloppiness and they are not an error, any more than a Londoner saying 'wa'er' has misspelled water. Correcting a native speaker's own pronunciation is the single fastest way to turn a friendly counter into a cold one, and it is a mistake almost exclusively made by people who have just finished a language course. The useful reflex in the other direction is the one from part three: when you genuinely have not got it, you do not ask for it again — again gets you the same speed, one notch louder — you ask for it slower, by name. And when even that fails, take the one word you did catch, use it, and let the rest go. Understanding four words in five is not a partial result at a bar. It is how everybody there is listening, including them.",
+        "exemplos": [
+          {
+            "es": "¿Me puede hablar más despacio, por favor?",
+            "pt": "could you speak more slowly, please — asks for speed, not for repetition"
+          },
+          {
+            "es": "¿Cómo?",
+            "pt": "👂 sorry? — what you will hear them use on each other, and it gets the sentence back at the same speed"
+          }
+        ]
+      }
+    ]
+  }
+}

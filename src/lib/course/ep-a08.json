@@ -1,0 +1,754 @@
+{
+  "id": "a08",
+  "slot": "A08",
+  "nivel": "avancado",
+  "numero": 36,
+  "parte": "A08",
+  "titulo": "So that they ask you back",
+  "subtitulo": "The ten minutes between the first goodbye and the door, the eight words that get a bar to remember you next year, and the pocket list of everything this course would keep if it could only keep twelve things",
+  "moldura": "ganha",
+  "cena": "Half eleven on your last night, the table has been saying goodbye for ten minutes and nobody has stood up, and the man who poured your coffee every morning is behind the bar.",
+  "decisao": "whether the last five minutes of the trip buy you a face they know next year, or you leave the way most visitors leave — through the door, with a nod",
+  "emJogo": "tempo",
+  "permissao": "You are allowed to say you will be back without naming a month. Nobody is holding you to a date, and the sentence is heard as warmth, not as a booking. You are allowed to leave a place you loved without a speech: eight words at the counter do more than a card and a big tip. And you are allowed to finish this course still getting the endings the other way round — guiri is said with affection far more often than not, and the one they remember is the one who said goodbye properly, not the one who said it perfectly.",
+  "permissaoAudioKey": "a08-n18",
+  "espelho": "The 'we must do this again sometime' you say at your own front door and never mean is the bit that reads as odd there. Said in Spain it is taken at face value, and somebody will ask you which weekend.",
+  "frasePiso": "You will say goodbye to a Spanish bar in a way that gets you a face they know next year. Most visitors spend a fortnight in the same place and leave through the door with a nod.",
+  "fichasCulturais": [
+    {
+      "sinal": "Somebody says they are going, and eleven minutes later everybody is still sitting down, saying they are going again.",
+      "suaLeitura": "They are being polite about wanting to leave, and one of us should be brave and stand up first.",
+      "oQueEAli": "The goodbye is a stretch of the evening rather than a moment in it. It opens with a 'bueno', it runs on the same warmth as the rest of the night, and standing up on the first one ends the evening ten minutes early for everybody.",
+      "oQueVoceFaz": "Announce it, then stay in your chair and keep talking until the others start moving. Leave when the third goodbye happens, not the first.",
+      "oQueMelhora": "You get the best ten minutes of the night — the ones where people say the things they did not say over dinner — instead of standing in a doorway with your coat on.",
+      "ondeNaoVale": "Not where a clock is running the room. A work lunch ends, a bar putting the chairs up ends, and a last metro ends — there the first goodbye is the real one and nobody is offended by it.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "a08-n05",
+        "a08-n06",
+        "a08-n07",
+        "a08-n17",
+        "a08-n17b",
+        "a08-n17c"
+      ]
+    },
+    {
+      "sinal": "You are leaving and somebody hands you an open invitation with no date on it — come back, you know where we are.",
+      "suaLeitura": "That is the polite noise people make at a door. It means nothing and I am not meant to act on it.",
+      "oQueEAli": "Said to somebody who has been in and out all week, it is closer to an address being handed over than to a pleasantry. Nobody expects a date; they do expect the sentence to be true.",
+      "oQueVoceFaz": "Answer it as though it were a plan rather than a compliment — say when you are next in the country, even if the when is a year away.",
+      "oQueMelhora": "You come back and you are a face they know, which is the difference between being served and being greeted.",
+      "ondeNaoVale": "Not 'hasta luego' from a shop assistant or a chemist. That one is simply the word for bye, it is said to people who will never be seen again, and it promises nothing at all.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "a08-n10",
+        "a08-vuelve-c",
+        "a08-n11",
+        "a08-n12"
+      ]
+    },
+    {
+      "sinal": "On the last morning you pay for the coffee, nod at the man who has made it every day since Monday, and he nods back and turns to the machine.",
+      "suaLeitura": "We had a week of something and he did not care either way. I was the tourist and now I am gone.",
+      "oQueEAli": "He does not know it is the last one. The week of small greetings only becomes a week to him at the point somebody says out loud that it is ending, and almost no visitor ever says it.",
+      "oQueVoceFaz": "Say it is the last morning, say how the week was, and say you will be back — three short sentences, standing at the counter, with the case by the door.",
+      "oQueMelhora": "The goodbye you get back is a different size from the nod, and next year the second coffee tends to arrive without being asked for.",
+      "ondeNaoVale": "Not in a place with a rota of twenty and a queue behind you. There nobody has served you all week — nobody has served you twice — and a nod is the whole of what is on offer.",
+      "evidencia": "CONSENSO",
+      "audioKeys": [
+        "a08-n08",
+        "a08-n09",
+        "a08-ultima-e"
+      ]
+    }
+  ],
+  "fatosDatados": [
+    {
+      "id": "menu-del-dia-preco",
+      "afirmacao": "The national average for a menú del día is about €14.20 — cheapest in the Canaries, Asturias, Andalusia and Murcia, dearest in the Balearics.",
+      "valor": "€14,20",
+      "fonte": "Hostelería de España + Edenred, divulgado em 2026 — citado em docs/pesquisa-espanha.md §7.2. Mesmo id declarado em ep-i03 (I03), onde o fato nasce; aqui ele volta na cola de bolso, arredondado para «about fourteen euros».",
+      "ano": 2026,
+      "revisarAte": "2027-04-01",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "a08-r03"
+      ]
+    },
+    {
+      "id": "agua-del-grifo-gratis",
+      "afirmacao": "Tap water asked for inside a hospitality business is free by law.",
+      "fonte": "Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular, art. 18.3 (BOE); síntese em docs/pesquisa-espanha.md §7.3. Mesmo id declarado em ep-b10 (B10) e ep-e03a (B11).",
+      "ano": 2022,
+      "revisarAte": "2028-01-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "a08-r04"
+      ]
+    },
+    {
+      "id": "grade-do-dia",
+      "afirmacao": "La cena runs from about 21:00, with kitchens reopening around 20:00-20:30 and last orders about 23:30.",
+      "valor": "21:00 · ~23:30",
+      "fonte": "docs/pesquisa-espanha.md §7.1 — consenso de fontes secundárias (guias gastronômicos e de viagem). O INE não publica hora média da cena. Mesmo id declarado em ep-c01a (I01), onde o fato nasce.",
+      "ano": 2026,
+      "revisarAte": "2028-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": [
+        "a08-r02"
+      ]
+    },
+    {
+      "id": "farmacia-de-guardia-rodizio",
+      "afirmacao": "In every locality at least one pharmacy is on duty outside shop hours, and the rota is posted on the door of every pharmacy, including the shut one you are standing in front of.",
+      "fonte": "docs/pesquisa-espanha.md §7.1 — rede de Colegios Oficiales de Farmacéuticos, prática nacional; fonte oficial em Madri: COFM (cofm.es → Farmacias de guardia); agregador nacional farmacias365.com · Mesmo id declarado em ep-b10 (B10), onde o fato nasce; aqui volta na cola de bolso.",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "FATO",
+      "risco": "baixo",
+      "audioKeys": [
+        "a08-r04"
+      ]
+    },
+    {
+      "id": "tres-precios-lista-obrigatoria",
+      "afirmacao": "A bar may charge different amounts at the counter, at an indoor table and on the terrace, but it has to state that on a displayed price list, and the amount shown is final, with tax already included.",
+      "fonte": "RDL 1/2007, Texto Refundido de la Ley General para la Defensa de los Consumidores, com regulação autonômica de consumo — síntese em docs/pesquisa-espanha.md §7.2. Mesmo id declarado em ep-e03a (B11), onde o fato nasce; aqui volta na cola de bolso.",
+      "ano": 2026,
+      "revisarAte": "2027-07-01",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "a08-r05"
+      ]
+    },
+    {
+      "id": "propina-pratica-por-situacao",
+      "afirmacao": "Spanish practice by situation: coffee or a small beer at the counter, nothing or the loose change; neighbourhood bar or set lunch, round up by fifty cents to a euro; a mid-range restaurant you enjoyed, five to ten per cent, and most leave less or nothing; taxi, round up; hotel porter or room cleaner, one or two euros in cash.",
+      "fonte": "consenso de guias de viagem 2025–2026, registrado em docs/pesquisa-espanha.md §7.3 — a mesma seção marca o valor médio de gorjeta na Espanha como NÃO PÚBLICO (§11.3), e por isso nenhum número médio é afirmado aqui. Mesmo id declarado em ep-i10 (I10), onde o fato nasce; aqui volta na cola de bolso como «round up, never a fifth».",
+      "ano": 2026,
+      "revisarAte": "2028-01-01",
+      "evidencia": "CONSENSO",
+      "risco": "baixo",
+      "audioKeys": [
+        "a08-r06"
+      ]
+    },
+    {
+      "id": "sin-camiseta-barcelona-palma",
+      "afirmacao": "Walking or standing about a public space with no shirt on is €120 to €300 in Barcelona under the civility ordinance in force since February 2026, and €100 to €200 across the whole of Palma de Mallorca, beach and seafront promenade excepted.",
+      "valor": "Barcelona €120–300 · Palma €100–200",
+      "fonte": "docs/pesquisa-espanha.md §7.7(a) — ordenança de civismo de Barcelona (em vigor fev/2026), rotulada FATO; Palma via imprensa espanhola, rotulada FATO · Mesmo id declarado em ep-i09 (I09), onde o fato nasce; aqui volta na cola de bolso SEM valor no áudio.",
+      "ano": 2026,
+      "revisarAte": "2027-02-01",
+      "evidencia": "FATO",
+      "risco": "medio",
+      "audioKeys": [
+        "a08-r08"
+      ]
+    },
+    {
+      "id": "pagamento-no-ato-barcelona",
+      "afirmacao": "Since February 2026 the Barcelona ordinance requires tourists and non-residents to pay on the spot, and the Guàrdia Urbana carry card machines to take it there and then.",
+      "fonte": "Ordenança de civismo de Barcelona, aprovada dez/2025 e em vigor fev/2026 — docs/pesquisa-espanha.md §7.7(e); teto sancionador da ordenança €3.000 · Mesmo id declarado em ep-i09 (I09), onde o fato nasce; aqui só a frase «on the spot, by card».",
+      "ano": 2026,
+      "revisarAte": "2027-02-01",
+      "evidencia": "FATO",
+      "risco": "alto",
+      "audioKeys": [
+        "a08-r08"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n01",
+      "bloco": "aquecimento",
+      "gesto": 4,
+      "tom": "ganha",
+      "pt": "Part thirty-six, and it is the last one. Warm-up: the flick. One touch of the tongue, never a roll."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n02",
+      "pt": "Vol-ve-RÉ. Pró-xi-ma. One tap of the tongue in each, on the r, never two. Hand on your leg, flick twice."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "bloco": "callback",
+      "consulta": [
+        "chegar/sair"
+      ],
+      "promptAudioKey": "a08-p01",
+      "promptPt": "Last afternoon. A shop you walked into to get out of the sun, and you are walking out again with nothing at all. Two things on your way through the door. Speak now.",
+      "audioKey": "e01b-12",
+      "es": "Vale, gracias. Hasta luego.",
+      "pinyin": "BAH-leh, GRAH-thyahs · AHS-tah LWEH-goh",
+      "pt": "both of them, on the way out"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n03",
+      "bloco": "cena",
+      "pt": "Half eleven, your last night, and the table has been saying goodbye for about ten minutes."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n04",
+      "pt": "Nobody has stood up. Listen to it, and do not go looking for words. You are not meant to have them."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-crudo1-e",
+      "es": "Bueno... pues nada, que nos vamos yendo, ¿eh?",
+      "pinyin": "BWEH-noh · pwehs NAH-dhah · keh nohs BAH-mohs YEN-doh",
+      "pt": "👂 Not translated, and you do not need it. Listen for what happens next: nothing.",
+      "tts": "Bueno... pues nada, que nos vamos yendo, ¿eh?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a08-crudo2-c",
+      "es": "Sí, sí, venga. Que mañana hay que madrugar.",
+      "pinyin": "see, see, BEN-gah · keh mah-NYAH-nah ai keh mah-droo-GAR",
+      "pt": "👂 Second one. Still nobody moving.",
+      "tts": "Sí, sí, venga. Que mañana hay que madrugar."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-crudo3-e",
+      "es": "Bueno, pues nada. Venga, venga.",
+      "pinyin": "BWEH-noh, pwehs NAH-dhah · BEN-gah, BEN-gah",
+      "pt": "👂 Third. Still sitting down.",
+      "tts": "Bueno, pues nada. Venga, venga."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n05",
+      "pt": "Three goodbyes, and not one chair moved. That is not people stalling. That is the goodbye itself."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n06",
+      "pt": "It starts at the first bueno and it runs about ten minutes. Nobody is waiting for anybody."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n07",
+      "pt": "Stand up on that first one and you have ended the night for five people. Sit, and you are still in it."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n08",
+      "bloco": "capsula",
+      "tom": "ganha",
+      "pt": "Now the bit almost nobody does, and it costs eight words at a counter on the last morning."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "b18-genial-c",
+      "es": "Ha estado genial. Volveré.",
+      "pinyin": "ah ehs-TAH-dhoh kheh-NYAL · bol-beh-REH",
+      "pt": "It's been great. I'll come back. — yours since part eighteen, and tonight it needs a front end."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n09",
+      "pt": "He does not know it is your last one. Until somebody says so, a week was just a lot of coffees."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-ultima-e",
+      "es": "Mañana nos vamos. Ha estado genial.",
+      "pinyin": "mah-NYAH-nah nohs BAH-mohs · ah ehs-TAH-dhoh kheh-NYAL",
+      "pt": "We leave tomorrow. It's been great. — the fact first, then how it was.",
+      "tts": "Mañana nos vamos. Ha estado genial."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n09b",
+      "pt": "Two short ones. The first is only a fact; the second he has already heard from you all week."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "consulta": [
+        "simpatia/agradecer",
+        "chegar/sair"
+      ],
+      "promptAudioKey": "a08-p02",
+      "promptPt": "The man who has made your coffee every day since Monday is wiping down the counter, and he thinks you are back on Thursday. Put him right, and then tell him how the week was. Speak now.",
+      "audioKey": "a08-ultima-e",
+      "es": "Mañana nos vamos. Ha estado genial.",
+      "pinyin": "mah-NYAH-nah nohs BAH-mohs · ah ehs-TAH-dhoh kheh-NYAL",
+      "pt": "the fact, and then how it was"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n10",
+      "pt": "Watch what comes back over the counter. Do not file it under being nice to the tourist."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a08-vuelve-c",
+      "es": "Pues cuando volváis, ya sabéis dónde estamos.",
+      "pinyin": "pwehs KWAN-doh bol-BAIS · yah sah-BAIS DHON-deh ehs-TAH-mohs",
+      "pt": "👂 'Whenever you're back, you know where we are.' — an address, handed over.",
+      "tts": "Pues cuando volváis, ya sabéis dónde estamos."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n11",
+      "pt": "At home that is a nice noise at a door. Here it is nearer to a key being put in your hand."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n12",
+      "pt": "So answer it like a plan, not like a compliment. There is a whole year to hang it on."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-anoquiene-e",
+      "es": "Nos vemos el año que viene.",
+      "pinyin": "nohs BEH-mohs el AH-nyoh keh BYEH-neh",
+      "pt": "See you next year. — no month, no promise you cannot keep, and it lands as one anyway.",
+      "tts": "Nos vemos el año que viene."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n12b",
+      "pt": "No month anywhere in it, and that is the point. A plan without a diary entry."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "consulta": [
+        "simpatia/convite",
+        "simpatia/agradecer"
+      ],
+      "promptAudioKey": "a08-p03",
+      "promptPt": "He has just told you where they are, for whenever you turn up again. Give him a when instead of a thank you, and do not name a month. Speak now.",
+      "audioKey": "a08-anoquiene-e",
+      "es": "Nos vemos el año que viene.",
+      "pinyin": "nohs BEH-mohs el AH-nyoh keh BYEH-neh",
+      "pt": "a when, not a thank you"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a08-aquiestamos-c",
+      "es": "Pues aquí estamos. Aquí no nos movemos.",
+      "pinyin": "pwehs ah-KEE ehs-TAH-mohs · ah-KEE noh nohs moh-BEH-mohs",
+      "pt": "👂 'We're here. We're not going anywhere.' — the answer that means it was taken seriously.",
+      "tts": "Pues aquí estamos. Aquí no nos movemos."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n13",
+      "pt": "And now the other end of the scale, because the same week has people you owe nothing to."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e01a-18",
+      "es": "Hasta luego.",
+      "pinyin": "AHS-tah LWEH-goh",
+      "pt": "👂 The word for bye. Said to somebody you will never see again, and it promises nothing."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "a08-p04",
+      "promptPt": "Nine floors down in a lift with a woman and a small dog, in silence, and the doors open on your floor. Two words as you step out. Speak now.",
+      "audioKey": "e01a-18",
+      "es": "Hasta luego.",
+      "pinyin": "AHS-tah LWEH-goh",
+      "pt": "two words, and nothing owed"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n14",
+      "pt": "Same two syllables all week, and they cost nothing. The next one is the one that carries weight."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "b18-hasta-e",
+      "es": "Muchas gracias por todo. Hasta la próxima.",
+      "pinyin": "MOO-chahs GRAH-thyahs por TOH-dhoh · AHS-tah lah PROK-see-mah",
+      "pt": "Thank you for everything. Until the next time. — this one is a small promise, and it is heard as one."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "consulta": [
+        "simpatia/agradecer",
+        "quarto/checkout"
+      ],
+      "promptAudioKey": "a08-p05",
+      "promptPt": "The woman on the desk who found you a table on Thursday and lent you an umbrella on Friday. Your case is by the door and the car is outside. Speak now.",
+      "audioKey": "b18-hasta-e",
+      "es": "Muchas gracias por todo. Hasta la próxima.",
+      "pinyin": "MOO-chahs GRAH-thyahs por TOH-dhoh · AHS-tah lah PROK-see-mah",
+      "pt": "for all of it, and the small promise on the end"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n15",
+      "pt": "One more, and it is a wish rather than a goodbye. Said whole, and you never take it apart."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "i08-vayabien-c",
+      "es": "Que vaya bien.",
+      "pinyin": "keh BAH-yah byen",
+      "pt": "All the best. — yours from the night you were invited home. That one is aimed at one person."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "a08-osvaya-e",
+      "es": "Que os vaya muy bien.",
+      "pinyin": "keh ohs BAH-yah mwee byen",
+      "pt": "The version for the pair of them, and the muy is what makes it a send-off.",
+      "tts": "Que os vaya muy bien."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n15b",
+      "pt": "Two of them, learnt whole: one aimed at a person, one at a pair. Nothing inside either moves."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "consulta": [
+        "chegar/sair",
+        "simpatia/agradecer"
+      ],
+      "promptAudioKey": "a08-p06",
+      "promptPt": "The couple who run the tapas place you went back to three nights running are both behind the bar as you leave it for the last time. To the two of them. Speak now.",
+      "audioKey": "a08-osvaya-e",
+      "es": "Que os vaya muy bien.",
+      "pinyin": "keh ohs BAH-yah mwee byen",
+      "pt": "to the two of them, on your way out"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n16",
+      "pt": "And one that is only true tonight, for whoever let you learn on them all fortnight."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "a08-paciencia-c",
+      "es": "Gracias por la paciencia con mi español.",
+      "pinyin": "GRAH-thyahs por lah pah-THYEN-thyah kon mee ehs-pah-NYOL",
+      "pt": "Thanks for putting up with my Spanish. — and yes, they will say your Spanish was fine.",
+      "tts": "Gracias por la paciencia con mi español."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n16b",
+      "pt": "Say it, then wait. What comes back is a flat denial that you ever needed any."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "consulta": [
+        "simpatia/agradecer",
+        "reparo/devagar"
+      ],
+      "promptAudioKey": "a08-p07",
+      "promptPt": "The woman in the bakery slowed right down for you every morning and never once switched to English. Thank her for the thing she actually did. Speak now.",
+      "audioKey": "a08-paciencia-c",
+      "es": "Gracias por la paciencia con mi español.",
+      "pinyin": "GRAH-thyahs por lah pah-THYEN-thyah kon mee ehs-pah-NYOL",
+      "pt": "for the thing he actually did"
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "a08-g01",
+      "bloco": "espelho",
+      "pt": "GUIRI ALERT. George, last one. At my own front door I say we must do this again sometime."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "a08-g02",
+      "pt": "I have never once meant it. Said it to a family in Cádiz and they asked me which weekend."
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "a08-g03",
+      "pt": "They were not being pushy. They took me at my word. Now I only say it when I would turn up."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n17",
+      "pt": "Back to the table that would not stand up. The goodbye there is the last course of the meal."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n17b",
+      "pt": "Cut it short and the whole evening reads as an appointment you have now finished attending."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n17c",
+      "pt": "Where it does not hold: a work lunch ends, and a bar putting the chairs up ends. Clocks win."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n18",
+      "bloco": "permissao",
+      "pt": "You may say you will be back and name no month. Nobody is holding you to it."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n18b",
+      "pt": "And you may finish this course still getting the endings the other way round. Guiri is mostly affection."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r01",
+      "bloco": "recap",
+      "pt": "Now the pocket list. Twelve things, five seconds each, and then your bag is packed."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r02",
+      "pt": "Dinner starts about nine. Turn up at seven and you are having tapas, which is a fine evening anyway."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r03",
+      "pt": "Weekday lunch, the set menu, around fourteen euros. Best-value meal in the country, and you can ask for it."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r04",
+      "pt": "A jug of tap water is free by law. And de guardia is the chemist that is open — the list is on the closed door."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r05",
+      "pt": "Check the price card before you sit on the terrace. Bar, table and terrace may legally cost three different amounts.",
+      "tom": "protege"
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r06",
+      "pt": "Round up, never a fifth. Bag in front of you on the metro, phone off the table, and say no to the rosemary."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r07",
+      "pt": "Real officers never ask to see your wallet. And the complaint form, asked for sitting down, settles most of it."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r08",
+      "pt": "T-shirt on when you leave the sand — Barcelona takes that one on the spot, by card."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r09",
+      "tom": "ganha",
+      "pt": "And the last of the twelve is the cheapest: hola walking in, hasta luego walking out. Every door, every time."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-s00",
+      "pt": "Shadowing, and then two out loud. Over the top of them, flat vowels, one punch a word."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "b18-genial-c",
+      "es": "Ha estado genial. Volveré.",
+      "pinyin": "ah ehs-TAH-dhoh kheh-NYAL · bol-beh-REH",
+      "pt": "It's been great. I'll come back."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Emilio",
+      "audioKey": "a08-osvaya-e",
+      "es": "Que os vaya muy bien.",
+      "pinyin": "keh ohs BAH-yah mwee byen",
+      "pt": "All the very best to you both."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "a08-n19",
+      "bloco": "piso",
+      "tom": "ganha",
+      "pt": "You will get a face they know next year. Most visitors leave through the door with a nod."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-r10",
+      "pt": "Two more out loud, in places we have not stood in tonight, and then that is the lot."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "promptAudioKey": "a08-p08",
+      "promptPt": "The woman on the cheese stall has cut you a sliver every Saturday of your stay, and she has just asked whether you are about next weekend. You are not. Speak now.",
+      "audioKey": "a08-anoquiene-e",
+      "es": "Nos vemos el año que viene.",
+      "pinyin": "nohs BEH-mohs el AH-nyoh keh BYEH-neh",
+      "pt": "further off than she thinks, and still a plan"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Emilio",
+      "promptVoz": "Alice",
+      "promptAudioKey": "a08-p09",
+      "promptPt": "The couple who run the guest house are both in the hall as you come down with the case, and they have you written in until Sunday. Two short ones. Speak now.",
+      "audioKey": "a08-ultima-e",
+      "es": "Mañana nos vamos. Ha estado genial.",
+      "pinyin": "mah-NYAH-nah nohs BAH-mohs · ah ehs-TAH-dhoh kheh-NYAL",
+      "pt": "the fact, and then how it was"
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "a08-rend",
+      "pt": "That is the whole thing. Bag packed, and you know what the room is doing. ¡Buen viaje!"
+    }
+  ],
+  "aprofundar": {
+    "titulo": "The long goodbye, the open invitation, and the twelve things (optional reading)",
+    "secoes": [
+      {
+        "titulo": "Why the goodbye takes ten minutes",
+        "corpo": "The thing to notice is not that people are slow to leave — it is that leaving is treated as a stretch of the evening with its own shape, rather than as the moment the evening stops. It opens with somebody saying 'bueno', usually with a hand on a knee, and 'bueno' here is doing the work that a chair scraping does elsewhere: it announces, and nothing more. What follows is a run of second thoughts, last stories and the things nobody said over dinner, and it is very often the best part of the night. Then somebody actually stands, and the whole table moves at once. If you get up on the first 'bueno' you have not been efficient, you have taken the last ten minutes off five people, and the evening ends looking like a meeting. The practical version: announce it, stay seated, and leave when the second or third goodbye comes round. Useful noises for the run-up, none of which you have to produce: 'venga' (come on, right then), 'que ya es tarde' (it's late now), 'que mañana madrugo' (I've an early start). The exceptions are all clock-shaped — a work lunch, a bar stacking chairs, a last metro — and there the first goodbye is the real one.",
+        "exemplos": [
+          {
+            "es": "Bueno, pues nada.",
+            "pt": "BWEH-noh, pwehs NAH-dhah — 👂 right then, well — the opening of the goodbye, not the end of it"
+          },
+          {
+            "es": "Venga, que mañana madrugo.",
+            "pt": "BEN-gah — 👂 come on, I've an early start tomorrow"
+          }
+        ]
+      },
+      {
+        "titulo": "'Hasta luego', 'hasta la próxima' and 'nos vemos' are three different sizes",
+        "corpo": "'Hasta luego' looks as though it means 'see you later' and commits you to a time. It does not. It is the ordinary word for bye, it is said walking out of a shop to somebody you will never see again, and it is what you say nine times a day for a fortnight. 'Adiós' does the same job and is slightly flatter; in some places it is even used as a greeting in passing. 'Hasta la próxima' — until the next time — is a size up: it is for somebody you have had a week with, and it says there will be a next time. 'Nos vemos' is the same weight and looser in shape: 'nos vemos el año que viene', 'nos vemos en septiembre', 'nos vemos pronto'. And 'que os vaya bien' — or 'que te vaya bien' to one person — is a wish rather than a farewell, said to people who are going off to do something: a shift, a drive, the rest of their week. All of these are learnt whole. Nothing inside them needs to be worked out at a door and nothing inside them ever gets taken apart: 'que te vaya bien' and 'que os vaya bien' are two separate things to carry, one aimed at a person and one at a pair.",
+        "exemplos": [
+          {
+            "es": "Nos vemos en septiembre.",
+            "pt": "nohs BEH-mohs en sep-TYEM-breh — see you in September"
+          },
+          {
+            "es": "Que te vaya bien.",
+            "pt": "keh teh BAH-yah byen — all the best (to one person)"
+          }
+        ]
+      },
+      {
+        "titulo": "The open invitation, and taking it at face value",
+        "corpo": "'Cuando volváis, ya sabéis dónde estamos' — whenever you're back, you know where we are — is not a form of words to be nodded at. In a bar or a shop you have used every day for a week, it is closer to an address being handed over: no date is expected, but the sentence is meant, and answering it with a thank you rather than a when is a small missed opportunity. The reply that works is a plan without a diary entry: 'nos vemos el año que viene'. It costs nothing, it is heard as true, and it is the reason the second coffee turns up unasked the following summer. This runs exactly opposite to the British habit of saying 'we must do this again sometime' as a way of ending a conversation. Said in Spain, that sentence is taken literally, and the honest thing is either to mean it or to use a smaller goodbye instead. One more that belongs in the same drawer: if somebody says 'a ver si nos vemos' — let's see if we can meet up — that is a genuine, if soft, opening, and the way to accept it is to name something, however small.",
+        "exemplos": [
+          {
+            "es": "A ver si nos vemos.",
+            "pt": "ah behr see nohs BEH-mohs — 👂 let's see if we can meet up — soft, and real"
+          },
+          {
+            "es": "Ya sabéis dónde estamos.",
+            "pt": "yah sah-BAIS DHON-deh ehs-TAH-mohs — 👂 you know where we are"
+          }
+        ]
+      },
+      {
+        "titulo": "Saying goodbye to the people who served you all week",
+        "corpo": "The counter you stood at every morning is the cheapest relationship of the trip and the one most visitors leave without touching. The reason is structural rather than rude: he does not know it is your last day. A week of nods only becomes a week at the moment somebody says out loud that it is ending. Three short sentences do all of it, standing up, with the case by the door: 'Mañana nos vamos' — we leave tomorrow; 'Ha estado genial' — it's been great; 'Volveré' or 'nos vemos el año que viene'. Add 'gracias por la paciencia con mi español' for whoever slowed down for you and never switched to English, and expect to be told your Spanish is excellent, which it is not and which is not the point. If you were served by two people, 'que os vaya muy bien' takes them both at once. None of this is a speech: the whole thing is under fifteen seconds, and it is the difference between being a customer and being a face. Where it does not apply is a big place with a rota — twenty staff, a queue behind you, nobody who has served you twice. There a nod is genuinely the whole of what is on offer, and nothing has gone wrong.",
+        "exemplos": [
+          {
+            "es": "Mañana nos vamos. Ha estado genial.",
+            "pt": "mah-NYAH-nah nohs BAH-mohs — we're off tomorrow. It's been great"
+          },
+          {
+            "es": "Gracias por la paciencia con mi español.",
+            "pt": "pah-THYEN-thyah — thanks for putting up with my Spanish"
+          }
+        ]
+      },
+      {
+        "titulo": "The twelve things, written down",
+        "corpo": "The pocket list, in full, for the screenshot, in the order the recap says it. One: dinner runs from about nine, and last orders are around half eleven; at seven you are having tapas, which is a good evening and not the one you booked. Two: the 'menú del día' at weekday lunch averages about €14.20 and is the best value in the country — and while you are at that table, a free tapa with the drink is a Granada habit rather than a Spanish law, so expect nothing and be pleased by everything. Three: 'una jarra de agua del grifo, por favor' — tap water inside a hospitality business has been free by law since 2022. Four: 'de guardia' is the word — there is no chemist open around the clock on every corner, there is a rota, and tonight's list is posted on the door of the closed one. Five: check the printed price list before you sit on the terrace; bar, table and terrace are legally allowed to cost three different amounts. Six: round up; a fifth does not read as generous. Seven: bag in front of you on the metro and phone off the table, particularly on the busiest lines at rush hour. Eight: do not take the sprig of rosemary — hands in pockets, 'no, gracias', keep walking. Nine: real officers do not ask to see your wallet; 'vamos a la comisaría' ends that conversation. Ten: 'la hoja de reclamaciones, por favor', said calmly and sitting down, settles most arguments before it is ever filled in. Eleven: T-shirt on when you leave the sand, can off the street, and in Barcelona that fine is now taken on the spot, by card. Twelve, and the cheapest of the lot: 'hola' walking in and 'hasta luego' walking out, every door, every time, including the doors you will never walk through again. Rules change, so check the official page before you fly — the links are in the app.",
+        "exemplos": [
+          {
+            "es": "Una jarra de agua del grifo, por favor.",
+            "pt": "OO-nah KHAH-rrah deh AH-gwah del GREE-foh — a jug of tap water, please"
+          },
+          {
+            "es": "La hoja de reclamaciones, por favor.",
+            "pt": "lah OH-khah deh rreh-klah-mah-THYOH-nehs — the complaint form, please"
+          }
+        ]
+      }
+    ]
+  }
+}

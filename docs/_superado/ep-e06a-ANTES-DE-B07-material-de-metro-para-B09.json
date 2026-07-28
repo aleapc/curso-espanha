@@ -1,0 +1,407 @@
+{
+  "id": "e06a",
+  "nivel": "basico",
+  "numero": 6,
+  "parte": "6A",
+  "titulo": "Out of the airport, and into the metro",
+  "subtitulo": "The man shouting \"taxi?\" is not a taxi — and your metro ticket does not cover the airport",
+  "steps": [
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n01",
+      "pt": "Part 6A. You've landed, you've got your bag, and you are about to walk through those doors into the most expensive fifty metres of your entire holiday. Warm-up first, thirty seconds. Hand on your leg — the metronome. Four equal taps: Bar-ce-lo-na. Nobody gets paid extra, nobody works for free. Now the flat palm: say 'no'. If the palm tilts, the vowel slid. Say it again — 'no'. Good. Two things are waiting for you out there: a taxi rank that works perfectly, and a man who very much wants you to believe he is part of it. But before any of that, one recall from the card-machine lesson — because it happens in the back of a taxi too. The driver's card reader lights up and cheerfully offers you the fare in pounds. That option costs you roughly a tenth of the fare. Refuse it, in four words."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p01",
+      "promptPt": "The taxi's card machine is offering to charge you in pounds. Tell it to charge you in euros. Speak now.",
+      "audioKey": "e06a-eneuros",
+      "es": "En euros, por favor.",
+      "pinyin": "en EH-oo-rohs, por fah-BOR",
+      "pt": "In euros, please."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n03",
+      "pt": "Right. There are exactly three legitimate ways out of a Spanish airport, and one illegitimate one. One: the taxi rank — 'la parada de taxis'. You join the back of it, like a civilised person. It always works, even at midnight on a Sunday. Two: a ride-hailing app — Uber, Cabify, Bolt. They operate legally in Madrid, but the rule is absolute: you book them in the app and walk to the pick-up point. A ride-hailing car cannot be flagged down in the street, ever. Three: the metro or the local train, which we'll come to. And the illegitimate one: the friendly chap in the arrivals hall who says 'taxi? taxi?'. In Spain a real taxi is never touted. If he approached you, he isn't one. 'No, gracias', and don't break stride. And one warning for Barcelona: the city is in the middle of pushing ride-hailing out of urban trips, so do not build your airport transfer around an app there. The rank always works — that is the entire point of a rank. Your first phrase is two words long, and you say it through the window: '¿Está libre?'"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06a-estalibre",
+      "es": "¿Está libre?",
+      "pinyin": "ehs-TAH LEE-breh",
+      "pt": "Are you free? 👂 the windscreen sign says LIBRE or OCUPADO",
+      "tts": "¿Está libre?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p02",
+      "promptPt": "A taxi is idling at the kerb and you can't tell whether he's waiting for somebody. Two words — ask if he's free. Speak now.",
+      "audioKey": "e06a-estalibre",
+      "es": "¿Está libre?",
+      "pinyin": "ehs-TAH LEE-breh",
+      "pt": "Are you free?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n04",
+      "pt": "Now, where to. Spanish street names will beat you in a fair fight — Calle de Ferraz, Carrer de Mallorca — and you don't want the holiday to open with three goes at a double L. So don't fight it: hold the phone up and say 'take me to this address'. The verb is 'llevar', to take somebody somewhere, and in Spain that double L is a Y — 'YEH-bah'. Never the 'zh' sound you may have picked up from Buenos Aires. '¿Me lleva a esta dirección?' And that's a slot. You drop anything you like on the end of it: this address, the centre, the station, the port."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06a-mellevadir",
+      "es": "¿Me lleva a esta dirección?",
+      "pinyin": "meh YEH-bah ah EHS-tah dee-rek-THYON",
+      "pt": "Can you take me to this address? (phone held up)",
+      "tts": "¿Me lleva a esta dirección?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p03",
+      "promptPt": "You're in the back seat with the hotel's address glowing on your phone. Show him the screen and ask him to take you there. Speak now.",
+      "audioKey": "e06a-mellevadir",
+      "es": "¿Me lleva a esta dirección?",
+      "pinyin": "meh YEH-bah ah EHS-tah dee-rek-THYON",
+      "pt": "Can you take me to this address?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p04",
+      "promptPt": "Now swap the ending. No address yet — you just want dropping in the middle of town. Ask for the centre. Speak now.",
+      "audioKey": "e06a-mellevacentro",
+      "es": "¿Me lleva al centro, por favor?",
+      "pinyin": "meh YEH-bah al THEN-troh, por fah-BOR",
+      "pt": "Can you take me to the city centre, please?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n05",
+      "pt": "Two money questions, and both go BEFORE the wheels turn — because once you're on the ring road you have precisely no leverage. Question one: is it the fixed fare? Madrid runs a flat thirty-three euros between Barajas airport and any address inside the M-30 ring road: twenty-four hours a day, every day, no extras allowed on top of it. Barcelona has no flat fare, but it does have an airport surcharge of about four euros sixty and a minimum of roughly twenty-one euros on anything leaving the airport. So you ask: '¿Es tarifa fija, verdad?' That 'verdad' on the end is doing a lot of quiet work — it turns a question into a small, friendly test. Question two, for every other journey: the meter goes on. '¿Me pone el taxímetro, por favor?' And here's the consequence, which is the only part you must actually remember: if a driver will not put the meter on, you do not negotiate and you do not get charmed. You get out, and you walk back to the rank. Those figures are 2026 — fares move, so check the airport's own page before you fly."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06a-tarifafija",
+      "es": "¿Es tarifa fija, verdad?",
+      "pinyin": "es tah-REE-fah FEE-khah, behr-DAHD",
+      "pt": "It's the fixed fare, isn't it?",
+      "tts": "¿Es tarifa fija, verdad?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06a-taximetro",
+      "es": "¿Me pone el taxímetro, por favor?",
+      "pinyin": "meh POH-neh el tak-SEE-meh-troh, por fah-BOR",
+      "pt": "Could you put the meter on, please?",
+      "tts": "¿Me pone el taxímetro, por favor?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p05",
+      "promptPt": "Madrid Barajas, bags in the boot, door still open. Check that the flat fare is what's happening — with that little 'isn't it' on the end. Speak now.",
+      "audioKey": "e06a-tarifafija",
+      "es": "¿Es tarifa fija, verdad?",
+      "pinyin": "es tah-REE-fah FEE-khah, behr-DAHD",
+      "pt": "It's the fixed fare, isn't it?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p06",
+      "promptPt": "Different journey, across town, and the meter is sitting there dark. Ask him to switch it on. Speak now.",
+      "audioKey": "e06a-taximetro",
+      "es": "¿Me pone el taxímetro, por favor?",
+      "pinyin": "meh POH-neh el tak-SEE-meh-troh, por fah-BOR",
+      "pt": "Could you put the meter on, please?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n06",
+      "pt": "Getting out. 'Pare aquí, por favor' — stop here. And then the one everybody skips: '¿Me da un recibo?' Ask for the receipt. It carries the licence number. Ninety-nine times out of a hundred you'll find it in a coat pocket in March and bin it. The hundredth time it is the only reason anybody ever gives you your money back."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p07",
+      "promptPt": "You can see your hotel door from here, and the fare felt wrong. Stop him, and ask for the receipt. Speak now.",
+      "audioKey": "e06a-pararecibo",
+      "es": "Pare aquí, por favor. ¿Me da un recibo?",
+      "pinyin": "PAH-reh ah-KEE, por fah-BOR. meh dah oon rreh-THEE-boh",
+      "pt": "Stop here, please. Could I have a receipt?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "George",
+      "audioKey": "e06a-guiri",
+      "pt": "Guiri alert. You are inside the terminal, you would very much like to leave the terminal, and there it is on the big board in letters a metre high: SALIDAS. Off you trot — straight back up to departures, where you came in, wheeling your case past the same duty-free for the second time in ten minutes. On a board, in an airport or a station, 'SALIDAS' means departures: things going away. 'SALIDA', singular, over a door, means the way out: that's you going away. Same word, two entirely separate lives. Rule of thumb — plural on a board, that's planes and trains. Singular over a door, that's you. And while we're here: it has never once in the history of Spain meant 'sale'. A sale is 'REBAJAS'."
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n07",
+      "pt": "Right — the metro, and the mental map nobody hands you at the door. There are three separate railways in Spain and they are not the same thing. 'Metro' is the underground: city only, its own ticket. 'Cercanías' — in Catalonia, 'Rodalies' — is commuter rail run by Renfe, lines with a C and a number; different network, different ticket, and it is usually the one that goes to the airport and to the towns nearby. And then long distance, the AVE and its cousins, with reserved seats and luggage through an X-ray, which is all of part 6B. Two questions cover you. First: '¿Este billete vale para el aeropuerto?' — because the airport almost always costs extra and is almost never included. Madrid charges a three-euro supplement on top; in Barcelona the airport metro is its own fare zone at about five ninety each way, and the ten-trip card does not cover it. Second, when you're at a machine that could belong to either railway: '¿Esto es Cercanías o metro?' Ask, and you don't end up stuck at a barrier with the wrong ticket and a queue building behind you."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06a-valeaero",
+      "es": "¿Este billete vale para el aeropuerto?",
+      "pinyin": "EHS-teh bee-YEH-teh BAH-leh PAH-rah el ah-eh-roh-PWEHR-toh",
+      "pt": "Is this ticket valid for the airport?",
+      "tts": "¿Este billete vale para el aeropuerto?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p08",
+      "promptPt": "You fly home tomorrow morning and you're holding a ten-trip card. Ask at the window whether it gets you to the airport. Speak now.",
+      "audioKey": "e06a-valeaero",
+      "es": "¿Este billete vale para el aeropuerto?",
+      "pinyin": "EHS-teh bee-YEH-teh BAH-leh PAH-rah el ah-eh-roh-PWEHR-toh",
+      "pt": "Is this ticket valid for the airport?"
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p09",
+      "promptPt": "Two sets of barriers, two different logos, and the app just said 'take the train'. Ask which railway you're actually standing in. Speak now.",
+      "audioKey": "e06a-cercometro",
+      "es": "¿Esto es Cercanías o metro?",
+      "pinyin": "EHS-toh es thehr-kah-NEE-ahs oh MEH-troh",
+      "pt": "Is this Cercanías or the metro?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n08",
+      "pt": "Buying the thing, and there's good news, recently. Since the first of June 2026 the Madrid metro takes contactless straight at the barrier — the bank card or the phone you already own. That removed an enormous amount of faff, because the paper single in Madrid no longer exists; without contactless you'd have to buy a little red plastic card for about two euros fifty first. Barcelona is a different animal: there the T-casual — ten trips, about thirteen euros — can be shared between several people, which makes it the best value if you're moving around, while contactless is arriving across 2026 at roughly twice the price per trip. So: 'Una T-casual, por favor' in Barcelona, or 'Un billete sencillo, por favor' wherever singles still exist. And one question that saves you a fine: '¿Tengo que validar el billete?' Do I have to validate it? On Cercanías and regional trains you very often do, at a little post before the platform — and an unvalidated ticket is treated as no ticket at all."
+    },
+    {
+      "tipo": "responde",
+      "voz": "Carmen",
+      "promptVoz": "Alice",
+      "promptAudioKey": "e06a-p10",
+      "promptPt": "There's a printed ticket in your hand and an odd little machine on a post before the platform. Ask whether you're supposed to use it. Speak now.",
+      "audioKey": "e06a-validar",
+      "es": "¿Tengo que validar el billete?",
+      "pinyin": "TEN-goh keh bah-lee-DAR el bee-YEH-teh",
+      "pt": "Do I have to validate the ticket?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n09",
+      "pt": "Three signs now — eyes only, nothing to say out loud. Just recognise them and do the thing. Each one has a consequence bolted to it."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06a-s-anden",
+      "es": "ANDÉN",
+      "pinyin": "an-DEN",
+      "pt": "👂 platform — this is the metro's word. Renfe says VÍA instead, and that catches people in 6B.",
+      "tts": "andén"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06a-s-pulse",
+      "es": "PULSE PARA ABRIR",
+      "pinyin": "POOL-seh PAH-rah ah-BREER",
+      "pt": "👂 press to open — on older trains the door will NOT open by itself. Press it, or watch your stop go past.",
+      "tts": "pulse para abrir"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n10",
+      "pt": "Whole scene, at the rank outside Terminal 4. Listen — you understand every word of this now."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06a-d1",
+      "es": "Hola, buenas. ¿Adónde vamos?",
+      "pinyin": "OH-lah, BWEH-nahs. ah-DOHN-deh BAH-mohs",
+      "pt": "— Hello there. Where are we going? (the driver)",
+      "tts": "Hola, buenas. ¿Adónde vamos?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06a-d2",
+      "es": "¿Me lleva a esta dirección, por favor?",
+      "pinyin": "meh YEH-bah ah EHS-tah dee-rek-THYON, por fah-BOR",
+      "pt": "— Can you take me to this address, please? (phone up)",
+      "tts": "¿Me lleva a esta dirección, por favor?"
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Emilio",
+      "audioKey": "e06a-d3",
+      "es": "Muy bien. Son 33 euros, tarifa fija.",
+      "pinyin": "mwee byen. son TRAYN-tah ee tres EH-oo-rohs, tah-REE-fah FEE-khah",
+      "pt": "— Very good. That's 33 euros, fixed fare.",
+      "tts": "Muy bien. Son treinta y tres euros, tarifa fija."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06a-d4",
+      "es": "Es tarifa fija, ¿verdad? Vale, perfecto.",
+      "pinyin": "es tah-REE-fah FEE-khah, behr-DAHD. BAH-leh, pehr-FEK-toh",
+      "pt": "— It's the fixed fare, isn't it? Fine, perfect.",
+      "tts": "Es tarifa fija, ¿verdad? Vale, perfecto."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06a-d5",
+      "es": "Pare aquí, por favor. ¿Me da un recibo?",
+      "pinyin": "PAH-reh ah-KEE, por fah-BOR. meh dah oon rreh-THEE-boh",
+      "pt": "— Stop here, please. Could I have a receipt?",
+      "tts": "Pare aquí, por favor. ¿Me da un recibo?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-s00",
+      "pt": "Shadowing. Say it over the top of her, out loud — don't wait your turn, that's the whole exercise. Three equal taps in 'dirección': di-rec-ción. Every one gets paid."
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "e06a-mellevadir",
+      "es": "¿Me lleva a esta dirección?",
+      "pinyin": "meh YEH-bah ah EHS-tah dee-rek-THYON",
+      "pt": "Can you take me to this address?"
+    },
+    {
+      "tipo": "shadow",
+      "voz": "Carmen",
+      "audioKey": "e06a-taximetro",
+      "es": "¿Me pone el taxímetro, por favor?",
+      "pinyin": "meh POH-neh el tak-SEE-meh-troh, por fah-BOR",
+      "pt": "Could you put the meter on, please?"
+    },
+    {
+      "tipo": "intro",
+      "voz": "Alice",
+      "audioKey": "e06a-n11",
+      "pt": "Getting around, in focus — ninety seconds. One: three railways, three tickets. Metro is the city; Cercanías is the commuter train and usually the airport one; long distance is a different animal and it's next. Two: the airport is never included. Assume a supplement and you'll never be caught out. Three: a ticket rule with no table in it — more than three journeys a day, buy the ten-trip card and share it; going to the airport by metro, budget the supplement separately, each way. Four, and this is a permission, because I have watched people stand in the rain rather than do it: you are allowed to get in a taxi. You are not being fleeced by definition. A metered Spanish taxi is honest, and cheap by British standards, and the rank outside every terminal is regulated to within an inch of its life. The thing you refuse is the man who came looking for you. And five: rules change. Fares, supplements and contactless rollouts all move. Check the operator's own page before you fly — the link is in the app."
+    },
+    {
+      "tipo": "recap",
+      "voz": "Alice",
+      "audioKey": "e06a-rend",
+      "pt": "Part 6A done. You can leave an airport without being adopted by a stranger, get a taxi to run on the meter, and buy the right ticket for the right railway. In 6B, the one that catches absolutely everybody: a Spanish long-distance train is not a train, it's a small airport — security scanner, a metal cage your suitcase has to fit through, and a gate that shuts before departure. Turn up thinking 'British train' and you'll watch yours leave without you. See you there."
+    },
+    {
+      "tipo": "ouvir",
+      "voz": "Carmen",
+      "audioKey": "e06a-estalibre",
+      "es": "¿Está libre?",
+      "pinyin": "ehs-TAH LEE-breh",
+      "pt": "Are you free? — two words, and you're moving."
+    }
+  ],
+  "aprofundar": {
+    "titulo": "Taxis, tickets and the three railways (optional)",
+    "secoes": [
+      {
+        "titulo": "Three railways, and why the wrong ticket traps you at the barrier",
+        "corpo": "Metro = urban underground, its own ticket, run by the city. Cercanías (Rodalies in Catalonia) = Renfe's commuter rail, lines numbered C-1, C-2 and so on: a separate network with a separate ticket, and normally the one serving the airport and the towns nearby. Media Distancia / AVE = long distance: reserved seat, luggage through an X-ray, gate closed before departure (part 6B). The classic failure is buying a metro ticket, walking to a Cercanías barrier, and discovering that the two systems have never once shared a fare.",
+        "exemplos": [
+          {
+            "es": "¿Esto es Cercanías o metro?",
+            "pt": "thehr-kah-NEE-ahs oh MEH-troh — Is this Cercanías or the metro?"
+          },
+          {
+            "es": "¿Qué línea va a Atocha? ¿Tengo que hacer transbordo?",
+            "pt": "keh LEE-neh-ah bah ah ah-TOH-chah — Which line goes to Atocha? Do I have to change?"
+          }
+        ]
+      },
+      {
+        "titulo": "Tickets city by city (2026 figures — verify before you fly)",
+        "corpo": "MADRID: the paper single no longer exists. You either tap a contactless bank card or phone at the barrier (accepted since 1 June 2026) or buy the red 'Tarjeta Transporte Público Multi' — about €2.50, non-personal, rechargeable, ten-year validity. Airport supplement: €3 to enter or leave the airport stations on a single or ten-trip ticket; the Abono Turístico already includes it. BARCELONA: the T-casual is about €13 for ten trips and CAN be shared between several people, but it does NOT cover the airport. Airport by metro line L9 Sud is its own fare zone, roughly €5.90 each way. The Hola Barcelona pass (2 or 3 days) is unlimited across metro, bus, tram, the Montjuïc funicular, FGC and Rodalies, and does include the airport terminals. Contactless on TMB runs about €2.90 a trip with transfers included inside 90 minutes, rolling out progressively through 2026. Rule of thumb with no table in it: more than three rides a day, buy the T-casual and share it; airport by metro, budget the supplement separately each way.",
+        "exemplos": [
+          {
+            "es": "Una T-casual, por favor.",
+            "pt": "OO-nah teh kah-SWAL — A T-casual, please."
+          },
+          {
+            "es": "¿Me recarga la tarjeta, por favor?",
+            "pt": "meh rreh-KAR-gah lah tar-KHEH-tah — Could you top up my card, please?"
+          }
+        ]
+      },
+      {
+        "titulo": "Taxi vs ride-hailing: where each is legal, as of July 2026",
+        "corpo": "A taxi can be hailed in the street or taken from a rank ('parada de taxis'). A ride-hailing car (Uber, Cabify, Bolt) is legally a 'VTC' and can only be booked through the app — it cannot pick you up off the street, which is why anyone offering you a ride in the arrivals hall is neither one nor the other. MADRID: flat fare of €33 between Barajas and any address inside the M-30, 24 hours a day, with no surcharges permitted on top; beyond the M-30 but within 9 km, Tariff 3 applies with a €22 initial charge; Madrid taxi fares rose about 2.36% in 2026. Ride-hailing operates legally, with a reform in force from July 2026 adding anti-counterfeit vehicle stickers, accessibility requirements and a cap on surge pricing. BARCELONA: airport surcharge €4.60, a minimum fare of about €21 on any journey leaving the airport, a fixed €46 between the airport and the Moll Adossat cruise terminal, and fares up about 2.3% in 2026. The Catalan Parliament is processing a bill that would progressively push ride-hailing out of urban transport — in progress, not in force. Either way the advice is the same: don't plan your Barcelona airport transfer around an app. The rank always works.",
+        "exemplos": [
+          {
+            "es": "¿Es tarifa fija al aeropuerto?",
+            "pt": "es tah-REE-fah FEE-khah — Is it the fixed airport fare?"
+          },
+          {
+            "es": "¿Me pone el taxímetro, por favor?",
+            "pt": "el tak-SEE-meh-troh — Could you put the meter on, please?"
+          }
+        ]
+      },
+      {
+        "titulo": "The slot: ¿Me lleva a … ?",
+        "corpo": "'Llevar' means to take somebody somewhere, and '¿Me lleva a…?' is a slot you fill with anything: an address, a place, a station, a port. Note the sound — 'll' is a Y in Spain, so 'lleva' is 'YEH-bah', never the 'zh' of Buenos Aires. This is the 'usted' form, which is the right register for a driver you've never met (bars and shops get 'tú'; uniforms, officials and grey hair get 'usted'). And for any street name with a Spanish double L or a J in it, hold the phone up. The artefact beats the pronunciation every single time.",
+        "exemplos": [
+          {
+            "es": "¿Me lleva a la estación de Atocha?",
+            "pt": "— Can you take me to Atocha station?"
+          },
+          {
+            "es": "¿Me lleva al puerto, por favor?",
+            "pt": "— Can you take me to the port, please?"
+          }
+        ]
+      },
+      {
+        "titulo": "The signs that cost you money if you miss them",
+        "corpo": "SALIDA over a door = way out. SALIDAS on a board = departures. LLEGADAS = arrivals. ANDÉN = platform (metro); VÍA = track (Renfe). CORRESPONDENCIA / TRANSBORDO = interchange. TAQUILLA = ticket office. VALIDAR / RECARGA = validate / top up. PULSE PARA ABRIR = press to open, and on older Cercanías and metro stock the door genuinely will not open on its own. SOLICITE PARADA = request stop, on buses — no button, no stop. AVERIADO / FUERA DE SERVICIO / NO FUNCIONA = out of order. LIBRE / OCUPADO = the little sign in the taxi's windscreen.",
+        "exemplos": [
+          {
+            "es": "AVERIADO",
+            "pt": "ah-beh-RYAH-dhoh — out of order (machine, lift, barrier)"
+          },
+          {
+            "es": "TAQUILLA",
+            "pt": "tah-KEE-yah — ticket office, for when the machine defeats you"
+          }
+        ]
+      }
+    ]
+  },
+  "slot": "B07",
+  "moldura": "ganha"
+}

@@ -1,0 +1,27 @@
+{
+  "_comentario": "¡Dime! (EN → Espanha): voz-guia BRITÂNICA (o corredor britânico é 10,9× o americano) — Alice (educadora) + George (avisos). Fala-alvo em espanhol PENINSULAR — Carmen (Carolina Ruiz) + Emilio. REGRA INV-5: a voz-guia NUNCA fala espanhol e a voz nativa NUNCA fala inglês. Espanhol não é tonal: a exigência é sotaque e naturalidade, não fidelidade tonal — alvo em multilingual_v2, guia em flash. Gate de casting: accent === 'peninsular' (locale es-ES não basta; há andaluzas na biblioteca). Rocío (andaluza, só para o ear module, NUNCA como modelo) ainda não casteada.",
+  "model": "eleven_flash_v2_5",
+  "modelZh": "eleven_multilingual_v2",
+  "narrador": "Xb7hH8MSUJpSbSDYk0k2",
+  "Alice": "Xb7hH8MSUJpSbSDYk0k2",
+  "George": "JBFqnCBsd6RMkjVDRZzb",
+  "Carmen": "h2cd3gvcqTp3m65Dysk7",
+  "Emilio": "ZCh4e9eZSUf41K4cmCEL",
+  "Ivan": "FVkjSdzllLpQkLZaNmJl",
+  "Matilda": "tSdO3lUIODN7SK6eWVhu",
+  "_ear_module": "A01 (ear module) usa Ivan e Matilda, NÃO Carmen e Emilio. Razão: Emilio é o modelo masculino padrão dos outros 23 episódios e no ear module antigo ele fazia TAMBÉM a voz do sul — isso contamina o modelo (o aluno passa a ouvir o padrão como se fosse variação regional) e viola a regra que o próprio syllabus já escrevia: a voz de variação entra SÓ no ear module, nunca como modelo. Ivan e Matilda são as duas ÚNICAS vozes peninsulares da biblioteca pública do ElevenLabs; NENHUMA é verificadamente andaluza, e por isso o A01 NÃO deve alegar sotaque de Sevilha nem de região nenhuma. O que o ear module treina com elas é o que dá para entregar com honestidade: outra pessoa, outro ritmo, outra velocidade, o mesmo espanhol. Se um dia houver voz andaluza verificada, ela substitui aqui sem tocar em mais nada.",
+  "_g14": {
+    "guia": [
+      "Alice",
+      "George"
+    ],
+    "guiaLingua": "en",
+    "alvo": [
+      "Carmen",
+      "Emilio",
+      "Ivan",
+      "Matilda"
+    ],
+    "alvoLingua": "es"
+  }
+}
