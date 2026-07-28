@@ -31,6 +31,7 @@ import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { g14 } from './lib/g14-voz-lingua.mjs';
+import { achaGentilicos, LINGUAS_G6 } from './lib/g6-gentilico.mjs';
 import { collectJobs } from './lib/collect-audio.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -498,25 +499,34 @@ for (const p of partes) {
 // G6 — TRAVA-A: zero adjetivo de povo. Cultura é comportamento com consequência,
 // nunca "os espanhóis são calorosos". Gentílico + cópula = estereótipo.
 // ════════════════════════════════════════════════════════════════════════════
-// A EXCEÇÃO DO NOME DE LÍNGUA, e o discriminador é gramatical, não improvisado.
-//
-// O portão pegava «Spanish is a typewriter: every key hits the paper just as
-// hard» — a metáfora central do B01, onde `Spanish` é a LÍNGUA (a frase anterior
-// é «English is a drum kit»). Em inglês, nome de língua com cópula SINGULAR só
-// pode ser a língua; o POVO exige plural — «the Spanish ARE». Por isso `is` só
-// conta como cópula de povo quando vem depois de «people».
-//
-// Um falso positivo aqui não é ruído: é um portão de catálogo (20 SKUs) mandando
-// o autor reescrever a melhor imagem da parte para satisfazer um regex.
-const GENTILICO =
-  /\b(the )?(spanish|spaniards|thai|chinese|italians?|french|germans?|argentin\w+|brazilians?|british|americans?)\s+(?:people\s+(?:are|is|always|never|tend to|love to|like to)|are|always|never|tend to|love to|like to)\b|\b(os |as )?(espanhóis|espanhola?s|tailandeses|chineses|italianos|franceses|alemães|argentinos|brasileiros)\s+(são|sempre|nunca|costumam|adoram|gostam de)\b/i;
-
-for (const p of partes) {
-  for (const s of p.j.steps || []) {
-    const txt = s.pt || '';
-    const m = txt.match(GENTILICO);
-    if (m) erros.push(`G6: ${p.f} ${s.audioKey || ''} — adjetivo de povo: "${m[0]}"`);
+// O regex vive em scripts/lib/g6-gentilico.mjs, POR LÍNGUA da narração — o SKU
+// alemão narra em alemão, e um regex só de inglês/português dava VERDE sem olhar.
+// A língua vem do `_g14.guiaLingua` do audio.config, que o SKU já declara.
+const linguaGuia = (() => {
+  try {
+    const c = JSON.parse(readFileSync(join(root, 'audio.config.json'), 'utf8'));
+    return c._g14?.guiaLingua;
+  } catch {
+    return undefined;
   }
+})();
+
+if (!linguaGuia) {
+  avisos.push('G6: audio.config não declara _g14.guiaLingua — não sei em que língua checar estereótipo. Portão DESLIGADO.');
+} else if (!LINGUAS_G6.includes(linguaGuia)) {
+  avisos.push(
+    `G6: não sei checar estereótipo em "${linguaGuia}" — acrescente as regras em scripts/lib/g6-gentilico.mjs. Portão DESLIGADO nesta língua.`
+  );
+} else {
+  let n = 0;
+  for (const p of partes)
+    for (const s of p.j.steps || []) {
+      for (const g of achaGentilicos(s.pt || '', linguaGuia)) {
+        erros.push(`G6: ${p.f} ${s.audioKey || ''} — adjetivo de povo: "${g}"`);
+        n++;
+      }
+    }
+  medidas.push(`G6 estereótipo (${linguaGuia}): ${n} ocorrência(s) — teto 0`);
 }
 
 // ════════════════════════════════════════════════════════════════════════════
@@ -1007,10 +1017,40 @@ const formasPath = join(dir, 'formas-verbais.json');
 const ANUNCIA_TROCA =
   /\b(now try (it )?with|same sentence,? but|same phrase,? but|now swap|just swap|swap (it |the )?(word|out)|now change the (word|noun)|replace [a-z' ]{1,15} with)\b|\b(mesma frase|só troque|agora troque|troque (a palavra|apenas)|substitua)\b|\b(gleicher satz|jetzt mit)\b/i;
 
-// Sinônimos que competem com o nome canônico da peça. O vocabulário instável é
-// o que faz o aluno achar que "the frame", "the pattern" e "the formula" são
-// três coisas diferentes — e a partir daí ele para de reconhecer a mesma peça
-// voltando. Os canônicos são "molde" (PT-BR) e "the frame" (EN).
+// O NOME CANÔNICO DA PEÇA É ESTÁVEL POR SKU, e vem do moldes.json — não é fixo
+// no script. PT-BR "molde", EN "the frame", DE "Baustein" (tijolinho de encaixe,
+// que casa com a metáfora Lego do método). Fixar "the frame" aqui acusou 11 das
+// 12 partes alemãs de "nunca nomear o molde", quando elas nomeiam "Baustein" 16
+// vezes — o portão cobrava uma palavra que não existe na língua do curso.
+const vocabMolde = (() => {
+  try {
+    const c = JSON.parse(readFileSync(moldesPath, 'utf8'));
+    return c._regras?.vocabulario_molde?.termo;
+  } catch {
+    return undefined;
+  }
+})();
+// slot → conjunto de moldes de que ele é CASA, lido do roster. É a fonte de
+// verdade sobre quem tem que ensinar os quatro tempos.
+const ehCasa = (() => {
+  const m = new Map();
+  try {
+    const c = JSON.parse(readFileSync(moldesPath, 'utf8'));
+    for (const md of c.moldes || [])
+      if (md.casa) (m.get(md.casa) || m.set(md.casa, new Set()).get(md.casa)).add(md.id);
+  } catch {}
+  return m;
+})();
+// Termo canônico do SKU, mais os dois universais que sempre valem (o corpus tem
+// PT e EN). Regex que casa "nomear a peça".
+const NOMEIA_MOLDE = new RegExp(
+  `\\b(the frame|molde${vocabMolde ? '|' + vocabMolde.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') : ''})\\b`,
+  'i'
+);
+
+// Sinônimos que competem com o nome canônico. O vocabulário instável é o que faz
+// o aluno achar que "the frame", "the pattern" e "the formula" são três coisas —
+// e aí ele para de reconhecer a mesma peça voltando.
 const SINONIMO_DE_MOLDE =
   /\b(the (pattern|template|formula|structure|building block|sentence frame))\b|\b(o (padrão|gabarito|modelo)|a (fórmula|estrutura))\b/i;
 
@@ -1071,10 +1111,14 @@ const SINONIMO_DE_MOLDE =
       }
     }
 
-    // Vocabulário de molde estável — só faz sentido conferir em parte que ensina
-    // molde, e por isso este braço acende junto com o G9.
-    const ensinaMolde = (p.j.steps || []).some((s) => s.molde) || (Array.isArray(p.j.moldes) && p.j.moldes.length);
-    if (!ensinaMolde) continue;
+    // "Nomear a peça" é o primeiro dos quatro tempos, e ele é obrigação da CASA —
+    // onde o molde nasce — não de todo slot que o toca. Um REDISPARO reusa o molde
+    // com encaixe novo, sem reapresentação (é a própria definição de redisparo);
+    // cobrar dele o batismo acusava B15 e B17 do alemão, que declaram em voz alta
+    // "quatro Bausteine das partes anteriores trabalharam, nenhum era novo".
+    // A casa é o que o roster diz ser casa — não o que a parte declara sobre si.
+    const casasDoSlot = ehCasa.get(p.j.slot);
+    if (!casasDoSlot || !casasDoSlot.size) continue;
     // O prompt de `responde` também é a guia falando — medido no corpus: é
     // dentro de um `promptPt` que está o "swap the middle of the template" que
     // batiza a peça de três jeitos na mesma parte. Deixar o prompt de fora
@@ -1092,9 +1136,12 @@ const SINONIMO_DE_MOLDE =
             'e ele não muda de parte para parte'
         );
     }
-    const nomeia = falaDaGuia.some(([, txt]) => /\bthe frame\b|\bmolde\b/i.test(String(txt || '')));
+    const nomeia = falaDaGuia.some(([, txt]) => NOMEIA_MOLDE.test(String(txt || '')));
     if (!nomeia)
-      erros.push(`G15: ${p.f} ensina molde e nunca o NOMEIA — o primeiro dos quatro tempos é nomear a peça`);
+      erros.push(
+        `G15: ${p.f} ensina molde e nunca o NOMEIA — o primeiro dos quatro tempos é nomear a peça ` +
+          `(o termo do SKU: ${vocabMolde ? `"${vocabMolde}"` : '"the frame"/"molde"'})`
+      );
   }
   if (!emUso(comEncaixe))
     avisos.push(
