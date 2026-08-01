@@ -28,6 +28,14 @@ const REGRAS = {
     /\b(die |der )?(Spanier(?:in)?(?:nen)?|Deutsche[nr]?|Katalanen|Basken|Galicier|Italiener(?:in)?(?:nen)?|Franzosen|Französin(?:nen)?|Chinesen|Thailänder(?:in)?(?:nen)?)\s+(sind|sein|mögen|lieben|hassen|neigen|immer|nie|meistens|typischerweise)\b/,
     // Adjetival: "typisch spanisch", "die spanische Art ist…"
     /\b(typisch\s+(spanisch|deutsch|italienisch|französisch|katalanisch)|die\s+(spanische|deutsche|italienische)\s+Art)\b/i
+  ],
+  fr: [
+    // Gentílico + cópula: "les Espagnols sont", "les Français aiment". Acrescentado
+    // ANTES de o primeiro autor francês escrever — a lição do alemão foi que um
+    // portão sem a língua do SKU dá verde sem verificar.
+    /\b(les |l['’])?(espagnol|espagnole|français|française|catalan|catalane|basque|italien|italienne|allemand|chinois)s?\s+(sont|aiment|adorent|détestent|ont tendance|sont toujours|ne sont jamais|typiquement)\b/i,
+    // Adjetival: "typiquement espagnol", "à l'espagnole"
+    /\b(typiquement\s+(espagnol|français|catalan|italien)|à l['’]espagnol[e]?)\b/i
   ]
 };
 

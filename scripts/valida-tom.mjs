@@ -142,7 +142,23 @@ const LEXICO_PERDA_PT =
   /\b(golpe|multa\w*|roubo|roubad\w+|furto|batedor|perigo\w*|emergênci\w+|hospital|farmácia|doente|doença|alergi\w+|polícia|perdid\w+|errad\w+|problema|cuidado|reclamaç\w+|pânico|não funciona|não é um)\b/i;
 const LEXICO_PERDA_DE =
   /\b(Betrug|Strafe\w*|Bußgeld|gestohlen|Diebstahl|Gefahr\w*|Notfall|Krankenhaus|Apotheke|Allergie|Polizei|verloren|falsch|Problem|Vorsicht|Panik|funktioniert nicht)\b/i;
-const cheiraPerda = (t) => LEXICO_PERDA.test(t) || LEXICO_PERDA_PT.test(t) || LEXICO_PERDA_DE.test(t);
+const LEXICO_PERDA_IT =
+  /\b(truffa|multa\w*|furto|rubat\w+|smarrit\w+|pers[oi]\b|perder\w*|sbagliat\w+|rott[oaie]|non funziona|pericol\w*|emergenz\w+|ospedale|farmacia|malat\w+|allergi\w+|polizia|evitare|attenzione|problema|rischi\w*|reclam\w+|panico|scadenz\w+|denunc\w+|non è un[oa]?)\b/i;
+const LEXICO_PERDA_FR =
+  /\b(arnaqu\w*|amende\w*|vol\b|volé\w*|pickpocket|danger\w*|urgence|hôpital|pharmacie|malad\w+|allergi\w+|police|perdu\w*|fauss?e?|erreur|problème|attention|panique|(ne )?marche pas|escroc\w*)\b/i;
+// O título é na LÍNGUA DO COMPRADOR (a narração). Rodar todos os léxicos juntos
+// dava falso positivo entre línguas — o «con» inglês (con man/golpe) tropeçava
+// no «con» PREPOSIÇÃO italiana. Roteia por guiaLingua; sem língua conhecida, cai
+// no comportamento antigo (não afrouxa). Mesma lição de G6/G14 (portão que não
+// lê a língua do SKU é decoração).
+const _lgPerda = (() => {
+  try { return JSON.parse(readFileSync(join(root, 'audio.config.json'), 'utf8'))._g14?.guiaLingua; }
+  catch { return undefined; }
+})();
+const _LEXICOS_PERDA = { en: LEXICO_PERDA, pt: LEXICO_PERDA_PT, de: LEXICO_PERDA_DE, it: LEXICO_PERDA_IT, fr: LEXICO_PERDA_FR };
+const cheiraPerda = _LEXICOS_PERDA[_lgPerda]
+  ? (t) => _LEXICOS_PERDA[_lgPerda].test(t)
+  : (t) => LEXICO_PERDA.test(t) || LEXICO_PERDA_PT.test(t) || LEXICO_PERDA_DE.test(t);
 
 // ── carga dos episódios ─────────────────────────────────────────────────────
 const partes = [];
