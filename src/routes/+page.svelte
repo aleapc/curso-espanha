@@ -5,6 +5,9 @@
   import { examDoNivel, quizDoEpisodio } from '$lib/course/quiz-nav';
   import { store, isDone, PROFILES } from '$lib/state.svelte';
   import { encodeSync, importSync, whatsappUrl } from '$lib/sync';
+  import { curso } from '$lib/curso.config';
+
+  const translatorHref = `https://translate.google.com/?sl=${curso.translatorPair.sl}&tl=${curso.translatorPair.tl}&op=translate`;
 
   const perfil = $derived(PROFILES.find((p) => p.id === store.current)!);
 
@@ -79,7 +82,7 @@
 </a>
 
 <a
-  href="https://translate.google.com"
+  href={translatorHref}
   target="_blank"
   rel="noopener"
   class="mt-4 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-md ring-1 ring-black/5"
@@ -98,6 +101,20 @@
   💡 Set it up BEFORE you fly. It saves you on small print — but it will not order your beer, and it
   will not tell you that the same drink costs three prices.
 </p>
+
+<a
+  href="{base}/bolso/"
+  class="mt-3 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-md ring-1 ring-black/5"
+>
+  <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-salvia/15 text-2xl">💱</span>
+  <span class="min-w-0 flex-1">
+    <span class="block font-bold leading-tight text-carvao">Traveler's pocket</span>
+    <span class="block text-xs text-carvao/60"
+      >Currency, plug type, and the emergency number — works with the phone in airplane mode.</span
+    >
+  </span>
+  <span class="shrink-0 text-lg text-carvao/30">→</span>
+</a>
 
 {#each niveis as nivel}
   {@const feitas = nivel.episodios.reduce((n, e) => n + feitasDe(e), 0)}
