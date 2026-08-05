@@ -1,0 +1,47 @@
+{
+  "marca": "¡Dime!",
+  "cabecalho": "Spain, at a glance",
+  "titulo": "Traveler's pocket",
+  "subtitulo": "The essentials stay available in airplane mode.",
+  "rotulos": {
+    "cambio": "Currency converter",
+    "valorEm": "Amount in",
+    "dataCotacao": "Rate date",
+    "avisoCotacao": "Reference only. Check your card or bank rate before spending.",
+    "tomadas": "Plugs & power",
+    "emergencia": "Emergency",
+    "ligar": "Call",
+    "saberUtil": "Useful to know"
+  },
+  "mesmaMoeda": "Spain uses the euro — the same currency you spend at home. Nothing to convert.",
+  "moedas": {
+    "EUR": { "flag": "🇪🇺", "locale": "es-ES" },
+    "GBP": { "flag": "🇬🇧", "locale": "en-GB" },
+    "USD": { "flag": "🇺🇸", "locale": "en-US" }
+  },
+  "cambio": {
+    "date": "2026-05-15",
+    "rates": {
+      "GBP": 0.86,
+      "USD": 1.16
+    }
+  },
+  "emergencia": [
+    { "numero": "112", "oQue": "Everything — ambulance, fire, police. English-speaking operators are available, and using English is what the line is for." },
+    { "numero": "091", "oQue": "Policía Nacional — crime in towns and cities." },
+    { "numero": "062", "oQue": "Guardia Civil — roads, motorways and rural areas." },
+    { "numero": "092", "oQue": "Policía Local — municipal police." }
+  ],
+  "saberUtil": [
+    { "emoji": "💧", "texto": "Tap water is free by law in every bar and restaurant — ask for \"una jarra de agua del grifo\". Refusing to serve it is not allowed." },
+    { "emoji": "☕", "texto": "The same drink can cost three different prices at the bar, at a table and on the terrace. That is legal, but the price list has to be posted — read it before you sit down outside." },
+    { "emoji": "💳", "texto": "If a card machine or cash machine offers to charge you in pounds or dollars, refuse and choose euros. That conversion typically adds around 10–13% on top." },
+    { "emoji": "💶", "texto": "Cards work almost everywhere in cities, but no business is obliged to take one. Carry €40–60 in small notes — a €50 note in a €3 bar is routinely refused." },
+    { "emoji": "🧾", "texto": "Waiters here are salaried, so tipping is extra, never the wage. Rounding up is the whole system and leaving nothing is not rude. If the card machine suggests a tip, it is voluntary — look for \"Otra cantidad\" or \"Sin propina\"." },
+    { "emoji": "🕐", "texto": "Lunch typically runs 14:00–15:30 and dinner rarely starts before 21:00; kitchens close in between. At 19:00 you are not having dinner, you are having tapas — and that is a perfectly good plan." },
+    { "emoji": "👜", "texto": "The risk to you is pickpocketing, not violence, and it happens in daylight in crowds — on the metro, at busy sights. Bag in front on the train, phone off the terrace table, bag never on the back of your chair." },
+    { "emoji": "🚔", "texto": "Real Spanish police never ask to see your wallet. If someone in plain clothes shows a badge and asks for it, keep it and say \"Vamos a la comisaría\" — the real officer agrees, the fake one leaves." },
+    { "emoji": "💊", "texto": "Pharmacists here triage and advise at no charge — sunburn, sore throat, bites, upset stomach. If the pharmacy is shut, read the door: it names the \"farmacia de guardia\" that is open tonight." },
+    { "emoji": "🏨", "texto": "Some regions charge a tourist tax per person per night that is not in your online booking price. It is collected at the hotel desk, sometimes in cash. It is a real tax, not a scam." }
+  ]
+}

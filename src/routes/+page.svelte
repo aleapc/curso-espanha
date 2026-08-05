@@ -66,7 +66,7 @@
     ¡Hola! 👋
   </h1>
   <p class="mt-1 text-carvao/70">
-    Survival Spanish and culture for Spain — listen, say it out loud, and don't get had.
+    Survival Spanish and culture for Spain — listen, say it out loud, and don’t get had.
   </p>
 </section>
 
