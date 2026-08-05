@@ -1,0 +1,437 @@
+diff --git a/docs/MATRIZ-CORREDORES.html b/docs/MATRIZ-CORREDORES.html
+index a9a31a9..a54b453 100644
+--- a/docs/MATRIZ-CORREDORES.html
++++ b/docs/MATRIZ-CORREDORES.html
+@@ -1,5 +1,11 @@
++<!doctype html>
++<html lang="pt-BR">
++<head>
++<meta charset="utf-8">
++<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Kit de Bordo — Mapa de Corredores</title>
+ <style>
++  html,body{margin:0;min-height:100vh;background:var(--ground);color:var(--ink);-webkit-text-size-adjust:100%}
+   :root{
+     --ground:#e9edef; --paper:#f7f9fa; --cell:#fbfcfd; --ink:#182029; --ink-2:#465563; --muted:#6f7d89;
+     --line:#d3dade; --line-2:#c1cacf; --accent:#0e5a5a;
+@@ -72,8 +78,13 @@
+   td.np{color:var(--muted);font-size:10px;font-family:var(--sans)}
+   td.blank{color:var(--line-2)}
+   td.home{background:repeating-linear-gradient(45deg,transparent,transparent 4px,color-mix(in srgb,var(--muted) 22%,transparent) 4px,color-mix(in srgb,var(--muted) 22%,transparent) 5px);color:var(--muted);font-family:var(--sans);font-size:10px}
+-  td.sku{box-shadow:inset 0 0 0 2px var(--sc)}
+-  td.sku .badge{position:absolute;top:2px;right:2px;width:7px;height:7px;border-radius:50%;background:var(--sc)}
++  td.sku{font-weight:800;box-shadow:inset 0 0 0 3px color-mix(in srgb,var(--sc) 60%,#000)}
++  td.sku.sk-live{background:var(--live)!important;color:#fff!important}
++  td.sku.sk-next{background:var(--next)!important;color:#fff!important}
++  td.sku.sk-prod{background:var(--prod)!important;color:#fff!important}
++  td.sku .badge{position:absolute;top:-1px;right:2px;font-size:12px;font-weight:900;line-height:1.2;color:#fff;text-shadow:0 1px 2px rgba(0,0,0,.4)}
++  .theme-toggle{position:fixed;top:12px;right:12px;z-index:9;font-family:var(--sans);font-size:12px;padding:.4rem .7rem;border-radius:8px;border:.5px solid var(--line-2);background:var(--paper);color:var(--ink);cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12)}
++  .theme-toggle:hover{border-color:var(--accent)}
+   .caveat{margin:1.1rem 0 0;padding:.8rem 1rem;border-left:3px solid var(--accent);background:var(--paper);border-radius:0 10px 10px 0;font-size:13px;color:var(--ink-2)}
+   .caveat b{color:var(--ink);font-weight:500}
+   .road{margin-top:1.8rem}
+@@ -86,7 +97,9 @@
+   footer{margin-top:2rem;padding-top:1rem;border-top:.5px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.6}
+   .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+ </style>
+-
++</head>
++<body>
++<button id="themeToggle" class="theme-toggle" aria-label="Alternar tema claro/escuro">◐ tema</button>
+ <div class="wrap">
+   <h2 class="sr-only">Matriz 15×15 de país de origem por país de destino, com turistas em milhões por ano em 2024, cada célula rotulada por fonte e série estatística, e o status de produção dos cursos do Kit de Bordo sobreposto.</h2>
+   <div class="eyebrow">Kit de Bordo · guia mestre de desenvolvimento</div>
+@@ -96,9 +109,9 @@
+   <div class="kpis" id="kpis"></div>
+ 
+   <div class="legend">
+-    <span class="grp"><span class="fr" style="border-color:var(--live)"></span>no ar</span>
+-    <span class="grp"><span class="fr" style="border-color:var(--prod)"></span>em produção</span>
+-    <span class="grp"><span class="fr" style="border-color:var(--next)"></span>próximo</span>
++    <span class="grp"><span class="sw" style="background:var(--live)"></span><b>✓ no ar</b></span>
++    <span class="grp"><span class="sw" style="background:var(--next)"></span><b>▶ próximo</b></span>
++    <span class="grp"><span class="sw" style="background:var(--prod)"></span>● em produção</span>
+     <span class="grp">tamanho:<span class="rampbar"><i style="background:var(--m1)"></i><i style="background:var(--m2)"></i><i style="background:var(--m3)"></i><i style="background:var(--m4)"></i><i style="background:var(--m5)"></i><i style="background:var(--m6)"></i></span>0,3→20 M</span>
+     <span class="grp"><i>~n</i> = inferência</span>
+     <span class="grp">n/p = não público</span>
+@@ -114,8 +127,8 @@
+     <div class="steps">
+       <div class="step" style="--st:var(--live)"><div class="tag">no ar</div><div class="h">Espanha · EN e DE</div><div class="d">Os dois maiores corredores pagos da coluna: 18,4 M de britânicos e 11,9 M de alemães. O acervo espanhol já está gravado.</div></div>
+       <div class="step" style="--st:var(--live)"><div class="tag">no ar</div><div class="h">Espanha · FR</div><div class="d">12,9 M de franceses sobre o acervo espanhol reusado; só voz-guia (Céline + Enrick), narração e /kit novos. No ar.</div></div>
+-      <div class="step" style="--st:var(--next)"><div class="tag">próximo</div><div class="h">Espanha · IT</div><div class="d">5,5 M de italianos. Fecha a coluna Espanha (EN+DE+FR+IT) pelo custo de uma voz-guia — o último reuso barato antes da França.</div></div>
+-      <div class="step" style="--st:var(--accent)"><div class="tag">2º acervo</div><div class="h">França como destino</div><div class="d">A próxima coluna a abrir: DE 7,7 · GB 7,3 · NL 5,9 · BE 5,0… um acervo francês novo serve o bloco inteiro. É onde o pipeline de imagens do Mac ganha trabalho de verdade.</div></div>
++      <div class="step" style="--st:var(--live)"><div class="tag">no ar</div><div class="h">Espanha · IT</div><div class="d">5,5 M de italianos sobre o acervo espanhol reusado; só voz-guia (Valeria + Fabio), narração e /kit novos. <b>Fecha a coluna Espanha 4/4</b> pelo custo de uma voz-guia. No ar.</div></div>
++      <div class="step" style="--st:var(--next)"><div class="tag">próximo · 2º acervo</div><div class="h">França como destino</div><div class="d">A próxima coluna a abrir: DE 7,7 · GB 7,3 · NL 5,9 · BE 5,0… um acervo francês novo serve o bloco inteiro. É onde o pipeline de imagens do Mac ganha trabalho de verdade.</div></div>
+     </div>
+   </section>
+ 
+@@ -124,7 +137,7 @@
+ 
+ <script>
+ const DATA = {"origens":[["Reino Unido",103.4],["Alemanha",125],["França",59.9],["EUA",178.6],["Itália",35.8],["Espanha",32.7],["Países Baixos",28.6],["Bélgica",26.9],["Suíça",21.5],["Brasil",19.9],["China",252.1],["Japão",14.3],["Coreia",32.3],["Canadá",43.4],["Rússia",38.7]],"destinos":[["França",102,"TCE"],["Espanha",93.8,"TF"],["EUA",72.3,"TF"],["Türkiye",60.5,"TF"],["Itália",57.7,"TCE"],["México",45,"TF"],["Reino Unido",41.7,"TF"],["Alemanha",37.5,"PERN"],["Japão",36.8,"TF"],["Grécia",35.9,"TF"],["Tailândia",35.5,"TF"],["Áustria",32.2,"TCE"],["Portugal",29,"TF"],["China",36,"NP"],["Arábia Saudita",29.7,"TF"]],"grid":{"França":{"Alemanha":{"v":7.672,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":7.303,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":5.888,"q":"FATO_COM_FONTE"},"Bélgica":{"v":5.021,"q":"FATO_COM_FONTE"},"EUA":{"v":4.68,"q":"FATO_COM_FONTE"},"Espanha":{"v":3.78,"q":"FATO_COM_FONTE"},"Suíça":{"v":3.103,"q":"FATO_COM_FONTE"},"Itália":{"v":3.097,"q":"FATO_COM_FONTE"},"China":{"v":0.804,"q":"FATO_COM_FONTE"},"Canadá":{"v":0.66,"q":"FATO_COM_FONTE"},"Brasil":{"v":0.543,"q":"FATO_COM_FONTE"},"Japão":{"v":0.423,"q":"FATO_COM_FONTE"},"Coreia":{"v":0.313,"q":"FATO_COM_FONTE"},"Rússia":{"v":0.21,"q":"FATO_COM_FONTE"}},"Espanha":{"Reino Unido":{"v":18.382,"q":"FATO_COM_FONTE"},"França":{"v":12.923,"q":"FATO_COM_FONTE"},"Alemanha":{"v":11.939,"q":"FATO_COM_FONTE"},"Itália":{"v":5.498,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":4.785,"q":"FATO_COM_FONTE"},"EUA":{"v":4.267,"q":"FATO_COM_FONTE"},"Bélgica":{"v":3.06,"q":"FATO_COM_FONTE"},"Rússia":{"v":null,"q":"NAO_PUBLICO"},"China":{"v":null,"q":"NAO_PUBLICO"},"Japão":{"v":null,"q":"NAO_PUBLICO"},"Coreia":{"v":null,"q":"NAO_PUBLICO"},"Canadá":{"v":null,"q":"NAO_PUBLICO"},"Espanha":{"v":null,"q":"NAO_PUBLICO"},"Suíça":{"v":2.123,"q":"FATO_COM_FONTE"}},"EUA":{"Canadá":{"v":20.241,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":4.037,"q":"FATO_COM_FONTE"},"Alemanha":{"v":1.995,"q":"FATO_COM_FONTE"},"Brasil":{"v":1.91,"q":"FATO_COM_FONTE"},"Japão":{"v":1.844,"q":"FATO_COM_FONTE"},"França":{"v":1.706,"q":"FATO_COM_FONTE"},"Coreia":{"v":1.7,"q":"FATO_COM_FONTE"},"China":{"v":1.626,"q":"FATO_COM_FONTE"},"Itália":{"v":1.124,"q":"FATO_COM_FONTE"},"Espanha":{"v":0.897,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":0.619,"q":"FATO_COM_FONTE"},"Bélgica":{"v":0.284,"q":"FATO_COM_FONTE"},"Rússia":{"v":0.088,"q":"FATO_COM_FONTE"},"EUA":{"v":null,"q":"NAO_PUBLICO"}},"Türkiye":{"EUA":{"v":1.442,"q":"FATO_COM_FONTE"},"Alemanha":{"v":6.62,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":4.433,"q":"FATO_COM_FONTE"},"China":{"v":0.409,"q":"INFERENCIA"},"França":{"v":1.1,"q":"INFERENCIA"},"Canadá":{"v":0.302,"q":"INFERENCIA"},"Rússia":{"v":6.71,"q":"FATO_COM_FONTE"},"Itália":{"v":0.719,"q":"FATO_COM_FONTE"},"Coreia":{"v":0.207,"q":"INFERENCIA"},"Espanha":{"v":0.383,"q":"INFERENCIA"},"Países Baixos":{"v":1.2,"q":"INFERENCIA"},"Japão":{"v":0.135,"q":"INFERENCIA"},"Bélgica":{"v":0.65,"q":"INFERENCIA"}},"Itália":{"Alemanha":{"v":14.05,"q":"FATO_COM_FONTE"},"EUA":{"v":8.13,"q":"FATO_COM_FONTE"},"França":{"v":5.36,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":3.8,"q":"FATO_COM_FONTE"},"Espanha":{"v":2.59,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":2.52,"q":"FATO_COM_FONTE"},"China":{"v":1.87,"q":"FATO_COM_FONTE"},"Bélgica":{"v":1.42,"q":"FATO_COM_FONTE"},"Canadá":{"v":1.3,"q":"FATO_COM_FONTE"},"Coreia":{"v":0.94,"q":"FATO_COM_FONTE"},"Japão":{"v":0.6,"q":"FATO_COM_FONTE"},"Rússia":{"v":0.53,"q":"FATO_COM_FONTE"},"Itália":{"v":65.7,"q":"FATO_COM_FONTE"},"Suíça":{"v":3.49,"q":"FATO_COM_FONTE"},"Brasil":{"v":1.39,"q":"FATO_COM_FONTE"}},"México":{"EUA":{"v":14.148,"q":"FATO_COM_FONTE"},"Canadá":{"v":2.642,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":0.468,"q":"FATO_COM_FONTE"},"Alemanha":{"v":0.262,"q":"FATO_COM_FONTE"},"Espanha":{"v":0.371,"q":"FATO_COM_FONTE"},"França":{"v":0.306,"q":"FATO_COM_FONTE"},"Itália":{"v":0.167,"q":"FATO_COM_FONTE"},"China":{"v":0.213,"q":"FATO_COM_FONTE"},"Japão":{"v":0.096,"q":"FATO_COM_FONTE"},"Coreia":{"v":0.111,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":0.084,"q":"FATO_COM_FONTE"},"Bélgica":{"v":null,"q":"NAO_PUBLICO"},"Rússia":{"v":null,"q":"NAO_PUBLICO"},"Brasil":{"v":0.217,"q":"FATO_COM_FONTE"}},"Reino Unido":{"EUA":{"v":5.585,"q":"FATO_COM_FONTE"},"França":{"v":3.611,"q":"FATO_COM_FONTE"},"Alemanha":{"v":3.342,"q":"FATO_COM_FONTE"},"Espanha":{"v":2.559,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":1.968,"q":"FATO_COM_FONTE"},"Itália":{"v":1.871,"q":"FATO_COM_FONTE"},"Canadá":{"v":0.944,"q":"FATO_COM_FONTE"},"Bélgica":{"v":0.873,"q":"FATO_COM_FONTE"},"China":{"v":0.503,"q":"FATO_COM_FONTE"},"Japão":{"v":0.226,"q":"FATO_COM_FONTE"},"Rússia":{"v":0.039,"q":"FATO_COM_FONTE"},"Coreia":{"v":null,"q":"NAO_PUBLICO"},"Reino Unido":{"v":null,"q":"NAO_PUBLICO"},"Suíça":{"v":0.85,"q":"FATO_COM_FONTE"},"Brasil":{"v":0.31,"q":"FATO_COM_FONTE"}},"Alemanha":{"Países Baixos":{"v":11.9,"q":"FATO_COM_FONTE"},"EUA":{"v":7.2,"q":"FATO_COM_FONTE"},"Suíça":{"v":6.9,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":5.3,"q":"FATO_COM_FONTE"},"França":{"v":3.7,"q":"FATO_COM_FONTE"},"Itália":{"v":3.5,"q":"FATO_COM_FONTE"},"Espanha":{"v":2.7,"q":"FATO_COM_FONTE"},"China":{"v":1.8,"q":"FATO_COM_FONTE"},"Canadá":{"v":0.386,"q":"FATO_COM_FONTE"},"Bélgica":{"v":null,"q":"NAO_PUBLICO"},"Rússia":{"v":null,"q":"NAO_PUBLICO"},"Coreia":{"v":null,"q":"NAO_PUBLICO"},"Japão":{"v":null,"q":"NAO_PUBLICO"}},"Japão":{"Coreia":{"v":8.8178,"q":"FATO_COM_FONTE"},"China":{"v":6.9812,"q":"FATO_COM_FONTE"},"EUA":{"v":2.7246,"q":"FATO_COM_FONTE"},"Canadá":{"v":0.5794,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":0.4372,"q":"FATO_COM_FONTE"},"França":{"v":0.385,"q":"FATO_COM_FONTE"},"Alemanha":{"v":0.3259,"q":"FATO_COM_FONTE"},"Itália":{"v":0.2297,"q":"FATO_COM_FONTE"},"Espanha":{"v":0.1823,"q":"FATO_COM_FONTE"},"Rússia":{"v":0.0993,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":null,"q":"NAO_PUBLICO"},"Bélgica":{"v":null,"q":"NAO_PUBLICO"},"Japão":{"v":null,"q":"NAO_PUBLICO"}},"Grécia":{"Alemanha":{"v":5.402,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":4.545,"q":"FATO_COM_FONTE"},"Itália":{"v":2.026,"q":"FATO_COM_FONTE"},"França":{"v":1.992,"q":"FATO_COM_FONTE"},"EUA":{"v":1.547,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":1.227,"q":"FATO_COM_FONTE"},"Bélgica":{"v":0.706,"q":"FATO_COM_FONTE"},"Espanha":{"v":0.599,"q":"FATO_COM_FONTE"},"Canadá":{"v":0.21,"q":"INFERENCIA"},"Rússia":{"v":0.016,"q":"FATO_COM_FONTE"},"China":{"v":null,"q":"NAO_PUBLICO"},"Japão":{"v":null,"q":"NAO_PUBLICO"},"Coreia":{"v":null,"q":"NAO_PUBLICO"}},"Tailândia":{"China":{"v":6.733,"q":"FATO_COM_FONTE"},"Coreia":{"v":1.869,"q":"FATO_COM_FONTE"},"Rússia":{"v":1.745,"q":"FATO_COM_FONTE"},"EUA":{"v":1.031,"q":"FATO_COM_FONTE"},"Japão":{"v":1.051,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":0.966,"q":"FATO_COM_FONTE"},"Alemanha":{"v":0.873,"q":"FATO_COM_FONTE"},"França":{"v":0.721,"q":"FATO_COM_FONTE"},"Itália":{"v":0.267,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":0.261,"q":"FATO_COM_FONTE"},"Canadá":{"v":0.251,"q":"FATO_COM_FONTE"},"Espanha":{"v":0.208,"q":"FATO_COM_FONTE"},"Bélgica":{"v":0.108,"q":"FATO_COM_FONTE"}},"Áustria":{"Alemanha":{"v":14.998,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":2.257,"q":"FATO_COM_FONTE"},"EUA":{"v":0.96,"q":"FATO_COM_FONTE"},"Itália":{"v":1.067,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":0.932,"q":"FATO_COM_FONTE"},"Bélgica":{"v":0.624,"q":"FATO_COM_FONTE"},"França":{"v":0.552,"q":"FATO_COM_FONTE"},"Espanha":{"v":0.406,"q":"FATO_COM_FONTE"},"China":{"v":0.385,"q":"FATO_COM_FONTE"},"Coreia":{"v":0.227,"q":"FATO_COM_FONTE"},"Canadá":{"v":0.15,"q":"FATO_COM_FONTE"},"Japão":{"v":0.106,"q":"FATO_COM_FONTE"},"Rússia":{"v":0.053,"q":"FATO_COM_FONTE"},"Suíça":{"v":1.354,"q":"FATO_COM_FONTE"}},"Portugal":{"Espanha":{"v":7.164,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":3.489,"q":"FATO_COM_FONTE"},"França":{"v":3.353,"q":"FATO_COM_FONTE"},"Alemanha":{"v":2.393,"q":"FATO_COM_FONTE"},"EUA":{"v":1.781,"q":"FATO_COM_FONTE"},"Itália":{"v":0.991,"q":"FATO_COM_FONTE"},"Países Baixos":{"v":1.008,"q":"FATO_COM_FONTE"},"Bélgica":{"v":0.643,"q":"FATO_COM_FONTE"},"China":{"v":null,"q":"NAO_PUBLICO"},"Canadá":{"v":null,"q":"NAO_PUBLICO"},"Rússia":{"v":null,"q":"NAO_PUBLICO"},"Coreia":{"v":null,"q":"NAO_PUBLICO"},"Japão":{"v":null,"q":"NAO_PUBLICO"},"Suíça":{"v":1.304,"q":"FATO_COM_FONTE"},"Brasil":{"v":1.443,"q":"FATO_COM_FONTE"}},"China":{"EUA":{"v":null,"q":"NAO_PUBLICO"},"Alemanha":{"v":null,"q":"NAO_PUBLICO"},"Reino Unido":{"v":null,"q":"NAO_PUBLICO"},"China":{"v":null,"q":"NAO_PUBLICO"},"França":{"v":null,"q":"NAO_PUBLICO"},"Canadá":{"v":null,"q":"NAO_PUBLICO"},"Rússia":{"v":null,"q":"NAO_PUBLICO"},"Itália":{"v":null,"q":"NAO_PUBLICO"},"Coreia":{"v":null,"q":"NAO_PUBLICO"},"Espanha":{"v":null,"q":"NAO_PUBLICO"},"Países Baixos":{"v":null,"q":"NAO_PUBLICO"},"Japão":{"v":null,"q":"NAO_PUBLICO"},"Bélgica":{"v":null,"q":"NAO_PUBLICO"}},"Arábia Saudita":{"EUA":{"v":0.388,"q":"FATO_COM_FONTE"},"Alemanha":{"v":0.106,"q":"FATO_COM_FONTE"},"Reino Unido":{"v":0.537,"q":"FATO_COM_FONTE"},"China":{"v":null,"q":"NAO_PUBLICO"},"França":{"v":0.233,"q":"FATO_COM_FONTE"},"Canadá":{"v":0.152,"q":"FATO_COM_FONTE"},"Rússia":{"v":0.156,"q":"FATO_COM_FONTE"},"Itália":{"v":null,"q":"NAO_PUBLICO"},"Coreia":{"v":null,"q":"NAO_PUBLICO"},"Espanha":{"v":null,"q":"NAO_PUBLICO"},"Países Baixos":{"v":null,"q":"NAO_PUBLICO"},"Japão":{"v":null,"q":"NAO_PUBLICO"},"Bélgica":{"v":null,"q":"NAO_PUBLICO"},"Brasil":{"v":0.012,"q":"FATO_COM_FONTE"}}},"totais":{"França":{"soma":43.5,"nFato":14},"Espanha":{"soma":63,"nFato":8},"EUA":{"soma":38.1,"nFato":13},"Türkiye":{"soma":19.9,"nFato":5},"Itália":{"soma":48,"nFato":14},"México":{"soma":19.1,"nFato":12},"Reino Unido":{"soma":22.7,"nFato":13},"Alemanha":{"soma":43.4,"nFato":9},"Japão":{"soma":20.8,"nFato":10},"Grécia":{"soma":18.1,"nFato":9},"Tailândia":{"soma":16.1,"nFato":13},"Áustria":{"soma":24.1,"nFato":14},"Portugal":{"soma":23.6,"nFato":10},"China":{"soma":0,"nFato":0},"Arábia Saudita":{"soma":1.6,"nFato":7}}};
+-const STATUS = {"Espanha|Reino Unido":"live","Espanha|Alemanha":"live","Espanha|França":"live","Espanha|Itália":"next"};
++const STATUS = {"Espanha|Reino Unido":"live","Espanha|Alemanha":"live","Espanha|França":"live","Espanha|Itália":"live","França|Reino Unido":"next"};
+ const SC = {live:"var(--live)",prod:"var(--prod)",next:"var(--next)"};
+ const SERIE = {TF:"TF",TCE:"TCE",PERN:"PN",NP:"—"};
+ 
+@@ -139,7 +152,7 @@ const {origens,destinos,grid,totais} = DATA;
+ // KPIs
+ const kh = document.getElementById('kpis');
+ kh.innerHTML = `
+-  <div class="kpi"><div class="n"><span class="dots"><span class="dot" style="background:var(--live)"></span><span class="dot" style="background:var(--live)"></span><span class="dot" style="background:var(--live)"></span><span class="dot" style="background:var(--next)"></span></span></div><div class="l">3 no ar (EN · DE · FR) · 1 próximo (IT)</div></div>
++  <div class="kpi"><div class="n"><span class="dots"><span class="dot" style="background:var(--live)"></span><span class="dot" style="background:var(--live)"></span><span class="dot" style="background:var(--live)"></span><span class="dot" style="background:var(--live)"></span><span class="dot" style="background:var(--next)"></span></span></div><div class="l">4 no ar — coluna Espanha completa (EN · DE · FR · IT) · 1 próximo (FR)</div></div>
+   <div class="kpi"><div class="n">224</div><div class="l">células com fonte primária (de 225)</div></div>
+   <div class="kpi"><div class="n">18,4<small> M</small></div><div class="l">GB→Espanha, o maior corredor pago do mundo</div></div>
+   <div class="kpi"><div class="n">≈63<small> M</small></div><div class="l">a coluna Espanha, somando 5 compradores</div></div>`;
+@@ -168,7 +181,7 @@ origens.forEach(([on,sp])=>{
+         if(cell.q==='INFERENCIA') cls+=' inf';
+       }
+     }
+-    if(sk){ cls+=' sku'; style+=`;--sc:${SC[sk]}`; inner+=`<span class="badge"></span>`; }
++    if(sk){ cls+=` sku sk-${sk}`; style+=`;--sc:${SC[sk]}`; inner=`<span class="badge">${sk==='live'?'✓':sk==='next'?'▶':'●'}</span>`+inner; }
+     h += `<td class="${cls}" style="${style}">${inner}</td>`;
+   });
+   h += '</tr>';
+@@ -180,4 +193,17 @@ t.innerHTML = h;
+ document.getElementById('caveat').innerHTML = `<b>Por que as colunas não somam entre si.</b> Cada país publica a sua própria série. Espanha, Reino Unido, Japão, Grécia, Türkiye, México e Portugal dão <b>TF</b> (chegadas na fronteira). França, Itália e Áustria só publicam <b>TCE</b> (chegadas em alojamento) por país — que subconta ~40% quem fica em casa de amigos ou aluguel. A Alemanha só publica <b>pernoites</b>, que inflam 3–5× a chegada. A China não abre origem nenhuma. Comparar Itália (TCE) com Espanha (TF) é comparar coisas diferentes — os números valem <b>dentro</b> da coluna, não entre elas.`;
+ 
+ document.getElementById('foot').innerHTML = `Ano-base 2024. Fontes primárias: INE/FRONTUR (ES), Insee/Eurostat (FR), ISTAT (IT), NTTO/trade.gov (US), TÜİK (TR), SECTUR-DATATUR (MX), ONS (GB), Destatis (DE), JNTO (JP), Banco da Grécia (GR), Min. Turismo (TH, SA), Statistik Austria (AT), INE-PT (PT). Origens ordenadas por gasto outbound (FMI BOP travel debit 2024). Cada número verificado por um segundo agente contra a fonte. Guia vivo — repintado a cada curso que muda de status.`;
+-</script>
+\ No newline at end of file
++
++// Toggle manual de tema — garante contraste mesmo se o container/navegador impuser um tema.
++const tt = document.getElementById('themeToggle');
++tt.addEventListener('click', () => {
++  const r = document.documentElement;
++  const cur = r.getAttribute('data-theme');
++  const sysDark = matchMedia('(prefers-color-scheme:dark)').matches;
++  const next = cur ? (cur === 'dark' ? 'light' : 'dark') : (sysDark ? 'light' : 'dark');
++  r.setAttribute('data-theme', next);
++  tt.textContent = next === 'dark' ? '☀ claro' : '☾ escuro';
++});
++</script>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/src/lib/components/KitBusca.svelte b/src/lib/components/KitBusca.svelte
+index 692d174..70697ab 100644
+--- a/src/lib/components/KitBusca.svelte
++++ b/src/lib/components/KitBusca.svelte
+@@ -9,6 +9,10 @@
+   // E ela NÃO é a entrada primária (PRODUTO.md §6) — é a saída de emergência de
+   // quem já sabe a palavra. Por isso é uma linha discreta, não um campo herói.
+ 
++  // `direcao`: 'cima' (padrão, tela do /kit — o polegar no rodapé) ou 'baixo'
++  // (âncora no header, onde o teclado nasce embaixo, não em cima).
++  let { direcao = 'cima' }: { direcao?: 'cima' | 'baixo' } = $props();
++
+   let termo = $state('');
+   const achados = $derived(buscar(termo));
+   const procurando = $derived(termo.trim().length >= 2);
+@@ -26,7 +30,9 @@
+     <!-- Resultados ABRINDO PARA CIMA: o teclado ocupa a metade de baixo, e uma
+          lista que abrisse para baixo nasceria embaixo dele. -->
+     <div
+-      class="absolute bottom-full left-0 right-0 mb-2 max-h-[46dvh] overflow-y-auto overscroll-contain rounded-2xl bg-white shadow-lg ring-1 ring-black/15"
++      class="absolute left-0 right-0 max-h-[46dvh] overflow-y-auto overscroll-contain rounded-2xl bg-white shadow-lg ring-1 ring-black/15 {direcao === 'baixo'
++        ? 'top-full mt-2'
++        : 'bottom-full mb-2'}"
+     >
+       {#if achados.length}
+         <ul>
+diff --git a/src/lib/curso.config.ts b/src/lib/curso.config.ts
+new file mode 100644
+index 0000000..c21876f
+--- /dev/null
++++ b/src/lib/curso.config.ts
+@@ -0,0 +1,24 @@
++// A CONFIG DE CURSO — o que muda entre EN/DE/FR/IT→Espanha (e o futuro →França)
++// mora AQUI e só aqui. Componentes agnósticos de língua (busca, tradutor,
++// bolso do viajante) leem daqui; nenhum deles tem par de idioma ou moeda
++// hard-coded. Derivar um SKU novo = copiar este arquivo e trocar os valores.
++
++export const curso = {
++  /** Idioma do comprador (a voz-guia). */
++  buyerLang: 'en',
++  /** Idioma do destino (a fala nativa ensinada). */
++  targetLang: 'es',
++  /** Par para o link do Google Tradutor: sl = comprador, tl = destino. */
++  translatorPair: { sl: 'en', tl: 'es' },
++  /** Moeda do destino. */
++  destCurrency: 'EUR',
++  /**
++   * Moedas de "casa" do comprador que vale converter no bolso do viajante.
++   * Vazio quando o comprador já usa a moeda do destino (ex.: DE/FR/IT→Espanha,
++   * todos em EUR) — nesse caso o /bolso mostra a nota "mesma moeda", sem conversor.
++   */
++  homeCurrencies: ['GBP', 'USD'] as string[],
++  timeZone: 'Europe/Madrid'
++} as const;
++
++export type CursoConfig = typeof curso;
+diff --git a/src/routes/+layout.svelte b/src/routes/+layout.svelte
+index 7a9e3b0..6807721 100644
+--- a/src/routes/+layout.svelte
++++ b/src/routes/+layout.svelte
+@@ -1,73 +1,144 @@
+-<script lang="ts">
+-  import '../app.css';
+-  import { onMount } from 'svelte';
+-  import { dev } from '$app/environment';
+-  import { base } from '$app/paths';
+-  import { PROFILES, store, setProfile } from '$lib/state.svelte';
+-
+-  let { children } = $props();
+-
+-  // Registro MANUAL do service worker (o injectRegister automático não injeta
+-  // nada em HTML prerenderizado — sem isto o app nunca teve SW em produção).
+-  // Registro direto com URL absoluta do base: o virtual:pwa-register compila
+-  // "./sw.js" (relativo à PÁGINA), que quebraria em deep-link de episódio.
+-  // Com registerType autoUpdate o sw.js já tem skipWaiting+clientsClaim, então
+-  // register puro + update() horário dá o autoUpdate completo.
+-  onMount(async () => {
+-    if (dev || !('serviceWorker' in navigator)) return;
+-    // Sem base (= vite preview local em localhost:4173/5182, origem COMPARTILHADA
+-    // com os outros PWAs do casal): só registra com ?sw na URL, senão o precache
+-    // do app "sequestra" o / dos outros projetos em preview.
+-    if (!base && !new URLSearchParams(location.search).has('sw')) return;
+-    try {
+-      // Quando o SW novo (skipWaiting+clientsClaim) assume o controle, recarrega
+-      // UMA vez pra a página pegar o código novo — sem isto o shell velho fica na
+-      // memória e mudanças de código não aparecem (o "reabri e não vi" do iOS).
+-      // Só em ATUALIZAÇÃO (já havia controller), nunca no 1º install (evita loop).
+-      if (navigator.serviceWorker.controller) {
+-        let recarregando = false;
+-        navigator.serviceWorker.addEventListener('controllerchange', () => {
+-          if (recarregando) return;
+-          recarregando = true;
+-          location.reload();
+-        });
+-      }
+-      const reg = await navigator.serviceWorker.register(`${base}/sw.js`, { scope: `${base}/` });
+-      void reg.update().catch(() => {}); // checa update já no launch
+-      // iOS só checa update no launch; com o app aberto horas (estudo/carro),
+-      // checa a cada hora pra nova versão chegar sem depender de reabrir 2x.
+-      setInterval(() => void reg.update().catch(() => {}), 60 * 60 * 1000);
+-    } catch {
+-      /* sem SW (navegador antigo / registro falhou) — app segue online */
+-    }
+-  });
+-</script>
+-
+-<div class="mx-auto flex min-h-dvh max-w-xl flex-col">
+-  <header
+-    class="sticky top-0 z-10 flex items-center justify-between gap-2 border-b border-black/5 bg-creme/90 px-4 py-3 backdrop-blur"
+-  >
+-    <a href="{base}/" class="flex items-baseline gap-1.5">
+-      <span class="text-lg font-extrabold text-terracota">¡Dime!</span>
+-      <span class="hidden text-xs font-medium text-carvao/50 sm:inline">· Spain survival Spanish</span>
+-    </a>
+-    <div class="flex gap-1">
+-      {#each PROFILES as p}
+-        <button
+-          type="button"
+-          onclick={() => setProfile(p.id)}
+-          aria-pressed={store.current === p.id}
+-          class="pill {store.current === p.id
+-            ? 'bg-terracota text-white'
+-            : 'bg-white text-carvao/70 ring-1 ring-black/10'}"
+-        >
+-          {p.emoji} {p.nome.split(' ')[0]}
+-        </button>
+-      {/each}
+-    </div>
+-  </header>
+-
+-  <main class="flex-1 px-4 pb-20 pt-3">
+-    {@render children()}
+-  </main>
+-</div>
++<script lang="ts">
++  import '../app.css';
++  import { onMount } from 'svelte';
++  import { dev } from '$app/environment';
++  import { base } from '$app/paths';
++  import { PROFILES, store, setProfile } from '$lib/state.svelte';
++  import { curso } from '$lib/curso.config';
++  import KitBusca from '$lib/components/KitBusca.svelte';
++
++  let { children } = $props();
++
++  // Busca e menu são alcançáveis de QUALQUER tela (era só na tela 0 do /kit),
++  // mas continuam a MESMA saída de emergência discreta — nunca um campo herói
++  // fixo (PRODUTO.md §6: busca não é entrada primária). Por isso ficam
++  // fechados por padrão, atrás de um ícone, e um clique fora fecha os dois.
++  let buscaAberta = $state(false);
++  let menuAberto = $state(false);
++
++  const translatorHref = `https://translate.google.com/?sl=${curso.translatorPair.sl}&tl=${curso.translatorPair.tl}&op=translate`;
++
++  // Registro MANUAL do service worker (o injectRegister automático não injeta
++  // nada em HTML prerenderizado — sem isto o app nunca teve SW em produção).
++  // Registro direto com URL absoluta do base: o virtual:pwa-register compila
++  // "./sw.js" (relativo à PÁGINA), que quebraria em deep-link de episódio.
++  // Com registerType autoUpdate o sw.js já tem skipWaiting+clientsClaim, então
++  // register puro + update() horário dá o autoUpdate completo.
++  onMount(async () => {
++    if (dev || !('serviceWorker' in navigator)) return;
++    // Sem base (= vite preview local em localhost:4173/5182, origem COMPARTILHADA
++    // com os outros PWAs do casal): só registra com ?sw na URL, senão o precache
++    // do app "sequestra" o / dos outros projetos em preview.
++    if (!base && !new URLSearchParams(location.search).has('sw')) return;
++    try {
++      // Quando o SW novo (skipWaiting+clientsClaim) assume o controle, recarrega
++      // UMA vez pra a página pegar o código novo — sem isto o shell velho fica na
++      // memória e mudanças de código não aparecem (o "reabri e não vi" do iOS).
++      // Só em ATUALIZAÇÃO (já havia controller), nunca no 1º install (evita loop).
++      if (navigator.serviceWorker.controller) {
++        let recarregando = false;
++        navigator.serviceWorker.addEventListener('controllerchange', () => {
++          if (recarregando) return;
++          recarregando = true;
++          location.reload();
++        });
++      }
++      const reg = await navigator.serviceWorker.register(`${base}/sw.js`, { scope: `${base}/` });
++      void reg.update().catch(() => {}); // checa update já no launch
++      // iOS só checa update no launch; com o app aberto horas (estudo/carro),
++      // checa a cada hora pra nova versão chegar sem depender de reabrir 2x.
++      setInterval(() => void reg.update().catch(() => {}), 60 * 60 * 1000);
++    } catch {
++      /* sem SW (navegador antigo / registro falhou) — app segue online */
++    }
++  });
++</script>
++
++<div class="mx-auto flex min-h-dvh max-w-xl flex-col">
++  <header
++    class="sticky top-0 z-10 border-b border-black/5 bg-creme/90 px-4 py-3 backdrop-blur"
++  >
++    <div class="flex items-center justify-between gap-2">
++      <a href="{base}/" class="flex items-baseline gap-1.5">
++        <span class="text-lg font-extrabold text-terracota">¡Dime!</span>
++        <span class="hidden text-xs font-medium text-carvao/50 sm:inline">· Spain survival Spanish</span>
++      </a>
++      <div class="flex items-center gap-1">
++        {#each PROFILES as p}
++          <button
++            type="button"
++            onclick={() => setProfile(p.id)}
++            aria-pressed={store.current === p.id}
++            class="pill {store.current === p.id
++              ? 'bg-terracota text-white'
++              : 'bg-white text-carvao/70 ring-1 ring-black/10'}"
++          >
++            {p.emoji} {p.nome.split(' ')[0]}
++          </button>
++        {/each}
++        <button
++          type="button"
++          onclick={() => {
++            buscaAberta = !buscaAberta;
++            menuAberto = false;
++          }}
++          aria-pressed={buscaAberta}
++          aria-label="Search the kit"
++          class="grid h-8 w-8 shrink-0 place-items-center rounded-full text-base {buscaAberta
++            ? 'bg-terracota text-white'
++            : 'bg-white text-carvao/70 ring-1 ring-black/10'}"
++        >
++          🔎
++        </button>
++        <div class="relative">
++          <button
++            type="button"
++            onclick={() => {
++              menuAberto = !menuAberto;
++              buscaAberta = false;
++            }}
++            aria-pressed={menuAberto}
++            aria-label="More"
++            class="grid h-8 w-8 shrink-0 place-items-center rounded-full text-base {menuAberto
++              ? 'bg-terracota text-white'
++              : 'bg-white text-carvao/70 ring-1 ring-black/10'}"
++          >
++            ⋯
++          </button>
++          {#if menuAberto}
++            <div
++              class="absolute right-0 top-full mt-2 w-52 overflow-hidden rounded-2xl bg-white shadow-lg ring-1 ring-black/15"
++            >
++              <a
++                href={translatorHref}
++                target="_blank"
++                rel="noopener"
++                onclick={() => (menuAberto = false)}
++                class="flex items-center gap-2.5 px-3.5 py-3 text-sm font-medium active:bg-black/5"
++              >
++                <span class="text-lg">🗣️</span> Google Translator
++              </a>
++              <a
++                href="{base}/bolso/"
++                onclick={() => (menuAberto = false)}
++                class="flex items-center gap-2.5 border-t border-black/5 px-3.5 py-3 text-sm font-medium active:bg-black/5"
++              >
++                <span class="text-lg">💱</span> Traveler's pocket
++              </a>
++            </div>
++          {/if}
++        </div>
++      </div>
++    </div>
++
++    {#if buscaAberta}
++      <div class="relative mt-2">
++        <KitBusca direcao="baixo" />
++      </div>
++    {/if}
++  </header>
++
++  <main class="flex-1 px-4 pb-20 pt-3">
++    {@render children()}
++  </main>
++</div>
+diff --git a/src/routes/+page.svelte b/src/routes/+page.svelte
+index 63eb2c8..b4ab96f 100644
+--- a/src/routes/+page.svelte
++++ b/src/routes/+page.svelte
+@@ -5,6 +5,9 @@
+   import { examDoNivel, quizDoEpisodio } from '$lib/course/quiz-nav';
+   import { store, isDone, PROFILES } from '$lib/state.svelte';
+   import { encodeSync, importSync, whatsappUrl } from '$lib/sync';
++  import { curso } from '$lib/curso.config';
++
++  const translatorHref = `https://translate.google.com/?sl=${curso.translatorPair.sl}&tl=${curso.translatorPair.tl}&op=translate`;
+ 
+   const perfil = $derived(PROFILES.find((p) => p.id === store.current)!);
+ 
+@@ -79,7 +82,7 @@
+ </a>
+ 
+ <a
+-  href="https://translate.google.com"
++  href={translatorHref}
+   target="_blank"
+   rel="noopener"
+   class="mt-4 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-md ring-1 ring-black/5"
+@@ -99,6 +102,20 @@
+   will not tell you that the same drink costs three prices.
+ </p>
+ 
++<a
++  href="{base}/bolso/"
++  class="mt-3 flex items-center gap-3 rounded-2xl bg-white p-3 shadow-md ring-1 ring-black/5"
++>
++  <span class="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-salvia/15 text-2xl">💱</span>
++  <span class="min-w-0 flex-1">
++    <span class="block font-bold leading-tight text-carvao">Traveler's pocket</span>
++    <span class="block text-xs text-carvao/60"
++      >Currency, plug type, and the emergency number — works with the phone in airplane mode.</span
++    >
++  </span>
++  <span class="shrink-0 text-lg text-carvao/30">→</span>
++</a>
++
+ {#each niveis as nivel}
+   {@const feitas = nivel.episodios.reduce((n, e) => n + feitasDe(e), 0)}
+   {@const totalP = nivel.episodios.reduce((n, e) => n + e.partes.length, 0)}
