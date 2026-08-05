@@ -7,26 +7,25 @@
   "titulo": "Someone invites you home",
   "subtitulo": "What you carry through the door, where you put yourself once you are in, the one word that starts the meal, the hour after the plates go — and the two short sentences that fix a night and a doorway before anybody stands up",
   "moldura": "ganha",
-
   "cena": "Twenty past ten at a bar you have been in all evening, the man on the next bar stool says come and eat at ours on Saturday, and there is about one minute before the round breaks up and nobody has said a time.",
-
   "decisao": "whether the invitation becomes an evening in somebody's flat or stays a nice thought on the pavement — a night at a table with five people, or another restaurant and the city seen through a hotel window",
   "emJogo": "ambos",
-
   "clique": {
-    "contagem": ["the bar stool", "the landing", "the table", "the square", "the street door"],
+    "contagem": [
+      "the bar stool",
+      "the landing",
+      "the table",
+      "the square",
+      "the street door"
+    ],
     "desconto": "Nobody gave you those sentences. You made them out of one question, one word and a doorway, and not one of them runs past a single breath.",
     "piso": "You will turn an invitation into an hour and a place, and be sat at somebody's table on Saturday. Most visitors fly home with an invitation they never put a day on."
   },
   "cliqueAudioKey": "i08-n26",
-
   "frasePiso": "You will turn an invitation into an hour and a place, and be sat at somebody's table on Saturday. Most visitors fly home with an invitation they never put a day on.",
-
   "permissao": "You are allowed to arrive a little after the hour you were given — on the dot is early, and the kitchen is not ready for you. You are allowed to take something small and cheap, and you are allowed to say no to the third helping: say it twice, with the praise on the end, and it is heard the second time. And you are allowed to leave. Announce it once, sit through the ten minutes that follow, and then go.",
   "permissaoAudioKey": "i08-n24",
-
   "espelho": "Getting up the moment the plates are cleared is the bit that reads as odd there. At a table at home, the hour after the food is the part you were invited for, and leaving in the middle of it looks as though the evening was a job you have now finished.",
-
   "fichasCulturais": [
     {
       "sinal": "You are handed a bottle back on the way out, or the one you brought goes straight onto a shelf in the kitchen and is never opened.",
@@ -36,7 +35,11 @@
       "oQueMelhora": "You come in as somebody who was expected instead of somebody being fed, and the invitation comes round again.",
       "ondeNaoVale": "Not a bar or a restaurant somebody has invited you to. There the round is the gift, and turning up with a bottle would be odd.",
       "evidencia": "CONSENSO",
-      "audioKeys": ["i08-n09", "i08-n10", "i08-n11"]
+      "audioKeys": [
+        "i08-n09",
+        "i08-n10",
+        "i08-n11"
+      ]
     },
     {
       "sinal": "You say you could not eat another thing, and another spoonful lands on your plate anyway, without anybody looking at you.",
@@ -46,7 +49,11 @@
       "oQueMelhora": "You stop eating when you are full and the person who cooked still gets told the thing they wanted to hear.",
       "ondeNaoVale": "Not an allergy or a diet. That one never goes into this soft register: it is the flat, serious sentence from part thirteen, with the card in your hand.",
       "evidencia": "CONSENSO",
-      "audioKeys": ["i08-n18", "i08-n19", "i08-n20"]
+      "audioKeys": [
+        "i08-n18",
+        "i08-n19",
+        "i08-n20"
+      ]
     },
     {
       "sinal": "The plates are cleared, the coffee comes out, and nobody stands up for an hour.",
@@ -56,10 +63,13 @@
       "oQueMelhora": "You get the hour where the talking happens, which is where you get told the things nobody tells a table of visitors.",
       "ondeNaoVale": "Not a weekday lunch that people have to get back from, and not a table with a train or a shift at the end of it — there it finishes on time and nobody sits on.",
       "evidencia": "CONSENSO",
-      "audioKeys": ["i08-n21", "i08-n22", "i08-n23"]
+      "audioKeys": [
+        "i08-n21",
+        "i08-n22",
+        "i08-n23"
+      ]
     }
   ],
-
   "fatosDatados": [
     {
       "id": "cena-en-casa-hora",
@@ -70,10 +80,12 @@
       "revisarAte": "2028-01-01",
       "evidencia": "CONSENSO",
       "risco": "baixo",
-      "audioKeys": ["i08-cenar-e", "i08-n24"]
+      "audioKeys": [
+        "i08-cenar-e",
+        "i08-n24"
+      ]
     }
   ],
-
   "steps": [
     {
       "tipo": "intro",
@@ -178,7 +190,9 @@
       "tts": "¿Nos vemos a las ocho y media en tu portal?"
     },
     {
-      "consulta": ["simpatia/convite"],
+      "consulta": [
+        "simpatia/convite"
+      ],
       "tipo": "responde",
       "voz": "Carmen",
       "promptVoz": "Alice",
@@ -230,7 +244,9 @@
       "tts": "Vale, allí estaré."
     },
     {
-      "consulta": ["simpatia/convite"],
+      "consulta": [
+        "simpatia/convite"
+      ],
       "tipo": "responde",
       "voz": "Carmen",
       "promptVoz": "Alice",
@@ -264,7 +280,10 @@
       "tts": "Te he traído una cosita."
     },
     {
-      "consulta": ["simpatia/convite","simpatia/agradecer"],
+      "consulta": [
+        "simpatia/convite",
+        "simpatia/agradecer"
+      ],
       "tipo": "responde",
       "voz": "Emilio",
       "promptVoz": "Alice",
@@ -304,7 +323,9 @@
       "pt": "You already own the front of that one from last night. Only what sits in the middle of it is new."
     },
     {
-      "consulta": ["simpatia/elogiar-lugar"],
+      "consulta": [
+        "simpatia/elogiar-lugar"
+      ],
       "tipo": "responde",
       "voz": "Carmen",
       "promptVoz": "Alice",
@@ -358,7 +379,7 @@
     },
     {
       "tipo": "responde",
-      "voz": "Carmen",
+      "voz": "Emilio",
       "promptVoz": "Alice",
       "molde": "APRECIACION",
       "encaixe": "buena pinta",
@@ -433,7 +454,9 @@
       "tts": "De verdad que no puedo más, estaba todo buenísimo."
     },
     {
-      "consulta": ["simpatia/convite"],
+      "consulta": [
+        "simpatia/convite"
+      ],
       "tipo": "responde",
       "voz": "Carmen",
       "promptVoz": "Alice",
@@ -511,7 +534,10 @@
       "tts": "Muchas gracias por todo. Ha estado genial."
     },
     {
-      "consulta": ["simpatia/agradecer","chegar/sair"],
+      "consulta": [
+        "simpatia/agradecer",
+        "chegar/sair"
+      ],
       "tipo": "responde",
       "voz": "Emilio",
       "promptVoz": "Alice",
@@ -625,7 +651,6 @@
       "pt": "That is it. You were invited, you put a day on it, and you stayed for the coffee. Hasta luego."
     }
   ],
-
   "aprofundar": {
     "titulo": "Getting to somebody's table, and knowing what to do once you are at it (optional reading)",
     "secoes": [

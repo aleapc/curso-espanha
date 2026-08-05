@@ -7,28 +7,28 @@
   "titulo": "The five questions everyone asks you",
   "subtitulo": "The opening that arrives at every counter — where from, first time, how many days, what do you make of it, what have you eaten — and the short answers that hand it back instead of closing it",
   "moldura": "ganha",
-
   "cena": "Second round at a counter in a town you got to this morning, the man on the next stool has turned half round, and he has just asked you where you are from.",
-
   "decisao": "whether the five questions turn into a conversation or stop dead — the table that answers them and hands one back leaves with the dish that is not on the board, the bar with no sign, a Sunday lunch it was invited to and, in a small place, now and then a round that never reaches the bill; the table that nods gets served and left alone",
   "emJogo": "ambos",
-
-  "moldes": ["PREFERENCIA"],
-
+  "moldes": [
+    "PREFERENCIA"
+  ],
   "clique": {
-    "contagem": ["the counter", "the terrace", "the market stall", "the taxi", "the hotel desk"],
+    "contagem": [
+      "the counter",
+      "the terrace",
+      "the market stall",
+      "the taxi",
+      "the hotel desk"
+    ],
     "desconto": "Nobody gave you those sentences. You made them on the spot, out of two openers and two words handed back.",
     "piso": "You will answer all five of the questions a stranger asks you at a counter, and put one back. Most visitors answer the first one and nod through the other four."
   },
   "cliqueAudioKey": "i05-n30",
-
   "frasePiso": "You will answer all five of the questions a stranger asks you at a counter, and put one back. Most visitors answer the first one and nod through the other four.",
-
   "permissao": "You never have to produce estáis, habéis or sois — you will hear them all day and build one about never, and ustedes works if you ever do. Three words is a whole answer, and liking the obvious thing is a real answer: nobody is marking your taste. And you are allowed to lose the question and ask for it again, twice, without it costing you the conversation.",
   "permissaoAudioKey": "i05-n27",
-
   "espelho": "Talking your own Spanish down — 'no, no, it's terrible' — is the bit that reads as odd there. It hands the turn back with nothing in it, and the person who was holding a door open closes it politely.",
-
   "fichasCulturais": [
     {
       "sinal": "Somebody you met ninety seconds ago asks where you are from, whether it is your first time, how many days you have got, what you make of the place and what you have eaten — one straight after the other.",
@@ -38,7 +38,11 @@
       "oQueMelhora": "You stop being the table nobody talks to, and the answers start arriving with places inside them.",
       "ondeNaoVale": "Not at a counter with eleven people behind you, and not at a bank, a surgery or a Guardia Civil checkpoint — there nobody asks you anything that is not on a form, and the quiet is not coldness.",
       "evidencia": "CONSENSO",
-      "audioKeys": ["i05-n20", "i05-n21", "i05-n22"]
+      "audioKeys": [
+        "i05-n20",
+        "i05-n21",
+        "i05-n22"
+      ]
     },
     {
       "sinal": "The question arrives with an ending you have never heard — estáis, habéis, sois — and his eyes go from you to the person next to you and back.",
@@ -48,7 +52,11 @@
       "oQueMelhora": "You answer questions you did not technically understand, which is what listening well actually looks like on a Tuesday night.",
       "ondeNaoVale": "Not in the Canaries and much of western Andalusia, where ustedes does the same job between friends — if you never hear estáis in Seville, nothing has gone wrong and nobody is being formal with you.",
       "evidencia": "CONSENSO",
-      "audioKeys": ["i05-cuantosdias-e", "i05-quehabeis-e", "i05-n27"]
+      "audioKeys": [
+        "i05-cuantosdias-e",
+        "i05-quehabeis-e",
+        "i05-n27"
+      ]
     },
     {
       "sinal": "You ask him one question back — whether there is something they only do here — and he stops what he is doing and thinks about it properly before answering.",
@@ -58,10 +66,13 @@
       "oQueMelhora": "You leave with a plate and a street that no search would have given you, and often with him telling the barman what you are drinking next.",
       "ondeNaoVale": "Not with somebody who is working a queue at half past two — there the same question is a nuisance, and what comes back is the nearest thing on the list.",
       "evidencia": "CONSENSO",
-      "audioKeys": ["i05-n16", "i05-n17", "i05-n18"]
+      "audioKeys": [
+        "i05-n16",
+        "i05-n17",
+        "i05-n18"
+      ]
     }
   ],
-
   "fatosDatados": [
     {
       "id": "vosotros-receptivo-e-ustedes-no-sul",
@@ -71,10 +82,12 @@
       "revisarAte": "2029-01-01",
       "evidencia": "CONSENSO",
       "risco": "baixo",
-      "audioKeys": ["i05-cuantosdias-e", "i05-n27"]
+      "audioKeys": [
+        "i05-cuantosdias-e",
+        "i05-n27"
+      ]
     }
   ],
-
   "steps": [
     {
       "tipo": "intro",
@@ -211,7 +224,10 @@
       "pt": "The end of the little word moved with the thing after it. You take that by ear, never by rule."
     },
     {
-      "consulta": ["simpatia/puxar-conversa","simpatia/elogiar-lugar"],
+      "consulta": [
+        "simpatia/puxar-conversa",
+        "simpatia/elogiar-lugar"
+      ],
       "tipo": "responde",
       "voz": "Emilio",
       "promptVoz": "Alice",
@@ -293,7 +309,10 @@
       "pt": "which of the two"
     },
     {
-      "consulta": ["mesa/mesa","simpatia/puxar-conversa"],
+      "consulta": [
+        "mesa/mesa",
+        "simpatia/puxar-conversa"
+      ],
       "tipo": "responde",
       "voz": "Carmen",
       "promptVoz": "Alice",
@@ -323,9 +342,11 @@
       "tts": "Me gusta más el de la esquina."
     },
     {
-      "consulta": ["simpatia/puxar-conversa"],
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
       "tipo": "responde",
-      "voz": "Carmen",
+      "voz": "Emilio",
       "promptVoz": "Alice",
       "molde": "PREFERENCIA",
       "encaixe": "el de la esquina",
@@ -397,7 +418,9 @@
       "tts": "Sí, es la primera vez."
     },
     {
-      "consulta": ["simpatia/puxar-conversa"],
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
       "tipo": "responde",
       "voz": "Carmen",
       "promptVoz": "Alice",
@@ -418,7 +441,9 @@
       "tts": "Diez días. ¿Y tú, eres de aquí?"
     },
     {
-      "consulta": ["simpatia/puxar-conversa"],
+      "consulta": [
+        "simpatia/puxar-conversa"
+      ],
       "tipo": "responde",
       "voz": "Emilio",
       "promptVoz": "Alice",
@@ -446,7 +471,7 @@
     },
     {
       "tipo": "responde",
-      "voz": "Carmen",
+      "voz": "Emilio",
       "promptVoz": "Alice",
       "molde": "HAY",
       "encaixe": "algo típico de aquí",
@@ -504,9 +529,12 @@
       "tts": "Me gusta mucho el pulpo."
     },
     {
-      "consulta": ["simpatia/elogiar-comida","simpatia/puxar-conversa"],
+      "consulta": [
+        "simpatia/elogiar-comida",
+        "simpatia/puxar-conversa"
+      ],
       "tipo": "responde",
-      "voz": "Emilio",
+      "voz": "Carmen",
       "promptVoz": "Alice",
       "molde": "PREFERENCIA",
       "encaixe": "el pulpo",
@@ -656,7 +684,6 @@
       "pt": "That is it. They asked, you answered short, and you asked one back. Hasta luego."
     }
   ],
-
   "aprofundar": {
     "titulo": "The five questions, and the two openers that answer them (optional reading)",
     "secoes": [
