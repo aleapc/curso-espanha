@@ -1,0 +1,1 @@
+import{l as e}from"./Cy43inty.js";function t(t,n){throw new e(t,n)}export{t};

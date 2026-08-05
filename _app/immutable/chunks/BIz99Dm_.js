@@ -1,0 +1,1 @@
+var e={sku:`curso-espanha`,buyerLang:`en`,targetLang:`es`,translatorPair:{sl:`en`,tl:`es`},destCurrency:`EUR`,homeCurrencies:[`GBP`,`USD`],timeZone:`Europe/Madrid`};export{e as t};
